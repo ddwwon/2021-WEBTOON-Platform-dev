@@ -14,17 +14,19 @@
         <div class="profile-image">
           <img src="../Background/window.jpeg" alt="window" />
         </div>
-        <div class="userName"><u>Username</u></div>
+        <div class="userName"><u>웹프실습3팀</u></div>
         <ul class="sideBar-lists">
-          <li class="sideBarComponent"><a href="#">공지 사항</a></li>
+          <li class="sideBarComponent"><a href="#"></a>검색</li>
           <li class="sideBarComponent"><a href="#"></a>게시판</li>
           <li class="sideBarComponent"><a href="#"></a>웹툰</li>
+          <li class="sideBarComponent"><a href="#"></a>보관함</li>
+          <li class="sideBarComponent"><a href="#"></a>설정</li>
         </ul>
       </section>
       <div class="centerContainer">
         <header>
           <label class="moreInfo">
-            <input type="button" value=">" class="sideBar" />
+            <input type="button" value=">" class="sideBar"/>
           </label>
 
           <img id="webToonAd" src="../CSS/webtoonAd/2021최애캐 안녕, 잘 지내니.jpg" alt="wave" />
@@ -51,18 +53,18 @@
           <button type="button" class="End">완결</button>
         </nav>
         <section class="webToonList-grid">
-          <div class="webToonList">
+          <div class="webToonList" onclick="location.href='../Components/월요웹툰/참교육/참교육.html'">
             <img
               class="thumbNail"
-              src="../Background/홀로그램.jpg"
+              src="../CSS/월요웹툰/mainWebtoonImages/참교육.jpg"
               alt="holo"
               onclick="showWebToon()"
             />
             <div class="webToonInfo">
-              <h1 class="webtoonInfoContent">Title</h1>
-              <h3 class="webtoonInfoContent">Author</h3>
-              <h3 class="webtoonInfoContent">Content</h3>
-              <h4 class="webtoonInfoContent">Rate</h4>
+              <h1 class="webtoonInfoContent">참교육</h1>
+              <h3 class="webtoonInfoContent">채용택 | 한가람</h3>
+              <h3 class="webtoonInfoContent">스토리 / 액션</h3>
+              <h4 class="webtoonInfoContent">★ 9.92</h4>
             </div>
           </div>
           <div class="webToonList">
@@ -212,6 +214,6 @@
       </div>
       <aside></aside>
     </div>
-    <script src="../JS/MainPage.js"></script>
+    <script src="../JS/mainPage/MainPage.js"></script>
   </body>
 </html>
