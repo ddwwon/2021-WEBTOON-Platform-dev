@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/MainPage.css" />
+    <title>Practice변경</title>
+  </head>
+  <body>
+    <div class="layoutContainer">
+      <aside></aside>
+      <section class="moreInfo-icon">
+        <div class="profile-image">
+          <img src="../Background/window.jpeg" alt="window" />
+        </div>
+        <div class="userName"><u>Username</u></div>
+        <ul class="sideBar-lists">
+          <li class="sideBarComponent"><a href="#">공지 사항</a></li>
+          <li class="sideBarComponent"><a href="#"></a>게시판</li>
+          <li class="sideBarComponent"><a href="#"></a>웹툰</li>
+        </ul>
+      </section>
+      <div class="centerContainer">
+        <header>
+          <label class="moreInfo">
+            <input type="button" value=">" class="sideBar" />
+          </label>
+
+          <img id="webToonAd" src="../CSS/webtoonAd/2021최애캐 안녕, 잘 지내니.jpg" alt="wave" />
+          <div class="circle">
+            <button class="btn1" onclick="changeAd(1)"></button>
+            <button class="btn2" onclick="changeAd(2)"></button>
+            <button class="btn3" onclick="changeAd(3)"></button>
+            <button class="btn4" onclick="changeAd(4)"></button>
+            <button class="btn5" onclick="changeAd(5)"></button>
+            <button class="btn6" onclick="changeAd(6)"></button>
+            <button class="btn7" onclick="changeAd(7)"></button>
+            <button class="btn8" onclick="changeAd(8)"></button>
+          </div>
+        </header>
+        <nav>
+          <button type="button" class="Mon">월</button>
+          <button type="button" class="Tue">화</button>
+          <button type="button" class="Wed">수</button>
+          <button type="button" class="Thu">목</button>
+          <button type="button" class="Fri">금</button>
+          <button type="button" class="Sat">토</button>
+          <button type="button" class="Sun">일</button>
+          <button type="button" class="New">신작</button>
+          <button type="button" class="End">완결</button>
+        </nav>
+        <section class="webToonList-grid">
+          <div class="webToonList">
+            <img
+              class="thumbNail"
+              src="../Background/홀로그램.jpg"
+              alt="holo"
+              onclick="showWebToon()"
+            />
+            <div class="webToonInfo">
+              <h1 class="webtoonInfoContent">Title</h1>
+              <h3 class="webtoonInfoContent">Author</h3>
+              <h3 class="webtoonInfoContent">Content</h3>
+              <h4 class="webtoonInfoContent">Rate</h4>
+            </div>
+          </div>
+          <div class="webToonList">
+            <img
+              class="thumbNail"
+              src="../Background/홀로그램.jpg"
+              alt="holo"
+            />
+            <div class="webToonInfo">
+              <h1>Title</h1>
+              <h2>Author</h2>
+              <h3>Content</h3>
+              <h4>Rate</h4>
+            </div>
+          </div>
+          <div class="webToonList">
+            <img
+              class="thumbNail"
+              src="../Background/홀로그램.jpg"
+              alt="holo"
+            />
+            <div class="webToonInfo">
+              <h1>Title</h1>
+              <h2>Author</h2>
+              <h3>Content</h3>
+              <h4>Rate</h4>
+            </div>
+          </div>
+          <div class="webToonList">
+            <img
+              class="thumbNail"
+              src="../Background/홀로그램.jpg"
+              alt="holo"
+            />
+            <div class="webToonInfo">
+              <h1>Title</h1>
+              <h2>Author</h2>
+              <h3>Content</h3>
+              <h4>Rate</h4>
+            </div>
+          </div>
+          <div class="webToonList">
+            <img
+              class="thumbNail"
+              src="../Background/홀로그램.jpg"
+              alt="holo"
+            />
+            <div class="webToonInfo">
+              <h1>Title</h1>
+              <h2>Author</h2>
+              <h3>Content</h3>
+              <h4>Rate</h4>
+            </div>
+          </div>
+          <div class="webToonList">
+            <img
+              class="thumbNail"
+              src="../Background/홀로그램.jpg"
+              alt="holo"
+            />
+            <div class="webToonInfo">
+              <h1>Title</h1>
+              <h2>Author</h2>
+              <h3>Content</h3>
+              <h4>Rate</h4>
+            </div>
+          </div>
+          <div class="webToonList">
+            <img
+              class="thumbNail"
+              src="../Background/홀로그램.jpg"
+              alt="holo"
+            />
+            <div class="webToonInfo">
+              <h1>Title</h1>
+              <h2>Author</h2>
+              <h3>Content</h3>
+              <h4>Rate</h4>
+            </div>
+          </div>
+          <div class="webToonList">
+            <img
+              class="thumbNail"
+              src="../Background/홀로그램.jpg"
+              alt="holo"
+            />
+            <div class="webToonInfo">
+              <h1>Title</h1>
+              <h2>Author</h2>
+              <h3>Content</h3>
+              <h4>Rate</h4>
+            </div>
+          </div>
+          <div class="webToonList">
+            <img
+              class="thumbNail"
+              src="../Background/홀로그램.jpg"
+              alt="holo"
+            />
+            <div class="webToonInfo">
+              <h1>Title</h1>
+              <h2>Author</h2>
+              <h3>Content</h3>
+              <h4>Rate</h4>
+            </div>
+          </div>
+          <div class="webToonList">
+            <img
+              class="thumbNail"
+              src="../Background/홀로그램.jpg"
+              alt="holo"
+            />
+            <div class="webToonInfo">
+              <h1>Title</h1>
+              <h2>Author</h2>
+              <h3>Content</h3>
+              <h4>Rate</h4>
+            </div>
+          </div>
+          <div class="webToonList">
+            <img
+              class="thumbNail"
+              src="../Background/홀로그램.jpg"
+              alt="holo"
+            />
+            <div class="webToonInfo">
+              <h1>Title</h1>
+              <h2>Author</h2>
+              <h3>Content</h3>
+              <h4>Rate</h4>
+            </div>
+          </div>
+          <div class="webToonList">
+            <img
+              class="thumbNail"
+              src="../Background/홀로그램.jpg"
+              alt="holo"
+            />
+            <div class="webToonInfo">
+              <h1>Title</h1>
+              <h2>Author</h2>
+              <h3>Content</h3>
+              <h4>Rate</h4>
+            </div>
+          </div>
+        </section>
+      </div>
+      <aside></aside>
+    </div>
+    <script src="../JS/MainPage.js"></script>
+  </body>
+</html>
