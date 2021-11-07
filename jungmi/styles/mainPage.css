@@ -1,0 +1,135 @@
+/*간격, 크기 등 모든 사이즈는 가변적(반응형)으로 설정*/
+/*css 변수 지정*/
+:root {
+    --main-purple: #a99cff;
+    --main-white: #fbfaff;
+    --main-black: #000000;
+}
+
+/*가로 길이는 화면 크기를 벗어나지 않게 max-width를 지정*/
+.main-screen {
+    display: grid;
+    max-width: 100vw;
+}
+
+/*슬라이드 이미지 비율 고정. 디스플레이 세로 크기의 25%, 가로 크기의 100%*/
+.height {
+    object-fit: cover;
+    height: 25vh;
+    width: 100vh;
+}
+
+/*버튼이 슬라이드 이미지 위에 겹쳐서 나타나도록 설정*/
+.web-button {
+    position: absolute;
+    z-index: 2;
+    width: 100vw;
+}
+/*헤더 버튼 테두리, 배경색 제거, 패딩*/
+.menu-button,
+.search-button,
+.mypage-button {
+    border: 0;
+    background-color: transparent;
+    padding: 0.5vh;
+    padding-left: 0.7em;
+    padding-right: 0.7em;
+}
+/*검색 버튼 아이콘 모양 때문에 추가 패딩*/
+.search-button {
+    padding: 0.9vh;
+}
+/*검색 버튼, 마이페이지 버튼 우측 정렬*/
+/*우측 정렬 되면 html 파일에서 먼저 적혀있는 버튼이 더 우측으로 감*/
+.search-button,
+.mypage-button {
+    float: right;
+}
+/*버튼 크기 비율 고정*/
+.bi-list {
+    font-size: 7vw;
+}
+.bi-search {
+    font-size: 6vw;
+}
+.bi-archive {
+    font-size: 7vw;
+}
+
+/*카테고리 버튼 영역 배경색*/
+.webtoon-category {
+    background-color: var(--main-white);
+}
+/*선택된 카테고리 표시(배경색, 둥글게)*/
+.check {
+    background-size: 10vw 10vh;
+    background-color: var(--main-purple);
+    border-radius: 30%;
+    color: var(--main-white) !important;
+}
+/*웹툰 카테고리(요일, 신작, 완결) 버튼(a 태그) 정렬*/
+.category-list {
+    display: flex;
+    justify-content: space-evenly; /*아이템(카테고리 버튼) 사이와 양 끝에 균일한 간격을 만들어 줌*/
+    list-style: none; /*리스트 점 없애기*/
+    padding: 0;
+    margin: 0 0 2vw 0;
+}
+/*웹툰 카테고리 마진&패딩(선택된 거 배경색 줄 때 모양 잡는 의도), 폰트 사이즈, 글꼴 설정*/
+.category {
+    padding: 0 2.4vw 0 2.4vw;
+    margin: 1.5vw 0 1.5vw 0;
+    color: var(--main-purple);
+    font-size: 5vw;
+    font-family: 'Do Hyeon', sans-serif;
+    text-decoration: none !important; /*a태그 밑줄 제거*/
+}
+.category:active,
+.category:hover,
+.category:visited {
+    background-size: 10px 10px;
+    background-color: var(--main-purple);
+    border-radius: 30%;
+    color: var(--main-white) !important;
+}
+
+/*ul 태그 시작점을 0px로 해서 왼쪽 공백 없애기*/
+.wetoon-list {
+    -webkit-padding-start: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+/*웹툰 이미지 정렬*/
+.webtoon {
+    list-style: none; /*리스트 점 없애기*/
+    float: left;
+    padding: 0;
+    margin: 0 1.5vw 2vh 1.5vw;
+}
+/*웹툰 이미지 크기 조정*/
+.webtoon-image {
+    object-fit: cover;
+    width: 30vw;
+    height: 30vh;
+    background: url(../webtoonImages/webtoon_image.png); /*웹툰 이미지를 배경으로*/
+    background-size: cover;
+    background-position: center center;
+}
+/*웹툰 이미지에 hover시 웹툰 정보 나타남*/
+.webtoon-info {
+    background: var(--main-black);
+    opacity: 0;
+    width: 30vw;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.webtoon-image:hover .webtoon-info {
+    opacity: 0.3;
+    text-align: center;
+    color: var(--main-white);
+}
+.webtoon > a {
+    text-decoration: none !important;
+}
