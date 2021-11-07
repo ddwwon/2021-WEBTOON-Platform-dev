@@ -108,9 +108,6 @@ header {
 .select-sequence {
   margin: 2.2vw;
 }
-.sequence {
-    font-size: 2vw;
-}
 .sequence > option {
     font-size: 3vw;
 }
@@ -127,7 +124,7 @@ header {
   color: var(--thick-gray);
   background-color: white;
   width: 25vw;
-  height: 3.5vh;
+  height: 100%;
   font-size: 4vw;
 }
 
