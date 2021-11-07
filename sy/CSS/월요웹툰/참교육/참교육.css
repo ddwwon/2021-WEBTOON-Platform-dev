@@ -21,6 +21,7 @@
 .main-screen {
   display: grid;
   max-width: 100vw;
+
 }
 header {
   background-color: var(--main-purple);
@@ -74,9 +75,19 @@ header {
 /*웹툰 설명 부분*/
 .webtoon-title,
 .webtoon-writer,
-.webtoon-score {
+.webtoon-score,
+.webtoonHashTag {
   font-size: 3vw;
   margin-bottom: 10%;
+}
+.webtoon-title {
+  font-size: 4vw;
+}
+.webtoon-score {
+  color :red;
+}
+.webtoonHashTag {
+  color: #1B1F3B ;
 }
 /*첫편부터 보기, 이어보기 버튼 스타일 지정*/
 .start-button,
