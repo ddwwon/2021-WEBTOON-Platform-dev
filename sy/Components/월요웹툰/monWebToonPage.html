@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../CSS/월요웹툰/monWebToonPage.css" />
+    <title>월요웹툰</title>
+  </head>
+  <body>
+    <div class="layoutContainer">
+      <aside></aside>
+      <section class="moreInfo-icon">
+        <div class="profile-image">
+          <img src="../../Background/window.jpeg" alt="window" />
+        </div>
+        <div class="userName"><u>웹프실습3팀</u></div>
+        <ul class="sideBar-lists">
+          <li class="sideBarComponent"><a href="#"></a>검색</li>
+          <li class="sideBarComponent"><a href="#"></a>게시판</li>
+          <li class="sideBarComponent"><a href="#"></a>웹툰</li>
+          <li class="sideBarComponent"><a href="#"></a>보관함</li>
+          <li class="sideBarComponent"><a href="#"></a>설정</li>
+        </ul>
+      </section>
+      <div class="centerContainer">
+        <header>
+          <label class="moreInfo">
+            <input type="button" value=">" class="sideBar"/>
+          </label>
+
+          <img id="webToonAd" src="../../CSS/webtoonAd/용사가돌아왔다.jpg" alt="wave" />
+          <div class="circle">
+            <button class="btn1" onclick="changeAd(1)"></button>
+            <button class="btn2" onclick="changeAd(2)"></button>
+            <button class="btn3" onclick="changeAd(3)"></button>
+            <button class="btn4" onclick="changeAd(4)"></button>
+            <button class="btn5" onclick="changeAd(5)"></button>
+            <button class="btn6" onclick="changeAd(6)"></button>
+            <button class="btn7" onclick="changeAd(7)"></button>
+            <button class="btn8" onclick="changeAd(8)"></button>
+          </div>
+        </header>
+        <nav>
+          <button type="button" class="Mon">월</button>
+          <button type="button" class="Tue">화</button>
+          <button type="button" class="Wed">수</button>
+          <button type="button" class="Thu">목</button>
+          <button type="button" class="Fri">금</button>
+          <button type="button" class="Sat">토</button>
+          <button type="button" class="Sun">일</button>
+          <button type="button" class="New">신작</button>
+          <button type="button" class="End">완결</button>
+        </nav>
+        <section class="webToonList-grid">
+          <!-- 참교육 -->
+          <div class="webToonList" onclick="location.href='../월요웹툰/참교육/참교육.html'">
+            <img
+              class="thumbNail"
+              src="../../CSS/월요웹툰/mainWebtoonImages/참교육.jpg"
+              alt="참교육"
+            />
+            <div class="webToonInfo">
+              <h1 class="webtoonInfoContent">참교육</h1>
+              <h3 class="webtoonInfoContent">채용택 | 한가람</h3>
+              <h3 class="webtoonInfoContent">스토리 / 액션</h3>
+              <h4 class="webtoonInfoContent">★ 9.92</h4>
+            </div>
+          </div>
+          <!-- 팔이피플 -->
+          <div class="webToonList">
+            <img
+              class="thumbNail"
+              src="../../CSS/월요웹툰/mainWebtoonImages/팔이피플.jpg"
+              alt="팔이피플"
+            />
+            <div class="webToonInfo">
+              <h1>팔이피플</h1>
+              <h2>매미 / 희세</h2>
+              <h3>스토리, 드라마</h3>
+              <h4>★ 9.83</h4>
+            </div>
+          </div>
+          <!-- 소녀의 세계 -->
+          <div class="webToonList">
+            <img
+              class="thumbNail"
+              src="../../CSS/월요웹툰/mainWebtoonImages/소녀의세계.jpg"
+              alt="소녀의 세계"
+            />
+            <div class="webToonInfo">
+              <h1>소녀의 세계</h1>
+              <h2>모랑지</h2>
+              <h3>스토리, 드라마</h3>
+              <h4>★ 9.58</h4>
+            </div>
+          </div>
+          <!-- 백수세끼 -->
+          <div class="webToonList">
+            <img
+              class="thumbNail"
+              src="../../CSS/월요웹툰/mainWebtoonImages/백수세끼.jfif"
+              alt="백수세끼"
+            />
+            <div class="webToonInfo">
+              <h1>백수세끼</h1>
+              <h2>치즈</h2>
+              <h3>스토리, 드라마</h3>
+              <h4>★ 9.96</h4>
+            </div>
+          </div>
+          <!-- 파이게임 -->
+          <div class="webToonList">
+            <img
+              class="thumbNail"
+              src="../../CSS/월요웹툰/mainWebtoonImages/파이게임.jpeg"
+              alt="파이게임"
+            />
+            <div class="webToonInfo">
+              <h1>파이게임</h1>
+              <h2>배진수</h2>
+              <h3>스토리, 스릴러</h3>
+              <h4>★ 9.59</h4>
+            </div>
+          </div>
+          <!-- 만렙돌파 -->
+          <div class="webToonList">
+            <img
+              class="thumbNail"
+              src="../../CSS/월요웹툰/mainWebtoonImages/만렙돌파.jpg"
+              alt="만렙돌파"
+            />
+            <div class="webToonInfo">
+              <h1>만렙돌파</h1>
+              <h2>성불예정, 홍실 / 미노</h2>
+              <h3>스토리, 판타지</h3>
+              <h4>★ 9.92</h4>
+            </div>
+          </div>
+          <!-- 잔불의기사 -->
+          <div class="webToonList">
+            <img
+              class="thumbNail"
+              src="../../CSS/월요웹툰/mainWebtoonImages/잔불의기사.jfif"
+              alt="잔불의기사"
+            />
+            <div class="webToonInfo">
+              <h1>잔불의기사</h1>
+              <h2>환댕</h2>
+              <h3>스토리, 판타지</h3>
+              <h4>★ 9.96</h4>
+            </div>
+          </div>
+          <!-- 삼매경 -->
+          <div class="webToonList">
+            <img
+              class="thumbNail"
+              src="../../CSS/월요웹툰/mainWebtoonImages/삼매경.jfif"
+              alt="삼매경"
+            />
+            <div class="webToonInfo">
+              <h1>삼매경</h1>
+              <h2>이원석 / 꿀찬</h2>
+              <h3>스토리, 액션</h3>
+              <h4>★ 9.83</h4>
+            </div>
+          </div>
+          <!-- 이터널스 -->
+          <div class="webToonList">
+            <img
+              class="thumbNail"
+              src="../../CSS/월요웹툰/mainWebtoonImages/이터널스.jpg"
+              alt="이터널스"
+            />
+            <div class="webToonInfo">
+              <h1>이터널스</h1>
+              <h2>닐 게이먼 / 존 로미타 주니어</h2>
+              <h3>스토리, 판타지</h3>
+              <h4>★9.85</h4>
+            </div>
+          </div>
+          <!-- 더블클릭 -->
+          <div class="webToonList">
+            <img
+              class="thumbNail"
+              src="../../CSS/월요웹툰/mainWebtoonImages/더블클릭.jfif"
+              alt="더블클릭"
+            />
+            <div class="webToonInfo">
+              <h1>더블클릭</h1>
+              <h2>김장훈, 박수봉 / 박수봉</h2>
+              <h3>스토리, 액션</h3>
+              <h4>★ 9.93</h4>
+            </div>
+          </div>
+          <!-- 말박왕 -->
+          <div class="webToonList">
+            <img
+              class="thumbNail"
+              src="../../CSS/월요웹툰/mainWebtoonImages/말박왕.jfif"
+              alt="말박왕"
+            />
+            <div class="webToonInfo">
+              <h1>말박왕</h1>
+              <h2>용사</h2>
+              <h3>스토리, 액션</h3>
+              <h4>★ 9.91</h4>
+            </div>
+          </div>
+          <!-- 결혼생활 그림일기 -->
+          <div class="webToonList">
+            <img
+              class="thumbNail"
+              src="../../CSS/월요웹툰/mainWebtoonImages/결혼생활그림일기.png"
+              alt="holo"
+            />
+            <div class="webToonInfo">
+              <h1>결혼생활 그림일기</h1>
+              <h2>은꼼지</h2>
+              <h3>옴니버스, 일상</h3>
+              <h4>★ 9.98</h4>
+            </div>
+          </div>
+        </section>
+      </div>
+      <aside></aside>
+    </div>
+    <script src="../../JS/월요웹툰/monWebToonPage.js"></script>
+  </body>
+</html>
