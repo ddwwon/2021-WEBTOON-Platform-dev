@@ -160,18 +160,98 @@ header {
   background-size: cover;
   background-position: center center;
 }
-/* 30화 백그라운드 */
+/* 웹툰 화수별 백그라운드 이미지시작 */
 .webtoon-image-30 {
   background: url(../참교육/참교육30화.jpg); /*웹툰 이미지를 배경으로*/
 }
-/* 29화 백그라운드 */
 .webtoon-image-29 {
   background: url(../참교육/참교육29화.jpg); /*웹툰 이미지를 배경으로*/
 }
-/* 28화 백그라운드 */
 .webtoon-image-28 {
   background: url(../참교육/참교육28화.jpg); /*웹툰 이미지를 배경으로*/
 }
+.webtoon-image-27 {
+  background: url(../참교육/참교육27화.jpg); /*웹툰 이미지를 배경으로*/
+}
+.webtoon-image-26 {
+  background: url(../참교육/참교육26화.jpg); /*웹툰 이미지를 배경으로*/
+}
+.webtoon-image-25 {
+  background: url(../참교육/참교육25화.jpg); /*웹툰 이미지를 배경으로*/
+}
+.webtoon-image-24 {
+  background: url(../참교육/참교육24화.jpg); /*웹툰 이미지를 배경으로*/
+}
+.webtoon-image-23 {
+  background: url(../참교육/참교육23화.jpg); /*웹툰 이미지를 배경으로*/
+}
+.webtoon-image-22 {
+  background: url(../참교육/참교육22화.jpg); /*웹툰 이미지를 배경으로*/
+}
+.webtoon-image-21 {
+  background: url(../참교육/참교육21화.jpg); /*웹툰 이미지를 배경으로*/
+}
+.webtoon-image-20 {
+  background: url(../참교육/참교육20화.jpg); /*웹툰 이미지를 배경으로*/
+}
+.webtoon-image-19 {
+  background: url(../참교육/참교육19화.jpg); /*웹툰 이미지를 배경으로*/
+}
+.webtoon-image-18 {
+  background: url(../참교육/참교육18화.jpg); /*웹툰 이미지를 배경으로*/
+}
+.webtoon-image-17 {
+  background: url(../참교육/참교육17화.jpg); /*웹툰 이미지를 배경으로*/
+}
+.webtoon-image-16 {
+  background: url(../참교육/참교육16화.jpg); /*웹툰 이미지를 배경으로*/
+}
+.webtoon-image-15 {
+  background: url(../참교육/참교육15화.jpg); /*웹툰 이미지를 배경으로*/
+}
+.webtoon-image-14 {
+  background: url(../참교육/참교육14화.jpg); /*웹툰 이미지를 배경으로*/
+}
+.webtoon-image-13 {
+  background: url(../참교육/참교육13화.jpg); /*웹툰 이미지를 배경으로*/
+}
+.webtoon-image-12 {
+  background: url(../참교육/참교육12화.jpg); /*웹툰 이미지를 배경으로*/
+}
+.webtoon-image-11 {
+  background: url(../참교육/참교육11화.jpg); /*웹툰 이미지를 배경으로*/
+}
+.webtoon-image-10 {
+  background: url(../참교육/참교육10화.jpg); /*웹툰 이미지를 배경으로*/
+}
+.webtoon-image-9 {
+  background: url(../참교육/참교육9화.jpg); /*웹툰 이미지를 배경으로*/
+}
+.webtoon-image-8 {
+  background: url(../참교육/참교육8화.jpg); /*웹툰 이미지를 배경으로*/
+}
+.webtoon-image-7 {
+  background: url(../참교육/참교육7화.jpg); /*웹툰 이미지를 배경으로*/
+}
+.webtoon-image-6 {
+  background: url(../참교육/참교육6화.jpg); /*웹툰 이미지를 배경으로*/
+}
+.webtoon-image-5 {
+  background: url(../참교육/참교육5화.jpg); /*웹툰 이미지를 배경으로*/
+}
+.webtoon-image-4 {
+  background: url(../참교육/참교육4화.jpg); /*웹툰 이미지를 배경으로*/
+}
+.webtoon-image-3 {
+  background: url(../참교육/참교육3화.jpg); /*웹툰 이미지를 배경으로*/
+}
+.webtoon-image-2 {
+  background: url(../참교육/참교육2화.jpg); /*웹툰 이미지를 배경으로*/
+}
+.webtoon-image-1 {
+  background: url(../참교육/참교육1화.jpg); /*웹툰 이미지를 배경으로*/
+}
+/* 웹툰 화수별 백그라운드 이미지 끝 */
 /*웹툰 이미지에 hover시 웹툰 정보 나타남*/
 .webtoon-info {
   background: var(--main-black);
