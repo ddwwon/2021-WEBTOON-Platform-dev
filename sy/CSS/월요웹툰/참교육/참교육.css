@@ -153,13 +153,24 @@ header {
   margin: 1vh 1.5vw 1vh 1.5vw;
 }
 /*웹툰 이미지 크기 조정*/
-.webtoon-image {
-  object-fit: cover;
+#webtoonImage {
+  object-fit: fill;
   width: 30vw;
   height: 30vw;
-  background: url(../참교육/참교육30화.jpg); /*웹툰 이미지를 배경으로*/
   background-size: cover;
   background-position: center center;
+}
+/* 30화 백그라운드 */
+.webtoon-image-30 {
+  background: url(../참교육/참교육30화.jpg); /*웹툰 이미지를 배경으로*/
+}
+/* 29화 백그라운드 */
+.webtoon-image-29 {
+  background: url(../참교육/참교육29화.jpg); /*웹툰 이미지를 배경으로*/
+}
+/* 28화 백그라운드 */
+.webtoon-image-28 {
+  background: url(../참교육/참교육28화.jpg); /*웹툰 이미지를 배경으로*/
 }
 /*웹툰 이미지에 hover시 웹툰 정보 나타남*/
 .webtoon-info {
@@ -171,8 +182,8 @@ header {
   align-items: center;
   justify-content: center;
 }
-.webtoon-image:hover .webtoon-info {
-  opacity: 0.3;
+#webtoonImage:hover .webtoon-info {
+  opacity: 0.7;
   text-align: center;
   color: white;
 }
