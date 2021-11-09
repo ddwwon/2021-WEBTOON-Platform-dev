@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../CSS/화요웹툰/tueWebToonPage.css" />
-    <title>화요웹툰</title>
+    <link rel="stylesheet" href="../../CSS/월요웹툰/index.css" />
+    <title>월요웹툰</title>
   </head>
   <body>
     <div class="layoutContainer">
@@ -42,16 +42,15 @@
           </div>
         </header>
         <nav>
-            <!-- 각각의 요일마다 버튼클릭시 요일별웹툰웹페이지로 이동하는 onclick 함수 설정 -->
-          <button type="button" class="Mon" onclick="">월</button>
-          <button type="button" class="Tue">화</button>
-          <button type="button" class="Wed">수</button>
-          <button type="button" class="Thu">목</button>
-          <button type="button" class="Fri">금</button>
-          <button type="button" class="Sat">토</button>
-          <button type="button" class="Sun">일</button>
-          <button type="button" class="New">신작</button>
-          <button type="button" class="End">완결</button>
+          <button type="button" class="Mon" onclick="transMonday()">월</button>
+          <button type="button" class="Tue" onclick="transTuesday()">화</button>
+          <button type="button" class="Wed" onclick="transWedsday()">수</button>
+          <button type="button" class="Thu" onclick="transThursday()">목</button>
+          <button type="button" class="Fri" onclick="transFriday()">금</button>
+          <button type="button" class="Sat" onclick="transSaturday()">토</button>
+          <button type="button" class="Sun" onclick="transSunday()">일</button>
+          <button type="button" class="New" onclick="transNew()">신작</button>
+          <button type="button" class="End" onclick="transEnd()">완결</button>
         </nav>
         <section class="webToonList-grid">
           <!-- 참교육 -->
@@ -226,6 +225,6 @@
       </div>
       <aside></aside>
     </div>
-    <script src="../../JS/화요웹툰/tueWebToonPage.js"></script>
+    <script src="../../JS/월요웹툰/index.js"></script>
   </body>
 </html>

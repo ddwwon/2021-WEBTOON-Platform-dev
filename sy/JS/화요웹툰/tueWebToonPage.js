@@ -2,8 +2,6 @@ const sideBarbtn = document.querySelector(".sideBar");
 const section = document.querySelector(".moreInfo-icon");
 const label = document.querySelector(".moreInfo");
 
-
-//메인홈페이지에서 각각의 웹툰에드버튼마다 다른 이미지를 보여주도록 하는 함수
 const changeAd = (idx) => {
   if (idx === 1) {
     document.getElementById("webToonAd").src = "../../CSS/webtoonAd/1을줄게.jpg";
@@ -51,7 +49,32 @@ sideBarbtn.addEventListener("blur", function () {
 });
 
 
-const className = 
-const transFormButton = () => {
-    
+
+//요일별, 신작별, 완결별 버튼을 클릭시 그분야 웹툰 페이지로 이동하는 함수 생성
+const transMonday = () => {
+  location.href ='../../Components/월요웹툰/index.html';
+}
+const transTuesday = () => {
+  location.href ='../../Components/화요웹툰/tueWebToonPage.html';
+}
+const transWednsday = () => {
+  location.href ='../../Components/수요웹툰/wednsWebToonPage.html';
+}
+const transThursday = () => {
+  location.href ='../../Components/목요웹툰/thursWebToonPage.html';
+}
+const transFriday = () => {
+  location.href ='../../Components/금요웹툰/FriWebToonPage.html';
+}
+const transSaturday = () => {
+  location.href ='../../Components/토요웹툰/saturWebToonPage.html';
+}
+const transSunday = () => {
+  location.href ='../../Components/일요웹툰/sunWebToonPage.html';
+}
+const transNew = () => {
+  location.href ='../../Components/신작웹툰/newWebToonPage.html';
+}
+const transEnd = () => {
+  location.href ='../../Components/완결웹툰/endWebToonPage.html';
 }
