@@ -157,7 +157,7 @@ header {
   object-fit: cover;
   width: 30vw;
   height: 30vw;
-  background: url(../webtoonImages/webtoon-viewImage.jpg); /*웹툰 이미지를 배경으로*/
+  background: url(../참교육/참교육30화.jpg); /*웹툰 이미지를 배경으로*/
   background-size: cover;
   background-position: center center;
 }
