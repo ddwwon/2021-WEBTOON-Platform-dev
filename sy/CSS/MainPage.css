@@ -64,7 +64,7 @@ header {
 /* 메뉴바 닉네임사이즈 vw로 변경, top left 요소 삭제 */
 .userName {
   color: #fff;
-  font-size: 3vw;
+  font-size: 3vh;
   border: none;
   /* position: absolute; */
   /* 부모요소크기만큼 가로값을 받고 그 중간에 닉네임지정 */
@@ -76,7 +76,7 @@ header {
 .sideBar-lists {
   list-style: none;
   padding-left: 0;
-  font-size: 2.5vw;
+  font-size: 2.5vh;
 } 
 
 /* 마진요소 20%로 변경 */
