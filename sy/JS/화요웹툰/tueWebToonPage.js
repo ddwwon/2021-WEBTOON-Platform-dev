@@ -64,7 +64,7 @@ const transThurs = () => {
   location.href ='../../Components/목요웹툰/thursWebToonPage.html';
 }
 const transFri = () => {
-  location.href ='../../Components/금요웹툰/FriWebToonPage.html';
+  location.href ='../../Components/금요웹툰/friWebToonPage.html';
 }
 const transSatur = () => {
   location.href ='../../Components/토요웹툰/saturWebToonPage.html';
