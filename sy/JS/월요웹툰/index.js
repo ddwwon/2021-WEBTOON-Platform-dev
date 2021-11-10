@@ -51,25 +51,25 @@ sideBarbtn.addEventListener("blur", function () {
 
 
 //요일별, 신작별, 완결별 버튼을 클릭시 그분야 웹툰 페이지로 이동하는 함수 생성
-const transMonday = () => {
+const transMon = () => {
   location.href ='../../Components/월요웹툰/index.html';
 }
-const transTuesday = () => {
+const transTues = () => {
   location.href ='../../Components/화요웹툰/tueWebToonPage.html';
 }
-const transWednsday = () => {
+const transWedns = () => {
   location.href ='../../Components/수요웹툰/wednsWebToonPage.html';
 }
-const transThursday = () => {
+const transThurs = () => {
   location.href ='../../Components/목요웹툰/thursWebToonPage.html';
 }
-const transFriday = () => {
+const transFri = () => {
   location.href ='../../Components/금요웹툰/FriWebToonPage.html';
 }
-const transSaturday = () => {
+const transSatur = () => {
   location.href ='../../Components/토요웹툰/saturWebToonPage.html';
 }
-const transSunday = () => {
+const transSun = () => {
   location.href ='../../Components/일요웹툰/sunWebToonPage.html';
 }
 const transNew = () => {
