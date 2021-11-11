@@ -185,18 +185,20 @@
     position: relative;
   }
   
-  .webToonList {
-    background-color: white;
-    padding: 0.2rem;
-    position: relative;
-  }
-  
-  /* 이미지의 높이를 vh로 변경 */
-  .webToonList img {
-    object-fit: cover;
-    height: 45vh;
-    border-radius: 10px;
-  }
+  /* 이미지박스크기를 60vh로 조정 */
+.webToonList {
+  background-color: white;
+  padding: 0.2rem;
+  position: relative;
+  height: 60vh;
+}
+
+/* 이미지의 높이를 부모요소에 꽉차게 맞도록 조정 */
+.webToonList img {
+  object-fit: cover;
+  height: 100%;
+  border-radius: 10px;
+}
   
   .webToonList img:hover {
     color: #454ade;
