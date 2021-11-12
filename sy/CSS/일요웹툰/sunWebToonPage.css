@@ -1,8 +1,10 @@
+/* 웹폰트사용 */
 @font-face {
   font-family: SCDream3;
   src: url("../Fonts/S-Core_Dream_OTF/SCDream3.otf");
 }
 
+/* 전체적인 레이아웃을 그리드로 주고 최소 높이를 100vh, 최고 넓이를 100vw로 주고, 열기준 0.5:2:0.5 비율로 전체적인 틀을 완성 */
 .layoutContainer {
   min-height: 100vh;
   max-width: 100vw;
@@ -10,19 +12,25 @@
   grid-template-columns: 0.5fr 2fr 0.5fr;
 }
 
+/* 모든 폰트를 웹폰트를 사용하고, 아래여백을 0.3rem을 주어 가독성에 좋도록 함 */
 * {
   font-family: SCDream3;
   margin-bottom: 0.3rem;
 }
 
+/* 사이드바 색상을 지정해둔 색으로 변경 */
 header {
   background-color: #94b0da;
   position: relative;
 }
 
+/* 사이드바 클릭버튼을 꾸미는 스타일 지정  */
 .moreInfo input {
-  position: absolute;
+  /* 포지션 절대적요소로 변경 */
+  position: absolute; 
+  /* 부모요소 배경색상을 물려받음 */
   background-color: transparent;
+  /* 보더 삭제 */
   border: none;
   color: #454ade;
   font-size: 2rem;
@@ -33,9 +41,13 @@ header {
 
 /* 메뉴바의 가로폭을 vw로 변경, 패딩탑과 레프트 삭제 */
 .moreInfo-icon {
+  /* z인덱스값을 주어 모든요소보다 먼저 보이도록 조정 */
   z-index: 1000;
+  /* display를 블럭요소로 변경 크기조정을 위해 */
   display: block;
+  /* 박스의 크기를 경계선을 기준으로 크기조정 */
   box-sizing: border-box;
+  /* 사이드바는 픽스로 고정 */
   position: fixed;
   background-color: #94b0da;
   color: #fff;
@@ -47,10 +59,15 @@ header {
   transition: 1s ease;
 }
 
+
 .profile-image {
+  /* 평소에는 이미지 모습을 숨김 */
   overflow: hidden;
+  /* 플렉스요소를 부여하여 정중앙에 위치하는것을용이하게 설정 */
   display: flex;
+  /* 세로축중간 */
   align-items: center;
+  /* 가로축 중간 */
   justify-content: center;
   height: 1%;
   border-radius: 50%;
@@ -76,94 +93,97 @@ header {
   list-style: none;
   padding-left: 0;
   font-size: 2.5vh;
-}
+} 
 
-/* 마진요소 20%로 변경 */
+/* 마진요소 5%로 변경 */
 .sideBarComponent {
-  margin: 20% 0;
+  margin: 5% 0;
 }
 
-/* 마진탑 20%로 변경 */
+/* 사이드바요소의 첫번째 요소인 검색부분 마진탑을 20%로 변경 */
 .sideBarComponent:nth-child(1) {
   margin-top: 20%;
 }
 
 .sideBarComponent > a {
   color: #fff;
+  /* 밑줄삭제 */
   text-decoration: none;
 }
 
 #webToonAd {
-  overflow: hidden;
+  /* 중앙정렬 시작 */
   display: flex;
   align-items: center;
   justify-content: center;
+  /* 중앙정렬 끝 */
   width: 100%;
-  height: 20rem;
+  height: 40vh;
   border-radius: 10px;
 }
 
+/* 메인웹툰광고클릭부분 꾸미기 */
 .circle button {
   border-radius: 50%;
   position: absolute;
   padding: 0.3rem;
   border: none;
   background-color: white;
+  width: 1.5vw;
+  height: 1.5vh;
 }
 
+/* 버튼에 마우스가 올라가 있을시 검정색으로 변경 */
 .circle button:hover {
   background-color: black;
 }
 
+/* 버튼요소위치조정 */
 .btn1 {
+  top: 95%;
+  right: 60%;
+}
+.btn2 {
+  top: 95%;
+  right: 56%;
+}
+.btn3 {
   top: 95%;
   right: 52%;
 }
-
-.btn2 {
-  top: 95%;
-  right: 50%;
-}
-
-.btn3 {
+.btn4 {
   top: 95%;
   right: 48%;
 }
-
-.btn4 {
-  top: 95%;
-  right: 46%;
-}
-
 .btn5 {
   top: 95%;
   right: 44%;
 }
-
 .btn6 {
-  top: 95%;
-  right: 42%;
-}
-
-.btn7 {
   top: 95%;
   right: 40%;
 }
-
+.btn7 {
+  top: 95%;
+  right: 36%;
+}
 .btn8 {
   top: 95%;
-  right: 38%;
+  right: 32%;
 }
 
+/* 웹툰들의 썸네일 크기 조정 */
 .thumbNail {
-  width: 100%;
+  width: 100%
 }
 
+/* 요일,신작,완결별웹툰 버튼 그리드로 표현 */
 nav {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
+/* 요일,신작,완결별 버튼 꾸미기 */
 nav button {
   font-size: 1vw;
   border: 3px solid #94b0da;
@@ -172,12 +192,18 @@ nav button {
   padding: 0.5rem;
   border-radius: 20px;
 }
-
+/* 현재 어디웹툰요소를 가리키는지 알기위해 색깔로 구분하는 스타일요소 지정 */
+nav button:nth-child(7) {
+  background-color: #454ade;
+  border-color: #454ade;
+}
+/* 요일,신작,완결 버튼부분에 마우스오버시 색상추가 */
 nav button:hover {
   background-color: #454ade;
   border-color: #454ade;
 }
 
+/* 메인웹툰이미지를 그리드로 표현, 1 line 3 pics 형태로 구현 */
 .webToonList-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -199,6 +225,7 @@ nav button:hover {
   border-radius: 10px;
 }
 
+/* 메인웹툰이미지에 마우스오버시 색상, 그리고 투명도 변경 */
 .webToonList img:hover {
   color: #454ade;
   opacity: 0.5;
@@ -219,5 +246,5 @@ nav button:hover {
 }
 
 /* .webtoonInfoContent {
-    padding: 0;
-  } */
+  padding: 0;
+} */
