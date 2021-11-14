@@ -38,12 +38,20 @@ body {
 #randomBox {
   height: 100%;
   width: 100%;
+  max-width: 40vw;
 }
 
 /* 랜덤박스설명문 중앙정렬 및 꾸미기 */
 .randomBoxInfo {
   text-align: center;
   font-size: 3vw;
+}
+
+/* 웹툰의 간략정보를 표시하는  공간, 평소에는 안보이게 해두고, 웹툰이 표기될때 정보를 같이 표기 */
+.webtoonInfo {
+  text-align: center;
+  font-size: 2.5vw;
+  visibility: hidden;
 }
 
 /* 랜덤웹툰추천, 초기화면가기 버튼을 플렉스로 지정 */

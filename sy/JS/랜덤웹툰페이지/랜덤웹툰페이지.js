@@ -2,6 +2,7 @@
 const randomWebToon = () => {
     // 1 ~ 108 까지의 난수 생성 (메인홈페이지의 웹툰은 총 108개 이기에)
     const randomNumber = Math.floor(Math.random() * 108) + 1;
+    //월요웹툰
     if(randomNumber === 1) { // 난수에 따라 각기다른 웹툰 추천
         // 랜덤박스 이미지를 각기다른 웹툰 이미지로 변경
         document.getElementById("randomBox").src ="../../CSS/월요웹툰/mainWebtoonImages/결혼생활그림일기.png"; 
@@ -13,6 +14,10 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/월요웹툰/결혼생활그림일기/결혼생활그림일기.html"
         };
+        // 웹툰 정보를 표기
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#옴니버스 #일상";
+        // 웹툰 정보를 보이도록 수정
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         // 웹툰 이미지 클릭시 그 웹툰으로 이동
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
@@ -23,6 +28,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/월요웹툰/더블클릭/더블클릭.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #액션";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 3) { 
@@ -32,6 +39,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/월요웹툰/만렙돌파/만렙돌파.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #판타지";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 4) { 
@@ -41,6 +50,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/월요웹툰/말박왕/말박왕.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #액션";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 5) { 
@@ -50,6 +61,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/월요웹툰/백수세끼/백수세끼.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #드라마";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 6) { 
@@ -59,6 +72,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/월요웹툰/삼매경/삼매경.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #액션";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 7) { 
@@ -68,6 +83,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/월요웹툰/소녀의세계/소녀의세계.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #드라마";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 8) { 
@@ -77,6 +94,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/월요웹툰/이터널스/이터널스.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #판타지";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 9) { 
@@ -86,6 +105,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/월요웹툰/잔불의기사/잔불의기사.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #판타지";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 10) { 
@@ -95,6 +116,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/월요웹툰/참교육/참교육.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #액션";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 11) { 
@@ -104,6 +127,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/월요웹툰/파이게임/파이게임.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #스릴러";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 12) { 
@@ -113,8 +138,11 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/월요웹툰/팔이피플/팔이피플.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #드라마";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
+    // 화요웹툰
     else if(randomNumber === 13) { 
         document.getElementById("randomBox").src ="../../CSS/화요웹툰/mainWebtoonImages/김부장.jfif";
         document.getElementsByClassName("randomBoxInfo")[0].innerText = "김부장";
@@ -122,6 +150,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/화요웹툰/김부장/김부장.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #액션";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 14) { 
@@ -131,6 +161,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/화요웹툰/나의플랏메이트/나의플랏메이트.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #드라마";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 15) { 
@@ -140,6 +172,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/화요웹툰/달콤살벌한부부/달콤살벌한부부.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #로맨스";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 16) { 
@@ -149,6 +183,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/화요웹툰/몬스터/몬스터.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #액션";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 17) { 
@@ -158,6 +194,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/화요웹툰/사신소년/사신소년.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #액션";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 18) { 
@@ -167,6 +205,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/화요웹툰/성인초딩/성인초딩.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #드라마";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 19) { 
@@ -176,6 +216,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/화요웹툰/여신강림/여신강림.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #로맨스";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 20) { 
@@ -185,6 +227,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/화요웹툰/위아더좀비/위아더좀비.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #드라마";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 21) { 
@@ -194,6 +238,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/화요웹툰/중증외상센터골든아워/중증외상센터골든아워.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #드라마";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 22) { 
@@ -203,6 +249,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/화요웹툰/하루만네가되고싶어/하루만네가되고싶어.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #로맨스";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 23) { 
@@ -212,6 +260,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/화요웹툰/한림체육관/한림체육관.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#에피소드 #액션";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 24) { 
@@ -221,8 +271,11 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/화요웹툰/호랑이들어와요/호랑이들어와요.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#에피소드 #판타지";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
+    // 수요웹툰
     else if(randomNumber === 25) { 
         document.getElementById("randomBox").src ="../../CSS/수요웹툰/mainWebToonImages/나쁜사람.jfif";
         document.getElementsByClassName("randomBoxInfo")[0].innerText = "나쁜사람";
@@ -230,6 +283,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/수요웹툰/나쁜사람/나쁜사람.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#에피소드 #액션";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 26) { 
@@ -239,6 +294,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/수요웹툰/내남편과결혼해줘/내남편과결혼해줘.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #로맨스";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 27) { 
@@ -248,6 +305,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/수요웹툰/미래의골동품가게/미래의골동품가게.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #스릴러";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 28) { 
@@ -257,6 +316,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/수요웹툰/변방의외노자/변방의외노자.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #판타지";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 29) { 
@@ -266,6 +327,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/수요웹툰/빌드업/빌드업.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #스포츠";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 30) { 
@@ -275,6 +338,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/수요웹툰/세상은돈과권력/세상은돈과권력.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#에피소드 #드라마";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 31) { 
@@ -284,6 +349,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/수요웹툰/여주실격!/여주실격!.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #드라마";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 32) { 
@@ -293,6 +360,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/수요웹툰/일렉시드/일렉시드.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #액션";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 33) { 
@@ -302,6 +371,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/수요웹툰/전지적독자시점/전지적독자시점.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #판타지";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 34) { 
@@ -311,6 +382,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/수요웹툰/캐슬/캐슬.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #드라마";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 35) { 
@@ -320,6 +393,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/수요웹툰/튜토리얼탑의고인물/튜토리얼탑의고인물.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #액션";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 36) { 
@@ -329,8 +404,11 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/수요웹툰/화산귀환/화산귀환.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #시대극";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
+    // 목요웹툰
     else if(randomNumber === 37) { 
         document.getElementById("randomBox").src ="../../CSS/목요웹툰/mainWebToonImages/나노마신.jfif";
         document.getElementsByClassName("randomBoxInfo")[0].innerText = "나노마신";
@@ -338,6 +416,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/목요웹툰/나노마신/나노마신.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #판타지";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 38) { 
@@ -347,6 +427,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/목요웹툰/나혼자네크로맨서/나혼자네크로맨서.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #판타지";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 39) { 
@@ -356,6 +438,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/목요웹툰/노답소녀/노답소녀.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #로맨스";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 40) { 
@@ -365,6 +449,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/목요웹툰/더복서/더복서.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #액션";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 41) { 
@@ -374,6 +460,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/목요웹툰/던전씹어먹는아티팩트/던전씹어먹는아티팩트.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #판타지";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 42) { 
@@ -383,6 +471,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/목요웹툰/무사만리행/무사만리행.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #액션";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 43) { 
@@ -392,6 +482,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/목요웹툰/묵시의인플루언서/묵시의인플루언서.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #스릴러";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 44) { 
@@ -401,6 +493,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/목요웹툰/별을삼킨너에게/별을삼킨너에게.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #로맨스";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 45) { 
@@ -410,6 +504,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/목요웹툰/오빠세끼/오빠세끼.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#에피소드 #일상";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 46) { 
@@ -419,6 +515,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/목요웹툰/이두나!/이두나!.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #로맨스";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 47) { 
@@ -428,6 +526,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/목요웹툰/정글쥬스/정글쥬스.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #액션";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 48) { 
@@ -437,8 +537,11 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/목요웹툰/포식동물/포식동물.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #스릴러";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
+    // 금요웹툰
     else if(randomNumber === 49) { 
         document.getElementById("randomBox").src ="../../CSS/금요웹툰/mainWebToonImages/1초.jfif";
         document.getElementsByClassName("randomBoxInfo")[0].innerText = "1초";
@@ -446,6 +549,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/금요웹툰/1초/1초.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #드라마";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 50) { 
@@ -455,6 +560,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/금요웹툰/개를낳았다/개를낳았다.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #드라마";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 51) { 
@@ -464,6 +571,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/금요웹툰/걸어서30분/걸어서30분.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #로맨스";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 52) { 
@@ -473,6 +582,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/금요웹툰/나혼자만렙뉴비/나혼자만렙뉴비.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #판타지";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 53) { 
@@ -482,6 +593,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/금요웹툰/낙향문사전/낙향문사전.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #판타지";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 54) { 
@@ -491,6 +604,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/금요웹툰/내과박원장/내과박원장.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #개그";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 55) { 
@@ -500,6 +615,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/금요웹툰/데드퀸/데드퀸.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #판타지";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 56) { 
@@ -509,6 +626,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/금요웹툰/매지컬메디컬/매지컬메디컬.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #드라마";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 57) { 
@@ -518,6 +637,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/금요웹툰/삼국지톡/삼국지톡.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#에피소드 #시대극";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 58) { 
@@ -527,6 +648,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/금요웹툰/상남자/상남자.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #액션";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 59) { 
@@ -536,6 +659,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/금요웹툰/세기말풋사과보습학원/세기말풋사과보습학원.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #로맨스";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 60) { 
@@ -545,8 +670,11 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/금요웹툰/죽지않으려면/죽지않으려면.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #액션";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
+    // 토요웹툰
     else if(randomNumber === 61) { 
         document.getElementById("randomBox").src ="../../CSS/토요웹툰/mainWebToonImages/광장.jfif";
         document.getElementsByClassName("randomBoxInfo")[0].innerText = "광장";
@@ -554,6 +682,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/토요웹툰/광장/광장.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #액션";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 62) { 
@@ -563,6 +693,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/토요웹툰/반드시해피엔딩/반드시해피엔딩.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #로맨스";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 63) { 
@@ -572,6 +704,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/토요웹툰/스터디그룹/스터디그룹.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #액션";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 64) { 
@@ -581,6 +715,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/토요웹툰/어글리후드/어글리후드.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #판타지";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 65) { 
@@ -590,6 +726,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/토요웹툰/엑스애쉬/엑스애쉬.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #판타지";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 66) { 
@@ -599,6 +737,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/토요웹툰/조조코믹스/조조코믹스.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#옴니버스 #로맨스";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 67) { 
@@ -608,6 +748,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/토요웹툰/존잘주의/존잘주의.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #로맨스";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 68) { 
@@ -617,6 +759,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/토요웹툰/청춘블라썸/청춘블라썸.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#옴니버스 #로맨스";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 69) { 
@@ -626,6 +770,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/토요웹툰/초인의시대/초인의시대.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #액션";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 70) { 
@@ -635,6 +781,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/토요웹툰/최면학교/최면학교.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #개그";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 71) { 
@@ -644,6 +792,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/토요웹툰/취사병전설이되다/취사병전설이되다.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #판타지";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 72) { 
@@ -653,8 +803,11 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/토요웹툰/힙한남자/힙한남자.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #로맨스";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
+    // 일요웹툰
     else if(randomNumber === 73) { 
         document.getElementById("randomBox").src ="../../CSS/일요웹툰/mainWebToonImages/곱게키웠더니,짐승.jfif";
         document.getElementsByClassName("randomBoxInfo")[0].innerText = "곱게 키웠더니, 짐승";
@@ -662,6 +815,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/일요웹툰/곱게키웠더니,짐승/곱게키웠더니,짐승.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#에피소드 #드라마";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 74) { 
@@ -671,6 +826,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/일요웹툰/나만보여!/나만보여!.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #드라마";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 75) { 
@@ -680,6 +837,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/일요웹툰/살아남은로맨스/살아남은로맨스.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #판타지";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 76) { 
@@ -689,6 +848,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/일요웹툰/소녀재판/소녀재판.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #드라마";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 77) { 
@@ -698,6 +859,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/일요웹툰/수희0(tngmlek0)/수희0(tngmlek0).html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #드라마";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 78) { 
@@ -707,6 +870,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/일요웹툰/싸움독학/싸움독학.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #액션";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 79) { 
@@ -716,6 +881,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/일요웹툰/약한영웅/약한영웅.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#에피소드 #액션";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 80) { 
@@ -725,6 +892,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/일요웹툰/어느날갑자기서울은/어느날갑자기서울은.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #스릴러";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 81) { 
@@ -734,6 +903,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/일요웹툰/이번생도잘부탁해/이번생도잘부탁해.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #로맨스";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 82) { 
@@ -743,6 +914,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/일요웹툰/입학용병/입학용병.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #액션";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 83) { 
@@ -752,6 +925,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/일요웹툰/테러대부활/테러대부활.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #액션";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 84) { 
@@ -761,8 +936,11 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/일요웹툰/투신전생기/투신전생기.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #액션";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
+    // 신작웹툰
     else if(randomNumber === 85) { 
         document.getElementById("randomBox").src ="../../CSS/신작웹툰/mainWebToonImages/그해우리는-초여름이좋아!.jfif";
         document.getElementsByClassName("randomBoxInfo")[0].innerText = "그 해 우리는 - 초여름이 좋아!";
@@ -770,6 +948,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/신작웹툰/그해우리는-초여름이좋아!/그해우리는-초여름이좋아!.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #로맨스";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 86) { 
@@ -779,6 +959,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/신작웹툰/만능잡캐/만능잡캐.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #판타지";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 87) { 
@@ -788,6 +970,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/신작웹툰/미혼남녀의효율적만남/미혼남녀의효율적만남.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #로맨스";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 88) { 
@@ -797,6 +981,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/신작웹툰/봐선안되는것/봐선안되는것.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#옴니버스 #스릴러";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 89) { 
@@ -806,6 +992,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/신작웹툰/신군/신군.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #액션";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 90) { 
@@ -815,6 +1003,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/신작웹툰/온에어/온에어.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #스릴러";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 91) { 
@@ -824,6 +1014,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/신작웹툰/재난소년/재난소년.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #판타지";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 92) { 
@@ -833,6 +1025,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/신작웹툰/존망코인/존망코인.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #스릴러";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 93) { 
@@ -842,6 +1036,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/신작웹툰/헤어지면죽음/헤어지면죽음.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #로맨스";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 94) { 
@@ -851,6 +1047,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/신작웹툰/현실퀘스트/현실퀘스트.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #액션";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 95) { 
@@ -860,6 +1058,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/신작웹툰/후궁스캔들/후궁스캔들.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #로맨스";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 96) { 
@@ -869,8 +1069,11 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/신작웹툰/희란국연가/희란국연가.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #로맨스";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
+    // 완결웹툰
     else if(randomNumber === 97) { 
         document.getElementById("randomBox").src ="../../CSS/완결웹툰/mainWebtoonImages/AI가세상을지배한다면.jfif";
         document.getElementsByClassName("randomBoxInfo")[0].innerText = "AI가 세상을 지배한다면";
@@ -878,6 +1081,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/완결웹툰/AI가세상을지배한다면/AI가세상을지배한다면.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#옴니버스 #판타지";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 98) { 
@@ -887,6 +1092,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/완결웹툰/D.P개의날/D.P개의날.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #드라마";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 99) { 
@@ -896,6 +1103,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/완결웹툰/롭플롭/롭플롭.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #드라마";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 100) { 
@@ -905,6 +1114,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/완결웹툰/비밀상자/비밀상자.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #드라마";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 101) { 
@@ -914,6 +1125,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/완결웹툰/수상한비밀상담부/수상한비밀상담부.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#에피소드 #스릴러";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 102) { 
@@ -923,6 +1136,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/완결웹툰/언메이크/언메이크.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #판타지";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 103) { 
@@ -932,6 +1147,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/완결웹툰/용감한시민/용감한시민.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #액션";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 104) { 
@@ -941,6 +1158,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/완결웹툰/원수를사랑하라/원수를사랑하라.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #로맨스";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 105) { 
@@ -950,6 +1169,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/완결웹툰/웰캄투실버라이프/웰캄투실버라이프.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#에피소드 #일상";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 106) { 
@@ -959,6 +1180,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/완결웹툰/인문학적감수성/인문학적감수성.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #드라마";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 107) { 
@@ -968,6 +1191,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/완결웹툰/조선홍보대행사조대박/조선홍보대행사조대박.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #개그";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
     else if(randomNumber === 108) { 
@@ -977,6 +1202,8 @@ const randomWebToon = () => {
         const transformToWebtoon = () => {
             location.href="../../Components/완결웹툰/해귀/해귀.html"
         }
+        document.getElementsByClassName("webtoonInfo")[0].innerText = "#스토리 #판타지";
+        document.getElementsByClassName("webtoonInfo")[0].style.visibility = "visible";
         document.getElementById("randomBox").addEventListener("click", transformToWebtoon);
     }
 }
