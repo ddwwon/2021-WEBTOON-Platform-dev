@@ -1,0 +1,71 @@
+/* 웹폰트사용 */
+@font-face {
+  font-family: SCDream3;
+  src: url("../../../Fonts/S-Core_Dream_OTF/SCDream3.otf");
+}
+
+/* 모든 폰트를 웹폰트를 사용하고, 아래여백을 0.3rem을 주어 가독성에 좋도록 함 */
+* {
+  font-family: SCDream3;
+  margin-bottom: 0.3rem;
+}
+
+/* 전체적으로 중앙정렬 하게끔보이도록 수정 */
+body {
+  margin: 0;
+  padding-right: 20%;
+  padding-left: 20%;
+}
+
+/* 랜덤웹툰추천 타이틀부분을 꾸미는 요소 작성 */
+.randomWebTitle {
+  font-size: 4vw;
+  padding: 2vh;
+  margin-bottom: 5vh;
+  color: white;
+  background-color: #94b0da;
+  text-align: center;
+  border: 3px solid #94b0da;
+  border-radius: 20px;
+}
+
+/* 랜덤박스이미지 중앙정렬 */
+.randomBoxDiv {
+  text-align: center;
+}
+
+/* 랜덤박스이미지 크기 조정 */
+#randomBox {
+  height: 100%;
+  width: 100%;
+}
+
+/* 랜덤박스설명문 중앙정렬 및 꾸미기 */
+.randomBoxInfo {
+  text-align: center;
+  font-size: 3vw;
+}
+
+/* 랜덤웹툰추천, 초기화면가기 버튼을 플렉스로 지정 */
+.boxSet {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* 두 박스의 스타일 요소 변경 */
+#boxButton {
+  color: white;
+  background-color: #94b0da;
+  border: none;
+  border: 3px solid #94b0da;
+  border-radius: 20px;
+  padding: 2vh;
+  width: 25vw;
+  font-size: 2vw;
+  margin-top: 5vh;
+}
+
+/* 두 박스가 클릭시 효과 */
+#boxButton:active {
+  background-color: #454ade;
+}

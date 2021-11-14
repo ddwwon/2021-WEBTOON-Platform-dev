@@ -102,7 +102,7 @@ header {
 
 /* 사이드바요소의 첫번째 요소인 검색부분 마진탑을 20%로 변경 */
 .sideBarComponent:nth-child(1) {
-  margin-top: 20%;
+  margin-top: 10%;
 }
 
 .sideBarComponent > a {
