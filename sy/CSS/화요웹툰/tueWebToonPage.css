@@ -235,14 +235,15 @@ nav button:hover {
   display: inline;
 }
 
-/* 탑, 레프트 조정 */
+/* 웹툰정보 중앙정렬 */
 .webToonInfo {
   position: absolute;
   text-align: center;
-  top: 15%;
-  left: 15%;
+  top: 50%;
+  left: 50%;
   display: none;
-  font-size: 1.5vw;
+  font-size: 2vh;
+  transform: translate(-50%, -50%);
 }
 
 /* .webtoonInfoContent {
