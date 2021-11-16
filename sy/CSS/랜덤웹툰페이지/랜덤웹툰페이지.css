@@ -16,6 +16,8 @@ body {
   padding-right: 20%;
   padding-left: 20%;
   border: 1.5rem solid #454ade;
+  /* 테두리가 꽉차게 보이도록 최소 높이를 100vh로 변경 */
+  min-height: 100vh; 
 }
 
 /* 랜덤웹툰추천 타이틀부분을 꾸미는 요소 작성 */
