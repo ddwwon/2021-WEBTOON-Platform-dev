@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Webtoon Search</title>
+
+    <!--css-->
+    <link rel="stylesheet" href="../CSS/searchPage.css" />
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="search-screen">
+        <header> <!-- 검색창 있는 상단 화면 -->
+            <div class="search-header">
+                <!-- 뒤로가기 버튼 -->
+                <a href="./main.html" class="back-button"><i class="bi bi-arrow-left"></i></a>
+                <!-- 검색창 -->
+                <div class="search-input">
+                    <i class="bi bi-search"></i>
+                    <form>
+                        <input type="text" class="input-text">
+                        <button type="reset" class="input-reset"><i class="bi bi-x"></i></button>
+                    </form>
+                </div>
+            </div>
+        </header>
+        <main> <!-- 인기 검색어, 추천 작품, 추천 완결, 추천 신작 -->
+            <div class="popular-search"> <!-- 인기 검색어 -->
+                <div class="popular-title"><b>인기 검색어</b></div>
+                <div class="search-list">
+                    <div class="search-words">1. 로맨스</div>
+                    <div class="search-words">2. 판타지</div>
+                    <div class="search-words">3. 웹툰</div>
+                    <div class="search-words">4. 하루만</div>
+                    <div class="search-words">5. 이번 생도</div>
+                </div>
+            </div>
+            <div class="recommend-webtoon"> <!-- 추천 작품 -->
+                <div class="recommend-webtoon-title"><b>추천 작품</b></div>
+                <div class="recommend-webtoon-list">
+                    <ul class="recommend-list">
+                        <li>
+                            <img class="webtoon-image" src="../WebtoonImages/RecommendWebtoon/소녀의세계.png">
+                            <div class="webtoon-title">소녀의 세계</div>
+                            <div class="webtoon-info">모랑지(네이버)</div>
+                        </li>
+                        <li>
+                            <img class="webtoon-image" src="../WebtoonImages/RecommendWebtoon/걸어서30분.png">
+                            <div class="webtoon-title">걸어서 30분</div>
+                            <div class="webtoon-info">이온도(네이버)</div>
+                        </li>
+                        <li>
+                            <img class="webtoon-image" src="../WebtoonImages/RecommendWebtoon/곱게키웠더니짐승.png">
+                            <div class="webtoon-title">곱게 키웠더니 짐승</div>
+                            <div class="webtoon-info">이른꽃, 티바(네이버)</div>
+                        </li>
+                        <li>
+                            <img class="webtoon-image" src="../WebtoonImages/RecommendWebtoon/여신강림.png">
+                            <div class="webtoon-title">여신강림</div>
+                            <div class="webtoon-info">야옹이(네이버)</div>
+                        </li>
+                        <li>
+                            <img class="webtoon-image" src="../WebtoonImages/RecommendWebtoon/이번생도잘부탁해.png">
+                            <div class="webtoon-title">이번 생도 잘 부탁해</div>
+                            <div class="webtoon-info">이혜(네이버)</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="recommend-end"> <!-- 추천 완결 -->
+                <div class="recommend-end-title"><b>추천 완결</b></div>
+                <div class="recommend-webtoon-list">
+                    <ul class="recommend-list">
+                        <li>
+                            <img class="webtoon-image" src="../WebtoonImages/RecommendEnd/AI가세상을지배한다면.png">
+                            <div class="webtoon-title">소녀의 세계</div>
+                            <div class="webtoon-info">모랑지(네이버)</div>
+                        </li>
+                        <li>
+                            <img class="webtoon-image" src="../WebtoonImages/RecommendEnd/비밀상자.png">
+                            <div class="webtoon-title">걸어서 30분</div>
+                            <div class="webtoon-info">이온도(네이버)</div>
+                        </li>
+                        <li>
+                            <img class="webtoon-image" src="../WebtoonImages/RecommendEnd/수상한비밀상담부.png">
+                            <div class="webtoon-title">곱게 키웠더니 짐승</div>
+                            <div class="webtoon-info">이른꽃, 티바(네이버)</div>
+                        </li>
+                        <li>
+                            <img class="webtoon-image" src="../WebtoonImages/RecommendEnd/웰캄투실버라이프.png">
+                            <div class="webtoon-title">여신강림</div>
+                            <div class="webtoon-info">야옹이(네이버)</div>
+                        </li>
+                        <li>
+                            <img class="webtoon-image" src="../WebtoonImages/RecommendEnd/인문학적감수성.png">
+                            <div class="webtoon-title">이번 생도 잘 부탁해</div>
+                            <div class="webtoon-info">이혜(네이버)</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="recommend-new"> <!-- 추천 신작 -->
+                <div class="recommend-new-title"><b>추천 신작</b></div>
+                <div class="recommend-webtoon-list">
+                    <ul class="recommend-list">
+                        <li>
+                            <img class="webtoon-image" src="../WebtoonImages/RecommendNew/온에어.png">
+                            <div class="webtoon-title">소녀의 세계</div>
+                            <div class="webtoon-info">모랑지(네이버)</div>
+                        </li>
+                        <li>
+                            <img class="webtoon-image" src="../WebtoonImages/RecommendNew/재난소년.png">
+                            <div class="webtoon-title">걸어서 30분</div>
+                            <div class="webtoon-info">이온도(네이버)</div>
+                        </li>
+                        <li>
+                            <img class="webtoon-image" src="../WebtoonImages/RecommendNew/헤어지면죽음.png">
+                            <div class="webtoon-title">곱게 키웠더니 짐승</div>
+                            <div class="webtoon-info">이른꽃, 티바(네이버)</div>
+                        </li>
+                        <li>
+                            <img class="webtoon-image" src="../WebtoonImages/RecommendNew/후궁스캔들.png">
+                            <div class="webtoon-title">여신강림</div>
+                            <div class="webtoon-info">야옹이(네이버)</div>
+                        </li>
+                        <li>
+                            <img class="webtoon-image" src="../WebtoonImages/RecommendNew/희란국연가.png">
+                            <div class="webtoon-title">이번 생도 잘 부탁해</div>
+                            <div class="webtoon-info">이혜(네이버)</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+        <div class="blank"></div> <!--footer에 가려지는 부분이 없도록 맨 아래에 여백-->
+        <footer> <!-- 웹툰 페이지명, 마이페이지(보관함) -->
+            <div class="footer-web-name">웹툰 페이지명</div>
+            <button type="button" class="archive-button" onclick="location.href=''"><i class="bi bi-archive"></i></button> <!-- 보관함 페이지로 경로 지정하기 -->
+        </footer>
+    </div>
+</body>
+</html>
