@@ -1,0 +1,207 @@
+/*간격, 크기 등 모든 사이즈는 가변적(반응형)으로 설정*/
+/*css 변수 지정*/
+:root {
+  --main-purple: #a99cff;
+  --main-white: #fbfaff;
+  --main-black: #000000;
+  --light-gray: #d9d9d9;
+  --thick-gray: #b0b0b0;
+}
+/* 웹폰트사용 */
+@font-face {
+  font-family: SCDream3;
+  src: url("../Fonts/S-Core_Dream_OTF/SCDream3.otf");
+}
+* {
+  font-family: SCDream3;
+  margin-bottom: 0.3rem;
+}
+
+/*가로 길이는 화면 크기를 벗어나지 않게 max-width를 지정*/
+.main-screen {
+  display: grid;
+  max-width: 100vw;
+
+}
+header {
+  background-color: var(--main-purple);
+}
+/*헤더 버튼 테두리, 배경색 제거, 패딩*/
+.pre-button,
+.like-button,
+.share-button {
+  border: 0;
+  background-color: transparent;
+  padding: 0.5vh;
+  padding-left: 0.7em;
+  padding-right: 0.7em;
+}
+/*관심설정 버튼, 공유 버튼 왼쪽 정렬*/
+/*우측 정렬 되면 html 파일에서 먼저 적혀있는 버튼이 더 우측으로 감*/
+.like-button,
+.share-button {
+  float: right;
+}
+/*버튼 크기 비율 고정*/
+.bi-arrow-left,
+.bi-share-fill,
+.bi-heart {
+  font-size: 7vw;
+  color: white;
+}
+
+/*웹툰 이미지 비율 고정*/
+.image-size {
+  object-fit: cover;
+  width: 50vw;
+  height: 100%;
+  padding: 4vw;
+}
+/*웹툰 이미지는 왼쪽, 웹툰 정보는 오른쪽에 배열*/
+.webtoon-start {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.right-contents {
+  display: flex;
+  flex-direction: column; /*요소들이 수직으로 정렬됨*/
+  align-items: left;
+  justify-content: center;
+  margin: 3vw;
+}
+.webtoon-explain {
+  margin: 2vw;
+}
+/*웹툰 설명 부분*/
+.webtoon-title,
+.webtoon-writer,
+.webtoon-score,
+.webtoonHashTag {
+  font-size: 3vw;
+  margin-bottom: 10%;
+}
+.webtoon-title {
+  font-size: 4vw;
+}
+.webtoon-score {
+  color :red;
+}
+.webtoonHashTag {
+  color: #1B1F3B ;
+}
+/*첫편부터 보기, 이어보기 버튼 스타일 지정*/
+.start-button,
+.continue-button {
+  background-size: 20vw 10vh;
+  background-color: var(--main-purple);
+  border: none;
+  border-radius: 20%;
+  color: white;
+  font-size: 3.8vw;
+  font-family: "Do Hyeon", sans-serif;
+  padding: 1vh 2vw 1vh 2vw;
+}
+
+/*구분선*/
+.line {
+  width: 100vw;
+  height: 0.3vw;
+  background-color: var(--light-gray);
+}
+
+/*전체 웹툰 수 표시, 첫편,최신편 선택 버튼 한 줄에 나오게 하기*/
+.button-line {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+/*첫편부터, 최신편부터 선택 버튼 우측 정렬*/
+.select-sequence {
+  margin: 2.2vw;
+}
+.sequence > option {
+    font-size: 3vw;
+}
+
+/*전체 웹툰 수 표시 글자 색, 크기*/
+.webtoon-num {
+  margin: 2.2vw;
+  color: var(--thick-gray);
+  font-size: 4vw;
+}
+/*select box 스타일*/
+.sequence {
+  border: none;
+  color: var(--thick-gray);
+  background-color: white;
+  width: 25vw;
+  height: 100%;
+  font-size: 4vw;
+}
+
+/*ul 태그 시작점을 0px로 해서 왼쪽 공백 없애기*/
+.wetoon-list {
+  -webkit-padding-start: 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+/*웹툰 이미지 정렬*/
+.webtoon {
+  list-style: none; /*리스트 점 없애기*/
+  float: left;
+  padding: 0;
+  margin: 1vh 1.5vw 1vh 1.5vw;
+}
+/*웹툰 이미지 크기 조정*/
+#webtoonImage {
+  object-fit: fill;
+  width: 30vw;
+  height: 30vw;
+  background-size: cover;
+  background-position: center center;
+}
+/* 웹툰 화수별 백그라운드 이미지시작 */
+.webtoon-image-8 {
+  background: url(./수상한비밀상담부8화.jpg); /*웹툰 이미지를 배경으로*/
+}
+.webtoon-image-7 {
+  background: url(./수상한비밀상담부7화.jpg); /*웹툰 이미지를 배경으로*/
+}
+.webtoon-image-6 {
+  background: url(./수상한비밀상담부6화.jpg); /*웹툰 이미지를 배경으로*/
+}
+.webtoon-image-5 {
+  background: url(./수상한비밀상담부5화.jpg); /*웹툰 이미지를 배경으로*/
+}
+.webtoon-image-4 {
+  background: url(./수상한비밀상담부4화.jpg); /*웹툰 이미지를 배경으로*/
+}
+.webtoon-image-3 {
+  background: url(./수상한비밀상담부3화.jpg); /*웹툰 이미지를 배경으로*/
+}
+.webtoon-image-2 {
+  background: url(./수상한비밀상담부2화.jpg); /*웹툰 이미지를 배경으로*/
+}
+.webtoon-image-1 {
+  background: url(./수상한비밀상담부1화.jpg); /*웹툰 이미지를 배경으로*/
+}
+/* 웹툰 화수별 백그라운드 이미지 끝 */
+/*웹툰 이미지에 hover시 웹툰 정보 나타남*/
+.webtoon-info {
+  background: var(--main-black);
+  opacity: 0;
+  width: 30vw;
+  height: 30vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5vw;
+}
+#webtoonImage:hover .webtoon-info {
+  opacity: 0.7;
+  text-align: center;
+  color: white;
+}
+.webtoon > a {
+  text-decoration: none !important;
+}

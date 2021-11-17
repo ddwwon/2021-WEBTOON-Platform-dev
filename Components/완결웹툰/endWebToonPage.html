@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../CSS/완결웹툰/endWebToonPage.css" />
+    <title>완결웹툰</title>
+  </head>
+  <body>
+    <div class="layoutContainer">
+      <aside></aside>
+      <section class="moreInfo-icon">
+        <div class="profile-image">
+          <img src="../../Background/window.jpeg" alt="window" />
+        </div>
+        <div class="userName"><u>웹프실습3팀</u></div>
+        <ul class="sideBar-lists">
+          <li class="sideBarComponent"><a href="#">검색</a></li>
+          <li class="sideBarComponent"><a href="#">게시판</a></li>
+          <li class="sideBarComponent"><a href="#">웹툰</a></li>
+          <li class="sideBarComponent"><a href="#">보관함</a></li>
+          <li class="sideBarComponent"><a href="../랜덤웹툰페이지/랜덤웹툰페이지.html" target="_self">랜덤웹툰추천</a></li>
+          <li class="sideBarComponent"><a href="#">설정</a></li>
+        </ul>
+      </section>
+      <div class="centerContainer">
+        <header>
+          <label class="moreInfo">
+            <input type="button" value=">" class="sideBar"/>
+          </label>
+
+          <img id="webToonAd" src="../../CSS/webtoonAd/용사가돌아왔다.jpg" alt="wave" />
+          <div class="circle">
+            <!-- 버튼클릭시 광고웹툰이미지 변경 -->
+            <button class="btn1" onclick="changeAd(1)"></button>
+            <button class="btn2" onclick="changeAd(2)"></button>
+            <button class="btn3" onclick="changeAd(3)"></button>
+            <button class="btn4" onclick="changeAd(4)"></button>
+            <button class="btn5" onclick="changeAd(5)"></button>
+            <button class="btn6" onclick="changeAd(6)"></button>
+            <button class="btn7" onclick="changeAd(7)"></button>
+            <button class="btn8" onclick="changeAd(8)"></button>
+          </div>
+        </header>
+        <nav>
+          <!-- 요일별,신작, 완결별 버튼 클릭시 홈페이지 이동 -->
+          <button type="button" class="Mon" onclick="transMon()">월</button>
+          <button type="button" class="Tue" onclick="transTues()">화</button>
+          <button type="button" class="Wed" onclick="transWedns()">수</button>
+          <button type="button" class="Thu" onclick="transThurs()">목</button>
+          <button type="button" class="Fri" onclick="transFri()">금</button>
+          <button type="button" class="Sat" onclick="transSatur()">토</button>
+          <button type="button" class="Sun" onclick="transSun()">일</button>
+          <button type="button" class="New" onclick="transNew()">신작</button>
+          <button type="button" class="End" onclick="transEnd()">완결</button>
+        </nav>
+        <section class="webToonList-grid">
+          <!-- 조선홍보대행사 조대박 -->
+          <div class="webToonList" onclick="location.href='../완결웹툰/조선홍보대행사조대박/조선홍보대행사조대박.html'">
+            <img
+              class="thumbNail"
+              src="../../CSS/완결웹툰/mainWebtoonImages/조선홍보대행사조대박.jfif"
+              alt="조선홍보대행사 조대박"
+            />
+            <div class="webToonInfo">
+              <h1 class="webtoonInfoContent">조선홍보대행사 조대박</h1>
+              <h3 class="webtoonInfoContent">김양수</h3>
+              <h3 class="webtoonInfoContent">#스토리 #개그</h3>
+              <h4 class="webtoonInfoContent">★ 9.98</h4>
+            </div>
+          </div>
+          <!-- 비밀상자 -->
+          <div class="webToonList" onclick="location.href='../완결웹툰/비밀상자/비밀상자.html'">
+            <img
+              class="thumbNail"
+              src="../../CSS/완결웹툰/mainWebtoonImages/비밀상자.jpeg"
+              alt="비밀상자"
+            />
+            <div class="webToonInfo">
+              <h1>비밀상자</h1>
+              <h2>레이카</h2>
+              <h3>#스토리 #드라마</h3>
+              <h4>★ 9.39</h4>
+            </div>
+          </div>
+          <!-- 인문학적 감수성 -->
+          <div class="webToonList" onclick="location.href='../완결웹툰/인문학적감수성/인문학적감수성.html'">
+            <img
+              class="thumbNail"
+              src="../../CSS/완결웹툰/mainWebtoonImages/인문학적감수성.jfif"
+              alt="인문학적 감수성"
+            />
+            <div class="webToonInfo">
+              <h1>인문학적 감수성</h1>
+              <h2>교날 / 번암</h2>
+              <h3>#스토리 #드라마</h3>
+              <h4>★ 9.97</h4>
+            </div>
+          </div>
+          <!-- D.P 개의날 -->
+          <div class="webToonList" onclick="location.href='../완결웹툰/D.P개의날/D.P개의날.html'">
+            <img
+              class="thumbNail"
+              src="../../CSS/완결웹툰/mainWebtoonImages/D.P개의날.png"
+              alt="D.P 개의날"
+            />
+            <div class="webToonInfo">
+              <h1>D.P 개의날</h1>
+              <h2>김보통</h2>
+              <h3>#스토리 #드라마</h3>
+              <h4>★ 9.66</h4>
+            </div>
+          </div>
+          <!-- 용감한 시민 -->
+          <div class="webToonList" onclick="location.href='../완결웹툰/용감한시민/용감한시민.html'">
+            <img
+              class="thumbNail"
+              src="../../CSS/완결웹툰/mainWebtoonImages/용감한시민.jfif"
+              alt="용감한 시민"
+            />
+            <div class="webToonInfo">
+              <h1>용감한 시민</h1>
+              <h2>김정현</h2>
+              <h3>#스토리 #액션</h3>
+              <h4>★ 9.56</h4>
+            </div>
+          </div>
+          <!-- 웰캄투실버라이프 -->
+          <div class="webToonList" onclick="location.href='../완결웹툰/웰캄투실버라이프/웰캄투실버라이프.html'">
+            <img
+              class="thumbNail"
+              src="../../CSS/완결웹툰/mainWebtoonImages/웰캄투실버라이프.jfif"
+              alt="웰캄투실버라이프"
+            />
+            <div class="webToonInfo">
+              <h1>웰캄투실버라이프</h1>
+              <h2>솔녀</h2>
+              <h3>#에피소드 #일상</h3>
+              <h4>★ 9.97</h4>
+            </div>
+          </div>
+          <!-- 원수를 사랑하라 -->
+          <div class="webToonList" onclick="location.href='../완결웹툰/원수를사랑하라/원수를사랑하라.html'">
+            <img
+              class="thumbNail"
+              src="../../CSS/완결웹툰/mainWebtoonImages/원수를사랑하라.jfif"
+              alt="원수를 사랑하라"
+            />
+            <div class="webToonInfo">
+              <h1>원수를 사랑하라</h1>
+              <h2>정윤 / 태건</h2>
+              <h3>#스토리 #로맨스</h3>
+              <h4>★ 9.26</h4>
+            </div>
+          </div>
+          <!-- 롭플롭 -->
+          <div class="webToonList" onclick="location.href='../완결웹툰/롭플롭/롭플롭.html'">
+            <img
+              class="thumbNail"
+              src="../../CSS/완결웹툰/mainWebtoonImages/롭플롭.jfif"
+              alt="롭플롭"
+            />
+            <div class="webToonInfo">
+              <h1>롭플롭</h1>
+              <h2>CTK</h2>
+              <h3>#스토리 #드라마</h3>
+              <h4>★ 9.93</h4>
+            </div>
+          </div>
+          <!-- AI가 세상을 지배한다면 -->
+          <div class="webToonList" onclick="location.href='../완결웹툰/AI가세상을지배한다면/AI가세상을지배한다면.html'">
+            <img
+              class="thumbNail"
+              src="../../CSS/완결웹툰/mainWebtoonImages/AI가세상을지배한다면.jfif"
+              alt="AI가 세상을 지배한다면"
+            />
+            <div class="webToonInfo">
+              <h1>AI가 세상을 지배한다면</h1>
+              <h2>POGO / HOOPA</h2>
+              <h3>#옴니버스 #판타지</h3>
+              <h4>★9.97</h4>
+            </div>
+          </div>
+          <!-- 수상한 비밀상담부 -->
+          <div class="webToonList" onclick="location.href='../완결웹툰/수상한비밀상담부/수상한비밀상담부.html'">
+            <img
+              class="thumbNail"
+              src="../../CSS/완결웹툰/mainWebtoonImages/수상한비밀상담부.jfif"
+              alt="수상한 비밀상담부"
+            />
+            <div class="webToonInfo">
+              <h1>수상한 비밀상담부</h1>
+              <h2>149</h2>
+              <h3>#에피소드 #스릴러</h3>
+              <h4>★ 9.87</h4>
+            </div>
+          </div>
+          <!-- 해귀 -->
+          <div class="webToonList" onclick="location.href='../완결웹툰/해귀/해귀.html'">
+            <img
+              class="thumbNail"
+              src="../../CSS/완결웹툰/mainWebtoonImages/해귀.jfif"
+              alt="해귀"
+            />
+            <div class="webToonInfo">
+              <h1>해귀</h1>
+              <h2>알파A</h2>
+              <h3>#스토리 #판타지</h3>
+              <h4>★ 9.87</h4>
+            </div>
+          </div>
+          <!-- 언메이크 -->
+          <div class="webToonList" onclick="location.href='../완결웹툰/언메이크/언메이크.html'">
+            <img
+              class="thumbNail"
+              src="../../CSS/완결웹툰/mainWebtoonImages/언메이크.jfif"
+              alt="언메이크"
+            />
+            <div class="webToonInfo">
+              <h1>언메이크</h1>
+              <h2>박화랑</h2>
+              <h3>#스토리 #판타지</h3>
+              <h4>★ 9.59</h4>
+            </div>
+          </div>
+        </section>
+      </div>
+      <aside></aside>
+    </div>
+    <script src="../../JS/완결웹툰/endWebToonPage.js"></script>
+  </body>
+</html>

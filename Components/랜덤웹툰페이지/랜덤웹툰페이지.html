@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>랜덤웹툰 페이지</title>
+    <link rel="stylesheet" href="../../CSS/랜덤웹툰페이지/랜덤웹툰페이지.css">
+</head>
+<body>
+    <header>
+        <p class="randomWebTitle">랜덤웹툰추천</p>
+    </header>
+    <main>
+        <div class="randomBoxDiv">
+            <img src="../../CSS/랜덤웹툰페이지/랜덤이미지.png" alt="랜덤박스" id="randomBox">
+        </div>
+        <p class="randomBoxInfo">랜덤으로 웹툰을 추천해드립니다!</p>
+        <p class="webtoonInfo"></p>
+    </main>
+    <footer>
+        <div class="boxSet">
+            <button id="boxButton" class="randomWebtoonRecommand" onclick="setTimeout(randomWebToon, 1000)">랜덤웹툰추천</button>
+            <button id="boxButton" class="backToBegin" onclick="setTimeout(backToBegin, 1000)">초기화면가기</button>
+        </div>
+    </footer>
+    <script src="../../JS/랜덤웹툰페이지/랜덤웹툰페이지.js"></script>
+</body>
+</html>

@@ -45,7 +45,7 @@ sideBarbtn.addEventListener("blur", function () {
 
 //요일별, 신작별, 완결별 버튼을 클릭시 그분야 웹툰 페이지로 이동하는 함수 생성
 const transMon = () => {
-  location.href ='../../Components/월요웹툰/index.html';
+  location.href ='../../Components/월요웹툰/monWebToonPage.html';
 }
 const transTues = () => {
   location.href ='../../Components/화요웹툰/tueWebToonPage.html';

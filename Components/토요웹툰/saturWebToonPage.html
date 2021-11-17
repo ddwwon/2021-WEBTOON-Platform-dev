@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../CSS/토요웹툰/saturWebToonPage.css" />
+    <title>토요웹툰</title>
+  </head>
+  <body>
+    <div class="layoutContainer">
+      <aside></aside>
+      <section class="moreInfo-icon">
+        <div class="profile-image">
+          <img src="../../Background/window.jpeg" alt="window" />
+        </div>
+        <div class="userName"><u>웹프실습3팀</u></div>
+        <ul class="sideBar-lists">
+          <li class="sideBarComponent"><a href="#">검색</a></li>
+          <li class="sideBarComponent"><a href="#">게시판</a></li>
+          <li class="sideBarComponent"><a href="#">웹툰</a></li>
+          <li class="sideBarComponent"><a href="#">보관함</a></li>
+          <li class="sideBarComponent"><a href="../랜덤웹툰페이지/랜덤웹툰페이지.html" target="_self">랜덤웹툰추천</a></li>
+          <li class="sideBarComponent"><a href="#">설정</a></li>
+        </ul>
+      </section>
+      <div class="centerContainer">
+        <header>
+          <label class="moreInfo">
+            <input type="button" value=">" class="sideBar"/>
+          </label>
+
+          <img id="webToonAd" src="../../CSS/webtoonAd/용사가돌아왔다.jpg" alt="wave" />
+          <div class="circle">
+            <!-- 버튼클릭시 광고웹툰이미지 변경 -->
+            <button class="btn1" onclick="changeAd(1)"></button>
+            <button class="btn2" onclick="changeAd(2)"></button>
+            <button class="btn3" onclick="changeAd(3)"></button>
+            <button class="btn4" onclick="changeAd(4)"></button>
+            <button class="btn5" onclick="changeAd(5)"></button>
+            <button class="btn6" onclick="changeAd(6)"></button>
+            <button class="btn7" onclick="changeAd(7)"></button>
+            <button class="btn8" onclick="changeAd(8)"></button>
+          </div>
+        </header>
+        <nav>
+          <!-- 요일별,신작, 완결별 버튼 클릭시 홈페이지 이동 -->
+          <button type="button" class="Mon" onclick="transMon()">월</button>
+          <button type="button" class="Tue" onclick="transTues()">화</button>
+          <button type="button" class="Wed" onclick="transWedns()">수</button>
+          <button type="button" class="Thu" onclick="transThurs()">목</button>
+          <button type="button" class="Fri" onclick="transFri()">금</button>
+          <button type="button" class="Sat" onclick="transSatur()">토</button>
+          <button type="button" class="Sun" onclick="transSun()">일</button>
+          <button type="button" class="New" onclick="transNew()">신작</button>
+          <button type="button" class="End" onclick="transEnd()">완결</button>
+        </nav>
+        <section class="webToonList-grid">
+          <!-- 조조코믹스 -->
+          <div class="webToonList" onclick="location.href='../토요웹툰/조조코믹스/조조코믹스.html'">
+            <img
+              class="thumbNail"
+              src="../../CSS/토요웹툰/mainWebtoonImages/조조코믹스.jfif"
+              alt="조조코믹스"
+            />
+            <div class="webToonInfo">
+              <h1 class="webtoonInfoContent">조조코믹스</h1>
+              <h3 class="webtoonInfoContent">이동건</h3>
+              <h3 class="webtoonInfoContent">#옴니버스 #로맨스</h3>
+              <h4 class="webtoonInfoContent">★ 9.98</h4>
+            </div>
+          </div>
+          <!-- 취사병 전설이 되다 -->
+          <div class="webToonList" onclick="location.href='../토요웹툰/취사병전설이되다/취사병전설이되다.html'">
+            <img
+              class="thumbNail"
+              src="../../CSS/토요웹툰/mainWebtoonImages/취사병전설이되다.jfif"
+              alt="취사병 전설이 되다"
+            />
+            <div class="webToonInfo">
+              <h1>취사병 전설이 되다</h1>
+              <h2>제이로빈 / 이진수</h2>
+              <h3>#스토리 #판타지</h3>
+              <h4>★ 9.94</h4>
+            </div>
+          </div>
+          <!-- 광장 -->
+          <div class="webToonList" onclick="location.href='../토요웹툰/광장/광장.html'">
+            <img
+              class="thumbNail"
+              src="../../CSS/토요웹툰/mainWebtoonImages/광장.jfif"
+              alt="광장"
+            />
+            <div class="webToonInfo">
+              <h1>광장</h1>
+              <h2>오세형 / 김균태</h2>
+              <h3>#스토리 #액션</h3>
+              <h4>★ 9.96</h4>
+            </div>
+          </div>
+          <!-- 초인의 시대 -->
+          <div class="webToonList" onclick="location.href='../토요웹툰/초인의시대/초인의시대.html'">
+            <img
+              class="thumbNail"
+              src="../../CSS/토요웹툰/mainWebtoonImages/초인의시대.jfif"
+              alt="초인의 시대"
+            />
+            <div class="webToonInfo">
+              <h1>초인의 시대</h1>
+              <h2>섭이</h2>
+              <h3>#스토리 #액션</h3>
+              <h4>★ 9.98</h4>
+            </div>
+          </div>
+          <!-- 스터디그룹 -->
+          <div class="webToonList" onclick="location.href='../토요웹툰/스터디그룹/스터디그룹.html'">
+            <img
+              class="thumbNail"
+              src="../../CSS/토요웹툰/mainWebtoonImages/스터디그룹.jfif"
+              alt="스터디그룹"
+            />
+            <div class="webToonInfo">
+              <h1>스터디그룹</h1>
+              <h2>신형욱 / 유승연</h2>
+              <h3>#스토리 #액션</h3>
+              <h4>★ 9.96</h4>
+            </div>
+          </div>
+          <!-- 존잘주의 -->
+          <div class="webToonList" onclick="location.href='../토요웹툰/존잘주의/존잘주의.html'">
+            <img
+              class="thumbNail"
+              src="../../CSS/토요웹툰/mainWebtoonImages/존잘주의.jfif"
+              alt="존잘주의"
+            />
+            <div class="webToonInfo">
+              <h1>존잘주의</h1>
+              <h2>령</h2>
+              <h3>#스토리 #로맨스</h3>
+              <h4>★ 9.65</h4>
+            </div>
+          </div>
+          <!-- 청춘 블라썸 -->
+          <div class="webToonList" onclick="location.href='../토요웹툰/청춘블라썸/청춘블라썸.html'">
+            <img
+              class="thumbNail"
+              src="../../CSS/토요웹툰/mainWebtoonImages/청춘블라썸.jfif"
+              alt="청춘블라썸"
+            />
+            <div class="webToonInfo">
+              <h1>청춘 블라썸</h1>
+              <h2>홍덕 / NEMONE</h2>
+              <h3>#옴니버스 #로맨스</h3>
+              <h4>★ 9.98</h4>
+            </div>
+          </div>
+          <!-- 힙한남자 -->
+          <div class="webToonList" onclick="location.href='../토요웹툰/힙한남자/힙한남자.html'">
+            <img
+              class="thumbNail"
+              src="../../CSS/토요웹툰/mainWebtoonImages/힙한남자.jfif"
+              alt="힙한남자"
+            />
+            <div class="webToonInfo">
+              <h1>힙한남자</h1>
+              <h2>혜니</h2>
+              <h3>#스토리 #로맨스</h3>
+              <h4>★ 9.95</h4>
+            </div>
+          </div>
+          <!-- 엑스애쉬 -->
+          <div class="webToonList" onclick="location.href='../토요웹툰/엑스애쉬/엑스애쉬.html'">
+            <img
+              class="thumbNail"
+              src="../../CSS/토요웹툰/mainWebtoonImages/엑스애쉬.jfif"
+              alt="엑스애쉬"
+            />
+            <div class="webToonInfo">
+              <h1>엑스애쉬</h1>
+              <h2>김세훈 / 이광수</h2>
+              <h3>#스토리 #판타지</h3>
+              <h4>★9.81</h4>
+            </div>
+          </div>
+          <!-- 반드시 해피엔딩 -->
+          <div class="webToonList" onclick="location.href='../토요웹툰/반드시해피엔딩/반드시해피엔딩.html'">
+            <img
+              class="thumbNail"
+              src="../../CSS/토요웹툰/mainWebtoonImages/반드시해피엔딩.jfif"
+              alt="반드시 해피엔딩"
+            />
+            <div class="webToonInfo">
+              <h1>반드시 해피엔딩</h1>
+              <h2>플아다, 불사 / 재림</h2>
+              <h3>#스토리 #로맨스</h3>
+              <h4>★ 9.96</h4>
+            </div>
+          </div>
+          <!-- 최면학교 -->
+          <div class="webToonList" onclick="location.href='../토요웹툰/최면학교/최면학교.html'">
+            <img
+              class="thumbNail"
+              src="../../CSS/토요웹툰/mainWebtoonImages/최면학교.jfif"
+              alt="최면학교"
+            />
+            <div class="webToonInfo">
+              <h1>최면학교</h1>
+              <h2>박은혁</h2>
+              <h3>#스토리 #개그</h3>
+              <h4>★ 9.84</h4>
+            </div>
+          </div>
+          <!-- 어글리후드 -->
+          <div class="webToonList" onclick="location.href='../토요웹툰/어글리후드/어글리후드.html'">
+            <img
+              class="thumbNail"
+              src="../../CSS/토요웹툰/mainWebtoonImages/어글리후드.jfif"
+              alt="어글리후드"
+            />
+            <div class="webToonInfo">
+              <h1>어글리후드</h1>
+              <h2>미애</h2>
+              <h3>#스토리 #판타지</h3>
+              <h4>★ 9.98</h4>
+            </div>
+          </div>
+        </section>
+      </div>
+      <aside></aside>
+    </div>
+    <script src="../../JS/토요웹툰/saturWebToonPage.js"></script>
+  </body>
+</html>

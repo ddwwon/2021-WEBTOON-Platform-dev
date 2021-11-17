@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../CSS/화요웹툰/tueWebToonPage.css" />
+    <title>화요웹툰</title>
+  </head>
+  <body>
+    <div class="layoutContainer">
+      <aside></aside>
+      <section class="moreInfo-icon">
+        <div class="profile-image">
+          <img src="../../Background/window.jpeg" alt="window" />
+        </div>
+        <div class="userName"><u>웹프실습3팀</u></div>
+        <ul class="sideBar-lists">
+          <li class="sideBarComponent"><a href="#">검색</a></li>
+          <li class="sideBarComponent"><a href="#">게시판</a></li>
+          <li class="sideBarComponent"><a href="#">웹툰</a></li>
+          <li class="sideBarComponent"><a href="#">보관함</a></li>
+          <li class="sideBarComponent"><a href="../랜덤웹툰페이지/랜덤웹툰페이지.html" target="_self">랜덤웹툰추천</a></li>
+          <li class="sideBarComponent"><a href="#">설정</a></li>
+        </ul>
+      </section>
+      <div class="centerContainer">
+        <header>
+          <label class="moreInfo">
+            <input type="button" value=">" class="sideBar"/>
+          </label>
+
+          <img id="webToonAd" src="../../CSS/webtoonAd/용사가돌아왔다.jpg" alt="wave" />
+          <div class="circle">
+            <!-- 버튼클릭시 광고웹툰이미지 변경 -->
+            <button class="btn1" onclick="changeAd(1)"></button>
+            <button class="btn2" onclick="changeAd(2)"></button>
+            <button class="btn3" onclick="changeAd(3)"></button>
+            <button class="btn4" onclick="changeAd(4)"></button>
+            <button class="btn5" onclick="changeAd(5)"></button>
+            <button class="btn6" onclick="changeAd(6)"></button>
+            <button class="btn7" onclick="changeAd(7)"></button>
+            <button class="btn8" onclick="changeAd(8)"></button>
+          </div>
+        </header>
+        <nav>
+          <!-- 요일별,신작, 완결별 버튼 클릭시 홈페이지 이동 -->
+          <button type="button" class="Mon" onclick="transMon()">월</button>
+          <button type="button" class="Tue" onclick="transTues()">화</button>
+          <button type="button" class="Wed" onclick="transWedns()">수</button>
+          <button type="button" class="Thu" onclick="transThurs()">목</button>
+          <button type="button" class="Fri" onclick="transFri()">금</button>
+          <button type="button" class="Sat" onclick="transSatur()">토</button>
+          <button type="button" class="Sun" onclick="transSun()">일</button>
+          <button type="button" class="New" onclick="transNew()">신작</button>
+          <button type="button" class="End" onclick="transEnd()">완결</button>
+        </nav>
+        <section class="webToonList-grid">
+          <!-- 여신강림 -->
+          <div class="webToonList" onclick="location.href='../화요웹툰/여신강림/여신강림.html'">
+            <img
+              class="thumbNail"
+              src="../../CSS/화요웹툰/mainWebtoonImages/여신강림.jpg"
+              alt="여신강림"
+            />
+            <div class="webToonInfo">
+              <h1 class="webtoonInfoContent">여신강림</h1>
+              <h3 class="webtoonInfoContent">야옹이</h3>
+              <h3 class="webtoonInfoContent">#스토리 #로맨스</h3>
+              <h4 class="webtoonInfoContent">★ 8.12</h4>
+            </div>
+          </div>
+          <!-- 한림체육관 -->
+          <div class="webToonList" onclick="location.href='../화요웹툰/한림체육관/한림체육관.html'">
+            <img
+              class="thumbNail"
+              src="../../CSS/화요웹툰/mainWebtoonImages/한림체육관.jpg"
+              alt="한림체육관"
+            />
+            <div class="webToonInfo">
+              <h1>한림체육관</h1>
+              <h2>혜성 / 이석재</h2>
+              <h3>#에피소드 #액션</h3>
+              <h4>★ 9.71</h4>
+            </div>
+          </div>
+          <!-- 사신소년 -->
+          <div class="webToonList" onclick="location.href='../화요웹툰/사신소년/사신소년.html'">
+            <img
+              class="thumbNail"
+              src="../../CSS/화요웹툰/mainWebtoonImages/사신소년.jpg"
+              alt="사신소년"
+            />
+            <div class="webToonInfo">
+              <h1>사신소년</h1>
+              <h2>류</h2>
+              <h3>#스토리 #액션</h3>
+              <h4>★ 9.33</h4>
+            </div>
+          </div>
+          <!-- 하루만 네가 되고 싶어 -->
+          <div class="webToonList" onclick="location.href='../화요웹툰/하루만네가되고싶어/하루만네가되고싶어.html'">
+            <img
+              class="thumbNail"
+              src="../../CSS/화요웹툰/mainWebtoonImages/하루만네가되고싶어.jfif"
+              alt="하루만네가되고싶어"
+            />
+            <div class="webToonInfo">
+              <h1>하루만 네가 되고 싶어</h1>
+              <h2>삼</h2>
+              <h3>#스토리 #로맨스</h3>
+              <h4>★ 9.98</h4>
+            </div>
+          </div>
+          <!-- 중증외상센터 : 골든아워 -->
+          <div class="webToonList" onclick="location.href='../화요웹툰/중증외상센터골든아워/중증외상센터골든아워.html'">
+            <img
+              class="thumbNail"
+              src="../../CSS/화요웹툰/mainWebtoonImages/중증외상센터골든아워.jfif"
+              alt="중증외상센터 : 골든아워"
+            />
+            <div class="webToonInfo">
+              <h1>중증외상센터 : 골든아워</h1>
+              <h2>한산이가 / 홍비치라</h2>
+              <h3>#스토리 #드라마</h3>
+              <h4>★ 9.98</h4>
+            </div>
+          </div>
+          <!-- 달콤살벌한 부부 -->
+          <div class="webToonList" onclick="location.href='../화요웹툰/달콤살벌한부부/달콤살벌한부부.html'">
+            <img
+              class="thumbNail"
+              src="../../CSS/화요웹툰/mainWebtoonImages/달콤살벌한부부.jpg"
+              alt="달콤살벌한 부부"
+            />
+            <div class="webToonInfo">
+              <h1>달콤살벌한 부부</h1>
+              <h2>플라비 / 장그린</h2>
+              <h3>#스토리 #로맨스</h3>
+              <h4>★ 9.98</h4>
+            </div>
+          </div>
+          <!-- 김부장 -->
+          <div class="webToonList" onclick="location.href='../화요웹툰/김부장/김부장.html'">
+            <img
+              class="thumbNail"
+              src="../../CSS/화요웹툰/mainWebtoonImages/김부장.jfif"
+              alt="김부장"
+            />
+            <div class="webToonInfo">
+              <h1>김부장</h1>
+              <h2>박태준 만화회사 / 정종택</h2>
+              <h3>#스토리 #액션</h3>
+              <h4>★ 9.35</h4>
+            </div>
+          </div>
+          <!-- 호랑이 들어와요 -->
+          <div class="webToonList" onclick="location.href='../화요웹툰/호랑이들어와요/호랑이들어와요.html'">
+            <img
+              class="thumbNail"
+              src="../../CSS/화요웹툰/mainWebtoonImages/호랑이들어와요.jfif"
+              alt="호랑이 들어와요"
+            />
+            <div class="webToonInfo">
+              <h1>호랑이 들어와요</h1>
+              <h2>배세혁 / 유은</h2>
+              <h3>#에피소드 #판타지</h3>
+              <h4>★ 9.98</h4>
+            </div>
+          </div>
+          <!-- 몬스터 -->
+          <div class="webToonList" onclick="location.href='../화요웹툰/몬스터/몬스터.html'">
+            <img
+              class="thumbNail"
+              src="../../CSS/화요웹툰/mainWebtoonImages/몬스터.jfif"
+              alt="몬스터"
+            />
+            <div class="webToonInfo">
+              <h1>몬스터</h1>
+              <h2>이은재</h2>
+              <h3>#스토리 #액션</h3>
+              <h4>★9.85</h4>
+            </div>
+          </div>
+          <!-- 위아더좀비 -->
+          <div class="webToonList" onclick="location.href='../화요웹툰/위아더좀비/위아더좀비.html'">
+            <img
+              class="thumbNail"
+              src="../../CSS/화요웹툰/mainWebtoonImages/위아더좀비.jfif"
+              alt="위아더좀비"
+            />
+            <div class="webToonInfo">
+              <h1>위아더좀비</h1>
+              <h2>이명재</h2>
+              <h3>#스토리 #드라마</h3>
+              <h4>★ 9.97</h4>
+            </div>
+          </div>
+          <!-- 성인초딩 -->
+          <div class="webToonList" onclick="location.href='../화요웹툰/성인초딩/성인초딩.html'">
+            <img
+              class="thumbNail"
+              src="../../CSS/화요웹툰/mainWebtoonImages/성인초딩.jfif"
+              alt="성인초딩"
+            />
+            <div class="webToonInfo">
+              <h1>성인초딩</h1>
+              <h2>미티</h2>
+              <h3>#스토리 #드라마</h3>
+              <h4>★ 9.83</h4>
+            </div>
+          </div>
+          <!-- 나의 플랏메이트 -->
+          <div class="webToonList" onclick="location.href='../화요웹툰/나의플랏메이트/나의플랏메이트.html'">
+            <img
+              class="thumbNail"
+              src="../../CSS/화요웹툰/mainWebtoonImages/나의플랏메이트.jfif"
+              alt="나의 플랏메이트"
+            />
+            <div class="webToonInfo">
+              <h1>나의 플랏메이트</h1>
+              <h2>산삼</h2>
+              <h3>#스토리 #드라마</h3>
+              <h4>★ 9.99</h4>
+            </div>
+          </div>
+        </section>
+      </div>
+      <aside></aside>
+    </div>
+    <script src="../../JS/화요웹툰/tueWebToonPage.js"></script>
+  </body>
+</html>
