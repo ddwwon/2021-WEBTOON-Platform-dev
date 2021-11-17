@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="../CSS/rogin.css">
-  <script src = "../JS/rogin.js"></script>
 
   <!-- bootstrap -->
   <!-- CSS only -->
@@ -22,8 +21,35 @@ integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+
 </head>
 
 <body>
+
     <header>
-        <i class="bi bi-list fs-1"></i>
+        <div class="layoutContainer">
+            
+            <section class="moreInfo-icon">
+
+                <label class="closeside">
+                <i class="bi bi-arrow-left fs-1"></i><input type="button" class="closesideBar"></i> 
+                </label>
+
+                <div class="profile-image">
+                    <a onclick="location.href='./profile.html'"><img src="./../Background/window.jpeg" alt="window" /></a>
+                </div>
+                
+                <div class="userName" onclick="location.href='../rogin.html'"><u>웹프실습3팀</u></div>
+                <ul class="sideBar-lists">
+                    <li class="sideBarComponent" onclick="location.href='./search.html'"><a>검색</a></li>
+                    <li class="sideBarComponent" onclick="location.href='./notice.html'"><a>게시판</a></li>
+                    <li class="sideBarComponent"><a href="#">웹툰</a></li>
+                    <li class="sideBarComponent" onclick="location.href='./SaveBox.html'"><a>보관함</a></li>
+                    <li class="sideBarComponent" onclick="location.href='./랜덤웹툰페이지/랜덤웹툰페이지.html'"><a>랜덤웹툰추천</a></li>
+                    <li class="sideBarComponent" onclick="location.href='./Setting.html'"><a>설정</a></li>
+                </ul>
+            </section>
+        </div>
+        <label class="moreInfo">
+            <i class="bi bi-list fs-1"></i><input type="button"class="sideBar"></i> 
+        </label>
+        
         <h2 class ="name">개척웹툰</h2>
         <hr class = "line">
     </header>
@@ -52,6 +78,7 @@ integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+
             <br><button class = "Google">구글 아이디로 로그인</button></br>
         </div>
     </main>
+    <script src = "../JS/rogin.js"></script>
 </body>
 
 </html>
