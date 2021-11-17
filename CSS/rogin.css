@@ -18,14 +18,15 @@
 /* 상단바 시작*/
 header{
   position: relative;
-  left:7%;
+  margin-top: 1%;
+  margin-left: 11%;
   background-color: white;
   color: var(--Blue);
 
   padding: 0.1%;
   min-width: 500px;
+  
 }
-
 /* 보관함 */
 .collection{
   float: right;
@@ -66,11 +67,6 @@ header{
 }
 
 /* 전체적인 레이아웃을 그리드로 주고 최소 높이를 100vh, 최고 넓이를 100vw로 주고, 열기준 0.5:2:0.5 비율로 전체적인 틀을 완성 */
-.layoutContainer {
-  min-height: 100vh;
-  max-width: 100vw;
-  
-}
 /* 메뉴바의 가로폭을 vw로 변경, 패딩탑과 레프트 삭제 */
 .moreInfo-icon {
   /* z인덱스값을 주어 모든요소보다 먼저 보이도록 조정 */
@@ -117,7 +113,7 @@ header{
   justify-content: center;
   height: 0.5%;
   border-radius: 50%;
-  padding: 30%;
+  padding: 25%;
   margin: 10% 20%;
   top: 0;
   left: 0;
@@ -175,11 +171,8 @@ header{
   display: block;
   text-align: center;
 }
-/* 상단바 끝*/
-
-
-/* 로그인 시작 */
 /* 햄버거 아이콘 */
+
 .bi{
   padding: 1rem;
 }
@@ -193,10 +186,23 @@ header{
 /* 수평선 */
 hr.line{
   width: 86%;
-  margin-left: 0;
+  margin-left: 0%;
   border-top: 1.4px solid #bbb;
   border-bottom: 0px;
 }
+/* 상단바 끝*/
+
+
+
+
+
+
+
+
+
+
+
+/* 로그인 시작 */
 /* 로그인 요소들의 공통된 위치 */
 main{
   position: static;

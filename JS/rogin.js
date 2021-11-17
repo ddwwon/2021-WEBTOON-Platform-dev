@@ -46,7 +46,7 @@ function Rogin(){
     const pw =document.querySelector('#roginPasswordInput');
 
     if(id.value == "manager" ||pw.value == "123456"){
-        location.href = 'succeedJoin.html'
+        setMainforweekDay();
     }
     else if(id.value == ""){
         alert("아이디를 입력해 주세요.")
