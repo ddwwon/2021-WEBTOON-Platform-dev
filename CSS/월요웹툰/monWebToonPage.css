@@ -212,10 +212,7 @@ nav button:hover {
   top: 50%;
   left: 50%;
   display: none;
-  font-size: 1.3vh;
+  font-size: 0.8vw;
   transform: translate(-50%, -50%);
 }
 
-/* .webtoonInfoContent {
-  padding: 0;
-} */

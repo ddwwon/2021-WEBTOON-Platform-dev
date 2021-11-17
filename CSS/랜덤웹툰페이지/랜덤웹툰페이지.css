@@ -18,8 +18,6 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   min-height: 100vh;
-  border-top: 1rem solid #454ade;
-  border-bottom: 1rem solid #454ade;
 }
 
 /* 랜덤웹툰추천 타이틀부분을 꾸미는 요소 작성 */
