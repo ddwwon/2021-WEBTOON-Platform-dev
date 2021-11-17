@@ -1,0 +1,25 @@
+/*간격, 크기 등 모든 사이즈는 가변적(반응형)으로 설정*/
+
+/*화면 크기를 반응형으로. 가로는 100vw, 세로는 100vh가 최대로 디스플레이 크기에 맞게 비율이 유지됨.*/
+.start-screen {
+    max-width: 100vw;
+    max-height: 100vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: column; /*요소들이 수직으로 정렬됨*/
+    align-items: center;
+    justify-content: center;
+}
+/*body에 margin 잡히는 거 방지*/
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/*아이콘 사이즈*/
+.icon-image {
+    width: 8em;
+    border-radius: 15%;
+}

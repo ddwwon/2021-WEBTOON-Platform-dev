@@ -4,7 +4,6 @@ const label = document.querySelector(".moreInfo");
 
 // 클릭 시 사이드 메뉴 생성, 사이드버튼 사라짐
 sideBarbtn.addEventListener("click", function () {
-  console.log("hi");
   section.style.left = 0;
   label.style.opacity = 0;
 });

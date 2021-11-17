@@ -1,0 +1,127 @@
+:root{
+  --SkyBlue1: #DCEDFF ;
+  --SkyBlue2 :#94b0da ;
+  --Blue: #454ade;
+  --DarkBlue: #1B1F3B;
+}
+header{
+  position: relative;
+  left:7%;
+  background-color: white;
+  color: var(--Blue);
+
+  padding: 0.1%;
+  min-width: 500px;
+ 
+}
+.bi{
+  padding: 1rem;
+}
+.name{
+  display: inline;
+}
+hr.line{
+  width: 86%;
+  margin-left: 0;
+  border-top: 1.4px solid #bbb;
+  border-bottom: 0px;
+}
+main{
+  position: static;
+  text-align: center;
+  min-width: 400px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#roginIdInput{
+  width: 20rem;
+  height: 2.5rem;
+  margin: 2rem;
+}
+#roginPasswordInput{
+  width: 20rem;
+  height: 2.5rem;
+  margin: 2rem;
+  margin-top: 0rem;
+}
+
+.LogInButton{
+  position: static;
+  
+  background-color: var(--Blue);
+  color:  white;
+  padding: 2%;
+  text-align: center;
+  font-size: 1rem;
+  margin: 1rem;
+  width: 50%;
+  border: 0;
+  border-radius: 1rem;
+}
+.LogInButton:hover {
+  background-color: var(--DarkBlue);
+  color: white;
+}
+.etc{
+  position: static;
+
+}
+
+.AnotherLogIn{
+  position: static;
+  margin: 2rem;
+}
+.Naver{
+  position: static;
+
+  background-color: rgb(77, 193, 39);
+  color:  rgb(248, 246, 246);
+  padding: 2%;
+  text-align: center;
+  font-size: 0.8rem;
+
+  width: 40%;
+  border: 0;
+  border-radius: 1rem;
+}
+.Naver:hover {
+  background-color: #2DB400;
+}
+.Kakao{
+  position: static;
+
+  background-color: #FFEB34;
+  color:  #222;
+  padding: 2%;
+  text-align: center;
+  font-size: 0.8rem;
+
+  width: 40%;
+  border: 0;
+  border-radius: 1rem;
+}
+.Kakao:hover {
+  background-color: #f1de32;
+  color: #222;
+}
+.Google{
+  position: static;
+
+  background-color: white;
+  color:  	#808080;
+  padding: 2%;
+  text-align: center;
+  font-size: 0.8rem;
+
+  width: 40%;
+  border-width: thin;
+  border-color: #C0C0C0;
+  border-radius: 1rem;
+  margin-bottom: 6rem;
+  
+}
+.Google:hover {
+  background-color: #f5f5f5;
+  
+}
