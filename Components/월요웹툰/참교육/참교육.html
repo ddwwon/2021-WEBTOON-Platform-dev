@@ -43,7 +43,11 @@
       <!-- 뒤로가기, 관심설정, 공유 버튼 -->
       <header>
         <div class="webtoon-button">
-          <button type="button" class="pre-button" onclick="location.href='../monWebToonPage.html'">
+          <button
+            type="button"
+            class="pre-button"
+            onclick="location.href='../monWebToonPage.html'"
+          >
             <i class="bi bi-arrow-left"></i>
           </button>
           <button type="button" class="share-button" onclick="shareButton()">
@@ -73,8 +77,20 @@
             </div>
             <!-- 첫편부터 보기, 이어보기 버튼 -->
             <div class="watch-button">
-              <button type="button" class="start-button" onclick="location.href='https://comic.naver.com/webtoon/detail?titleId=758037&no=1&weekday=mon'">첫편부터 보기</button>
-              <button type="button" class="continue-button" onclick="reloadButton()">이어보기</button>
+              <button
+                type="button"
+                class="start-button"
+                onclick="location.href='https://comic.naver.com/webtoon/detail?titleId=758037&no=1&weekday=mon'"
+              >
+                첫편부터 보기
+              </button>
+              <button
+                type="button"
+                class="continue-button"
+                onclick="reloadButton()"
+              >
+                이어보기
+              </button>
             </div>
           </div>
         </div>
@@ -101,7 +117,7 @@
             <!-- 웹툰 리스트 배열 유동적으로 변경 필요 -->
             <ul class="wetoon-list">
               <!-- 참교육 30화 -->
-             <li class="webtoon">
+              <li class="webtoon">
                 <a
                   href="https://comic.naver.com/webtoon/detail?titleId=758037&no=30&weekday=mon"
                 >
@@ -405,6 +421,7 @@
         </div>
       </main>
     </div>
+    <div></div>
     <script src="../../../JS/월요웹툰/서브월요웹툰공통JS.js"></script>
   </body>
 </html>
