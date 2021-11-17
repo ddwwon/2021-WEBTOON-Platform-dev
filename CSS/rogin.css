@@ -96,9 +96,7 @@ header{
   float: right;
   cursor: pointer;
 }
-.closeside:hover{
-  color: var(--DarkBlue);
-}
+
 /* 사이드 바 여는 아이콘 */
 .moreInfo{
   position: relative;
@@ -124,10 +122,10 @@ header{
   top: 0;
   left: 0;
   cursor: pointer;
-  filter: contrast(190%);;
+  filter: contrast(170%);;
 }
 .profile-image:hover{
-  filter: contrast(170%);;
+  filter: contrast(190%);;
 }
 
 
