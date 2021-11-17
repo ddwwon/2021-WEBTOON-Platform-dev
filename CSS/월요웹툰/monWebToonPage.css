@@ -202,7 +202,7 @@ nav {
 
 /* 요일,신작,완결별 버튼 꾸미기 */
 nav button {
-  font-size: 2vh;
+  font-size: 2.1vh;
   border: 3px solid #94b0da;
   background-color: #94b0da;
   color: white;
@@ -261,7 +261,7 @@ nav button:hover {
   top: 50%;
   left: 50%;
   display: none;
-  font-size: 1.2vh;
+  font-size: 1.3vh;
   transform: translate(-50%, -50%);
 }
 

@@ -4,31 +4,32 @@
   src: url("../../../Fonts/S-Core_Dream_OTF/SCDream3.otf");
 }
 
-/* 모든 폰트를 웹폰트를 사용하고, 아래여백을 0.3rem을 주어 가독성에 좋도록 함 */
+/* 모든 폰트를 웹폰트를 사용함 */
 * {
   font-family: SCDream3;
-  margin-bottom: 0.3rem;
 }
-
-/* 전체적으로 중앙정렬 하게끔보이도록 수정 */
+/* 바디의 여백 없애기 */
 body {
   margin: 0;
-  padding-right: 20%;
-  padding-left: 20%;
-  border: 1.5rem solid #454ade;
-  /* 테두리가 꽉차게 보이도록 최소 높이를 100vh로 변경 */
   min-height: 100vh; 
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  min-height: 100vh;
+  border-top: 1rem solid #454ade;
+  border-bottom: 1rem solid #454ade;
 }
 
 /* 랜덤웹툰추천 타이틀부분을 꾸미는 요소 작성 */
 .randomWebTitle {
-  font-size: 4vw;
-  padding: 2vh;
-  margin-bottom: 5vh;
+  font-size: 3vw;
+  padding: 1vh;
+  margin-bottom: 3vh;
   color: white;
   background-color: #94b0da;
   text-align: center;
-  border: 3px solid #94b0da;
   border-radius: 20px;
 }
 
@@ -41,7 +42,8 @@ body {
 #randomBox {
   height: 100%;
   width: 100%;
-  max-width: 40vw;
+  max-width: 20vw;
+  /* max-height: 40vh; */
 }
 
 /* 랜덤박스설명문 중앙정렬 및 꾸미기 */
@@ -73,7 +75,8 @@ body {
   padding: 2vh;
   width: 25vw;
   font-size: 2vw;
-  margin-top: 5vh;
+  margin-top: 1vh;
+  margin-bottom: 5vh;
 }
 
 /* 두 박스가 클릭시 효과 */
