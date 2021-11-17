@@ -96,12 +96,16 @@ header{
   float: right;
   cursor: pointer;
 }
+.closeside:hover{
+  color: var(--DarkBlue);
+}
 /* 사이드 바 여는 아이콘 */
 .moreInfo{
   position: relative;
   cursor: pointer;
   top: 0.3rem;
 }
+
 
 /* 프로필 */
 .profile-image {
@@ -119,7 +123,11 @@ header{
   margin: 10% 20%;
   top: 0;
   left: 0;
-  
+  cursor: pointer;
+  filter: contrast(190%);;
+}
+.profile-image:hover{
+  filter: contrast(170%);;
 }
 
 
@@ -132,7 +140,12 @@ header{
   /* 부모요소크기만큼 가로값을 받고 그 중간에 닉네임지정 */
   width: 100%;
   text-align: center;
+  cursor: pointer;
 }
+.userName:hover{
+  color: var(--DarkBlue);
+}
+
 
 /* 사이드바의 리스트들 절대적요소 삭제, 패딩 왼쪽값 0으로 조정, 폰트사이즈 vw로 변경  */
 .sideBar-lists {
@@ -144,6 +157,7 @@ header{
 /* 마진요소 5%로 변경 */
 .sideBarComponent {
   padding: 5% 0;
+  cursor: pointer;
 }
 
 /* 사이드바요소의 첫번째 요소인 검색부분 마진탑을 20%로 변경 */
