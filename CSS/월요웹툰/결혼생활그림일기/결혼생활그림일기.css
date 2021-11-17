@@ -8,6 +8,7 @@
   --thick-gray: #b0b0b0;
 }
 /* 웹폰트사용 */
+
 @font-face {
   font-family: SCDream3;
   src: url("../Fonts/S-Core_Dream_OTF/SCDream3.otf");
