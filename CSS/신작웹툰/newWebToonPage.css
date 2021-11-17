@@ -18,9 +18,8 @@
   margin-bottom: 0.3rem;
 }
 
-/* 사이드바 색상을 지정해둔 색으로 변경 */
+/* 사이드바 */
 header {
-  background-color: #94b0da;
   position: relative;
 }
 
@@ -128,65 +127,17 @@ header {
   text-align: center;
 }
 
-#webToonAd {
-  /* 중앙정렬 시작 */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* 중앙정렬 끝 */
-  width: 100%;
-  height: 40vh;
-  border-radius: 10px;
+/*웹툰 광고 부분*/
+/*슬라이드 이미지 비율 고정. 디스플레이 세로 크기의 25%, 가로 크기의 100%*/
+.height {
+  object-fit: cover;
+  height: 22vh;
+  width: 100vh;
 }
-
-/* 메인웹툰광고클릭부분 꾸미기 */
-.circle button {
-  border-radius: 50%;
+/*사이드바 버튼이 웹툰 광고 위에 겹치도록*/
+.moreInfo {
   position: absolute;
-  padding: 0.3rem;
-  border: none;
-  background-color: white;
-  width: 1.5vw;
-  height: 1.5vh;
-}
-
-/* 버튼에 마우스가 올라가 있을시 검정색으로 변경 */
-.circle button:hover {
-  background-color: black;
-}
-
-/* 버튼요소위치조정 */
-.btn1 {
-  top: 95%;
-  right: 65%;
-}
-.btn2 {
-  top: 95%;
-  right: 60%;
-}
-.btn3 {
-  top: 95%;
-  right: 55%;
-}
-.btn4 {
-  top: 95%;
-  right: 50%;
-}
-.btn5 {
-  top: 95%;
-  right: 45%;
-}
-.btn6 {
-  top: 95%;
-  right: 40%;
-}
-.btn7 {
-  top: 95%;
-  right: 35%;
-}
-.btn8 {
-  top: 95%;
-  right: 30%;
+  z-index: 2;
 }
 
 /* 웹툰들의 썸네일 크기 조정 */
