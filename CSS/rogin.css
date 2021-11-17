@@ -56,7 +56,7 @@ header{
 }
 
 .closeside{
-  margin-left: 10rem;
+  float: right;
   cursor: pointer;
 }
 .moreInfo{
