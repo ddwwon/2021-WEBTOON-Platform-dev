@@ -171,20 +171,8 @@ header{
   display: block;
   text-align: center;
 }
-/* 상단바 끝*/
-
-
-
-
-
-
-
-
-
-
-
-/* 로그인 시작 */
 /* 햄버거 아이콘 */
+
 .bi{
   padding: 1rem;
 }
@@ -202,6 +190,19 @@ hr.line{
   border-top: 1.4px solid #bbb;
   border-bottom: 0px;
 }
+/* 상단바 끝*/
+
+
+
+
+
+
+
+
+
+
+
+/* 로그인 시작 */
 /* 로그인 요소들의 공통된 위치 */
 main{
   position: static;

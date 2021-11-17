@@ -1,6 +1,8 @@
 const sideBarbtn = document.querySelector(".sideBar");
 const section = document.querySelector(".moreInfo-icon");
 const label = document.querySelector(".moreInfo");
+const btn = document.querySelector(".btn");
+const thumbNail = document.querySelector(".thumbNail");
 
 // 클릭 시 사이드 메뉴 생성, 사이드버튼 사라짐
 sideBarbtn.addEventListener("click", function () {
@@ -12,4 +14,19 @@ sideBarbtn.addEventListener("click", function () {
 sideBarbtn.addEventListener("blur", function () {
   section.style.left = "-100%";
   label.style.opacity = 1;
+});
+
+const btn_click = () => {
+  btn.style.backgroundColor = "#454ade";
+  btn.style.color = "white";
+};
+
+thumbNail.addEventListener("mouseover", (event) => {
+  console.log("over");
+  thumbNail.style.opacity = 0.3;
+});
+
+thumbNail.addEventListener("mouseout", (event) => {
+  console.log("out");
+  thumbNail.style.opacity = 1;
 });
