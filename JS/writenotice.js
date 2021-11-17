@@ -9,6 +9,6 @@ function Write(){
         alert("내용을 작성해주세요.")
     }
     else{
-        location.href ='/html/notice.html'
+        location.href ='../Components/notice.html'
     }
 }
