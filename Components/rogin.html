@@ -21,7 +21,7 @@ integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+
 </head>
 
 <body>
-
+    <!-- <header> = 상단바-->
     <header>
         <div class="layoutContainer">
             
@@ -39,7 +39,6 @@ integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+
                 <ul class="sideBar-lists">
                     <li class="sideBarComponent" onclick="location.href='./search.html'"><a>검색</a></li>
                     <li class="sideBarComponent" onclick="location.href='./notice.html'"><a>게시판</a></li>
-                    <li class="sideBarComponent"><a href="#">웹툰</a></li>
                     <li class="sideBarComponent" onclick="location.href='./SaveBox.html'"><a>보관함</a></li>
                     <li class="sideBarComponent" onclick="location.href='./랜덤웹툰페이지/랜덤웹툰페이지.html'"><a>랜덤웹툰추천</a></li>
                     <li class="sideBarComponent" onclick="location.href='./Setting.html'"><a>설정</a></li>
@@ -50,10 +49,19 @@ integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+
             <i class="bi bi-list fs-1"></i><input type="button"class="sideBar"></i> 
         </label>
         
-        <h2 class ="name">개척웹툰</h2>
+        <h2 class ="name" onclick="setMainforweekDay();">개척웹툰</h2>
+        <div class = "collection">
+            <i class="bi bi-collection fs-2" onclick="location.href='./SaveBox.html'"></i>    
+        </div>
+        <div class ="search">
+            <i class="bi bi-search fs-2" onclick="location.href='./search.html'"></i>   
+        </div>
+
         <hr class = "line">
     </header>
+    <!--상단바 끝-->
 
+    <!-- <main> = 로그인-->
     <main>
         <div class = "LogIn">
             <input type="text" placeholder="아이디" id="roginIdInput">
@@ -78,7 +86,7 @@ integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+
             <br><button class = "Google">구글 아이디로 로그인</button></br>
         </div>
     </main>
+    <!-- 로그인 끝-->
     <script src = "../JS/rogin.js"></script>
 </body>
-
 </html>
