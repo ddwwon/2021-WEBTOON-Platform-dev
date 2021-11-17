@@ -4,36 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+    <!-- bootstrap -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- bootstrap-icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+        
+
     <link rel="stylesheet" href="../CSS/SaveBox.css">
     <title>Saving Box</title>
 </head>
 <body>
+    <!-- <header> = 상단바-->
+      <header>
+        <div class="layoutContainer">
+            
+            <section class="moreInfo-icon">
+
+                <label class="closeside">
+                <i class="bi bi-arrow-left fs-1"></i><input type="button" class="closesideBar"></i> 
+                </label>
+
+                <div class="profile-image">
+                    <a onclick="location.href='./profile.html'"><img src="./../Background/window.jpeg" alt="window" /></a>
+                </div>
+                
+                <div class="userName" onclick="location.href='../rogin.html'"><u>웹프실습3팀</u></div>
+                <ul class="sideBar-lists">
+                    <li class="sideBarComponent" onclick="location.href='./search.html'"><a>검색</a></li>
+                    <li class="sideBarComponent" onclick="location.href='./notice.html'"><a>게시판</a></li>
+                    <li class="sideBarComponent" onclick="location.href='./SaveBox.html'"><a>보관함</a></li>
+                    <li class="sideBarComponent" onclick="location.href='./랜덤웹툰페이지/랜덤웹툰페이지.html'"><a>랜덤웹툰추천</a></li>
+                    <li class="sideBarComponent" onclick="location.href='./Setting.html'"><a>설정</a></li>
+                </ul>
+            </section>
+        </div>
+        <label class="moreInfo">
+            <i class="bi bi-list fs-1"></i><input type="button"class="sideBar"></i> 
+        </label>
+        
+        <h2 class ="name" onclick="setMainforweekDay();">개척웹툰</h2>
+        <div class = "collection">
+            <i class="bi bi-collection fs-2" onclick="location.href='./SaveBox.html'"></i>    
+        </div>
+        <div class ="search">
+            <i class="bi bi-search fs-2" onclick="location.href='./search.html'"></i>   
+        </div>
+
+        <hr class = "line">
+      </header>
+    <!--상단바 끝-->
     <div class = "Side_margin">
         <div></div>
         <div class = "SaveBox_Layout">
-            <!-- 사이드바 클릭시 나오는 부분 구현-->
-            <section class = "moreInfo-icon">
-              <!-- 프로필 이미지 -->
-              <div class = "profile-image">
-                <img src="../프로필이미지/물결.jpeg" alt="물결">
-              </div>
-              <div class = "userName"><U>Username</U></div>
-
-              <ul class = "sideBar-lists">
-                <li class = "sideBarComponent"><a href="#">공지 사항</a></li>
-                <li class = "sideBarComponent"><a href="#"></a>게시판</li>
-                <li class = "sideBarComponent"><a href="#"></a>웹툰</li>
-              </ul>
-            </section>
-            <!--  -->
-            <header> 
-              <!-- 사이드바 버튼 -->
-              <label class = "moreInfo">
-                <input type = "button" value=">" class = "sideBar">
-              </label>
-              <!--     -->
-              <div class = SavaBox_title>보관함</div> 
-            </header>
             <nav class>
                 <button class = "Continue_webtoon">이어보기</button>
                 <button class = "Like_webtoon">❤</button>
@@ -42,73 +71,97 @@
                     <div class = "Webtoon_list">
                       <img class = "thumbNail" src="../웹툰대표이미지들/금요웹툰/세기말풋사과보습학원.jfif" alt="세기말풋사과보습학원"/>
                       <div class = "webToonInfo">
-                        <h2>세기말 풋사과 보습학원</h2>
-                        <h3>Author</h3>
-                        <h3>Content</h3>
-                        <h4>Rate</h4>
-                      </div>
+                        <div>세기말 풋사과 보습학원</div>
+                        <div>Author</div>
+                        <div>Content</div>
+                        <div>Rate</div>
+                        <button onclick = "btn_click()" type="button" class="btn btn-lg" data-bs-toggle="popover" title="Popover title" data-bs-content="알림설정이 완료되었습니다!?">
+                          알림 설정
+                        </button>
+                      </div>                      
                     </div>                       
                     <div class = "Webtoon_list">
                       <img class = "thumbNail" src="../웹툰대표이미지들/목요웹툰/오빠세끼.jfif" alt="오빠세끼"/>
                       <div class = "webToonInfo">
-                        <h2>오빠세끼</h2>
-                        <h3>Author</h3>
-                        <h3>Content</h3>
-                        <h4>Rate</h4>
+                        <div>오빠세끼</div>
+                        <div>Author</div>
+                        <div>Content</div>
+                        <div>Rate</div>
+                        <button onclick = "btn_click()" type="button" class="btn btn-lg" data-bs-toggle="popover" title="Popover title" data-bs-content="알림설정이 완료되었습니다!?">
+                          알림 설정
+                        </button>
                       </div> 
                     </div>
                     <div class = "Webtoon_list">
                       <img class = "thumbNail" src="../웹툰대표이미지들/수요웹툰/세상은돈과권력.jfif" alt ="세상은돈과권력"/>
                       <div class = "webToonInfo">
-                        <h2>세상은 돈과 권력</h2>
-                        <h3>Author</h3>
-                        <h3>Content</h3>
-                        <h4>Rate</h4>
+                        <div>세상은 돈과 권력</div>
+                        <div>Author</div>
+                        <div>Content</div>
+                        <div>Rate</div>
+                        <button onclick = "btn_click()" type="button" class="btn btn-lg" data-bs-toggle="popover" title="Popover title" data-bs-content="알림설정이 완료되었습니다!?">
+                          알림 설정
+                        </button>
                       </div> 
                     </div>
                     <div class = "Webtoon_list">
                       <img class = "thumbNail" src="../웹툰대표이미지들/신작웹툰/신군.jpg" alt="신군"/>
                       <div class = "webToonInfo">
-                        <h2>신군</h2>
-                        <h3>Author</h3>
-                        <h3>Content</h3>
-                        <h4>Rate</h4>
+                        <div>신군</div>
+                        <div>Author</div>
+                        <div>Content</div>
+                        <div>Rate</div>
+                        <button onclick = "btn_click()" type="button" class="btn btn-lg" data-bs-toggle="popover" title="Popover title" data-bs-content="알림설정이 완료되었습니다!?">
+                          알림 설정
+                        </button>
                       </div> 
                     </div>
                     <div class = "Webtoon_list">
                       <img class = "thumbNail" src="../웹툰대표이미지들/월요웹툰/소녀의세계.jpg" alt="소녀의세계"/>
                       <div class = "webToonInfo">
-                        <h2>소녀의 세계</h2>
-                        <h3>Author</h3>
-                        <h3>Content</h3>
-                        <h4>Rate</h4>
+                        <div>소녀의 세계</div>
+                        <div>Author</div>
+                        <div>Content</div>
+                        <div>Rate</div>
+                        <button onclick = "btn_click()" type="button" class="btn btn-lg" data-bs-toggle="popover" title="Popover title" data-bs-content="알림설정이 완료되었습니다!?">
+                          알림 설정
+                        </button>
                       </div> 
                     </div>
                     <div class = "Webtoon_list">
                       <img class = "thumbNail" src="../웹툰대표이미지들/일요웹툰/살아남은로맨스.jfif" alt="살아남은로맨스"/>
                       <div class = "webToonInfo">
-                        <h2>살아남은 로맨스</h2>
-                        <h3>Author</h3>
-                        <h3>Content</h3>
-                        <h4>Rate</h4>
+                        <div>살아남은 로맨스</div>
+                        <div>Author</div>
+                        <div>Content</div>
+                        <div>Rate</div>
+                        <button onclick = "btn_click()" type="button" class="btn btn-lg" data-bs-toggle="popover" title="Popover title" data-bs-content="알림설정이 완료되었습니다!?">
+                          알림 설정
+                        </button>
                       </div> 
                     </div>
                     <div class = "Webtoon_list">
                       <img class = "thumbNail" src="../웹툰대표이미지들/토요웹툰/반드시해피엔딩.jfif" alt="반드시해피엔딩"/>
                       <div class = "webToonInfo">
-                        <h2>반드시 해피엔딩</h2>
-                        <h3>Author</h3>
-                        <h3>Content</h3>
-                        <h4>Rate</h4>
+                        <div>반드시 해피엔딩</div>
+                        <div>Author</div>
+                        <div>Content</div>
+                        <div>Rate</div>
+                        <button onclick = "btn_click()" type="button" class="btn btn-lg" data-bs-toggle="popover" title="Popover title" data-bs-content="알림설정이 완료되었습니다!?">
+                          알림 설정
+                        </button>
                       </div> 
                     </div>
                     <div class = "Webtoon_list">
                       <img class = "thumbNail" src="../웹툰대표이미지들/화요웹툰/하루만네가되고싶어.jfif" alt="하루만네가되고싶어"/>
                       <div class = "webToonInfo">
-                        <h2>하루만 네가 되고싶어</h2>
-                        <h3>Author</h3>
-                        <h3>Content</h3>
-                        <h4>Rate</h4>
+                        <div>하루만 네가 되고싶어</div>
+                        <div>Author</div>
+                        <div>Content</div>
+                        <div>Rate</div>
+                        <button onclick = "btn_click()" type="button" class="btn btn-lg" data-bs-toggle="popover" title="Popover title" data-bs-content="알림설정이 완료되었습니다!?">
+                          알림 설정
+                        </button>
                       </div>  
                     </div>               
                 </main>
