@@ -4,6 +4,14 @@
   src: url("../../../Fonts/S-Core_Dream_OTF/SCDream3.otf");
 }
 
+/* 색상 */
+:root{
+  --SkyBlue1: #DCEDFF ;
+  --SkyBlue2 :#94b0da ;
+  --Blue: #454ade;
+  --DarkBlue: #1B1F3B;
+}
+
 /* 모든 폰트를 웹폰트를 사용함 */
 * {
   font-family: SCDream3;
@@ -14,79 +22,12 @@ body {
   min-height: 100vh; 
 }
 
-.container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  min-height: 100vh;
-}
-
-/* 랜덤웹툰추천 타이틀부분을 꾸미는 요소 작성 */
-.randomWebTitle {
-  font-size: 3vw;
-  padding: 1vh;
-  margin-bottom: 3vh;
-  color: white;
-  background-color: #94b0da;
-  text-align: center;
-  border-radius: 20px;
-}
-
-/* 랜덤박스이미지 중앙정렬 */
-.randomBoxDiv {
-  text-align: center;
-}
-
-/* 랜덤박스이미지 크기 조정 */
-#randomBox {
-  height: 100%;
-  width: 100%;
-  max-width: 20vw;
-  /* max-height: 40vh; */
-}
-
-/* 랜덤박스설명문 중앙정렬 및 꾸미기 */
-.randomBoxInfo {
-  text-align: center;
-  font-size: 3vw;
-}
-
-/* 웹툰의 간략정보를 표시하는  공간, 평소에는 안보이게 해두고, 웹툰이 표기될때 정보를 같이 표기 */
-.webtoonInfo {
-  text-align: center;
-  font-size: 2.5vw;
-  visibility: hidden;
-}
-
-/* 랜덤웹툰추천, 초기화면가기 버튼을 플렉스로 지정 */
-.boxSet {
-  display: flex;
-  justify-content: space-around;
-}
-
-/* 두 박스의 스타일 요소 변경 */
-#boxButton {
-  color: white;
-  background-color: #94b0da;
-  border: none;
-  border: 3px solid #94b0da;
-  border-radius: 20px;
-  padding: 2vh;
-  width: 25vw;
-  font-size: 2vw;
-  margin-top: 1vh;
-  margin-bottom: 5vh;
-}
-
-/* 두 박스가 클릭시 효과 */
-#boxButton:active {
-  background-color: #454ade;
-}
-
 /* 상단바 시작*/
 .topOfHeader {
   position: relative;
   margin-top: 1%;
   margin-left: 11%;
+  margin-right: 11%;
   background-color: white;
   color: var(--Blue);
 
@@ -259,3 +200,72 @@ hr.line{
   border-bottom: 0px;
 }
 /* 상단바 끝*/
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  min-height: 100vh;
+}
+
+/* 랜덤웹툰추천 타이틀부분을 꾸미는 요소 작성 */
+.randomWebTitle {
+  font-size: 3vw;
+  padding: 1vh;
+  margin-bottom: 3vh;
+  color: white;
+  background-color: #94b0da;
+  text-align: center;
+  border-radius: 20px;
+}
+
+/* 랜덤박스이미지 중앙정렬 */
+.randomBoxDiv {
+  text-align: center;
+}
+
+/* 랜덤박스이미지 크기 조정 */
+#randomBox {
+  height: 100%;
+  width: 100%;
+  max-width: 20vw;
+  /* max-height: 40vh; */
+}
+
+/* 랜덤박스설명문 중앙정렬 및 꾸미기 */
+.randomBoxInfo {
+  text-align: center;
+  font-size: 3vw;
+}
+
+/* 웹툰의 간략정보를 표시하는  공간, 평소에는 안보이게 해두고, 웹툰이 표기될때 정보를 같이 표기 */
+.webtoonInfo {
+  text-align: center;
+  font-size: 2.5vw;
+  visibility: hidden;
+}
+
+/* 랜덤웹툰추천, 초기화면가기 버튼을 플렉스로 지정 */
+.boxSet {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* 두 박스의 스타일 요소 변경 */
+#boxButton {
+  color: white;
+  background-color: #94b0da;
+  border: none;
+  border: 3px solid #94b0da;
+  border-radius: 20px;
+  padding: 2vh;
+  width: 25vw;
+  font-size: 2vw;
+  margin-top: 1vh;
+  margin-bottom: 5vh;
+}
+
+/* 두 박스가 클릭시 효과 */
+#boxButton:active {
+  background-color: #454ade;
+}
+

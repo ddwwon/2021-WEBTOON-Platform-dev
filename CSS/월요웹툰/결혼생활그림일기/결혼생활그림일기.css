@@ -27,9 +27,12 @@
 /*좌우 여백을 제외한 중심 페이지 부분*/
 .main-screen {
   display: grid;
+  flex-direction: column;
+  grid-template-rows: 0.1fr 0.1fr 0.1fr;
 }
 header {
   background-color: var(--main-blue);
+  height: 5.5vh;
 }
 /*헤더 버튼 테두리, 배경색 제거, 패딩*/
 .pre-button,

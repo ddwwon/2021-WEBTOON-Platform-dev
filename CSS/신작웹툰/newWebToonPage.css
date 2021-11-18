@@ -4,6 +4,14 @@
   src: url("../Fonts/S-Core_Dream_OTF/SCDream3.otf");
 }
 
+/* 색상 */
+:root{
+  --SkyBlue1: #DCEDFF ;
+  --SkyBlue2 :#94b0da ;
+  --Blue: #454ade;
+  --DarkBlue: #1B1F3B;
+}
+
 /* 전체적인 레이아웃을 그리드로 주고 최소 높이를 100vh, 최고 넓이를 100vw로 주고, 열기준 0.5:2:0.5 비율로 전체적인 틀을 완성 */
 .layoutContainer {
   min-height: 100vh;
@@ -23,6 +31,7 @@
   position: relative;
   margin-top: 1%;
   margin-left: 11%;
+  margin-right: 11%;
   background-color: white;
   color: var(--Blue);
 
@@ -175,7 +184,9 @@
 }
 /* 햄버거 아이콘 */
 
-.bi{
+.bi-list,
+.bi-collection,
+.bi-search {
   padding: 1rem;
 }
 
