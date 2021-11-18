@@ -14,29 +14,56 @@
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <!-- bootstrap-icon -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css"
+  />
   </head>
   <body>
+    <!-- <topOfTop> = 상단바-->
+      <div class="topOfTop">
+        <div>
+            <section class="moreInfo-icon">
+                <label class="closeside">
+                <i class="bi bi-arrow-left fs-1"></i><input type="button" class="closesideBar"></i> 
+                </label>
+  
+                <div class="profile-image">
+                    <a onclick="location.href='../profile.html'"><img src="../../Background/window.jpeg" alt="window" /></a>
+                </div>
+                
+                <div class="userName" onclick="location.href='../../Components/rogin.html'"><u>웹프실습3팀</u></div>
+                <ul class="sideBar-lists">
+                    <li class="sideBarComponent" onclick="location.href='../search.html'"><a>검색</a></li>
+                    <li class="sideBarComponent" onclick="location.href='../notice.html'"><a>게시판</a></li>
+                    <li class="sideBarComponent" onclick="location.href='../SaveBox.html'"><a>보관함</a></li>
+                    <li class="sideBarComponent" onclick="location.href='../랜덤웹툰페이지/랜덤웹툰페이지.html'"><a>랜덤웹툰추천</a></li>
+                    <li class="sideBarComponent" onclick="location.href='../Setting.html'"><a>설정</a></li>
+                </ul>
+            </section>
+        </div>
+        <label class="moreInfo">
+            <i class="bi bi-list fs-1"></i><input type="button"class="sideBar"></i> 
+        </label>
+        
+        <h2 class ="name" onclick="setMainforweekDay();">개척웹툰</h2>
+        <div class = "collection">
+            <i class="bi bi-collection fs-2" onclick="location.href='../SaveBox.html'"></i>    
+        </div>
+        <div class ="search">
+            <i class="bi bi-search fs-2" onclick="location.href='../search.html'"></i>   
+        </div>
+  
+        <hr class = "line">
+      </topOfTop>
+    <!--상단바 끝-->
     <div class="layoutContainer">
       <aside></aside>
-      <section class="moreInfo-icon">
-        <div class="profile-image">
-          <img src="../../Background/window.jpeg" alt="window" />
-        </div>
-        <div class="userName" onclick="location.href='../rogin.html'"><u>웹프실습3팀</u></div>
-        <ul class="sideBar-lists">
-          <li class="sideBarComponent"><a href="../search.html" target="_self">검색</a></li>
-          <li class="sideBarComponent"><a href="../notice.html" target="_self">게시판</a></li>
-          <li class="sideBarComponent"><a href="../SaveBox.html" target="_self">보관함</a></li>
-          <li class="sideBarComponent"><a href="../랜덤웹툰페이지/랜덤웹툰페이지.html" target="_self">랜덤웹툰추천</a></li>
-          <li class="sideBarComponent"><a href="../Setting.html" target="_self">설정</a></li>
-        </ul>
-      </section>
       <div class="centerContainer">
+        
         <header>
           <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-            <label class="moreInfo">
-              <input type="button" value=">" class="sideBar"/>
-            </label>
             <!-- 슬라이드 하단 버튼 -->
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -108,10 +135,10 @@
               alt="전지적 독자 시점"
             />
             <div class="webToonInfo">
-              <h1 class="webtoonInfoContent">전지적 독자 시점</h1>
-              <h3 class="webtoonInfoContent">싱숑,UMI / 슬리피-C</h3>
-              <h3 class="webtoonInfoContent">#스토리 #판타지</h3>
-              <h4 class="webtoonInfoContent">★ 9.96</h4>
+              <div>전지적 독자 시점</div>
+              <div>싱숑,UMI / 슬리피-C</div>
+              <div>#스토리 #판타지</div>
+              <div>★ 9.96</div>
             </div>
           </div>
           <!-- 화산귀환 -->
@@ -122,10 +149,10 @@
               alt="화산귀환"
             />
             <div class="webToonInfo">
-              <h1>화산귀환</h1>
-              <h2>비가 / LICO</h2>
-              <h3>#스토리 #시대극</h3>
-              <h4>★ 9.97</h4>
+              <div>화산귀환</div>
+              <div>비가 / LICO</div>
+              <div>#스토리 #시대극</div>
+              <div>★ 9.97</div>
             </div>
           </div>
           <!-- 캐슬 -->
@@ -136,10 +163,10 @@
               alt="캐슬"
             />
             <div class="webToonInfo">
-              <h1>캐슬</h1>
-              <h2>정연</h2>
-              <h3>#스토리 #드라마</h3>
-              <h4>★ 9.88</h4>
+              <div>캐슬</div>
+              <div>정연</div>
+              <div>#스토리 #드라마</div>
+              <div>★ 9.88</div>
             </div>
           </div>
           <!-- 튜토리얼 탑의 고인물 -->
@@ -150,10 +177,10 @@
               alt="튜토리얼 탑의 고인물"
             />
             <div class="webToonInfo">
-              <h1>튜토리얼 탑의 고인물</h1>
-              <h2>방구석김씨 / 루비</h2>
-              <h3>#스토리 #액션</h3>
-              <h4>★ 9.94</h4>
+              <div>튜토리얼 탑의 고인물</div>
+              <div>방구석김씨 / 루비</div>
+              <div>#스토리 #액션</div>
+              <div>★ 9.94</div>
             </div>
           </div>
           <!-- 일렉시드 -->
@@ -164,10 +191,10 @@
               alt="일렉시드"
             />
             <div class="webToonInfo">
-              <h1>일렉시드</h1>
-              <h2>손제호 / 제나</h2>
-              <h3>#스토리 #액션</h3>
-              <h4>★ 9.94</h4>
+              <div>일렉시드</div>
+              <div>손제호 / 제나</div>
+              <div>#스토리 #액션</div>
+              <div>★ 9.94</div>
             </div>
           </div>
           <!-- 변방의 외노자 -->
@@ -178,10 +205,10 @@
               alt="변방의 외노자"
             />
             <div class="webToonInfo">
-              <h1>변방의 외노자</h1>
-              <h2>후로스트, 턍 / 북국너구리</h2>
-              <h3>#스토리 #판타지</h3>
-              <h4>★ 9.82</h4>
+              <div>변방의 외노자</div>
+              <div>후로스트, 턍 / 북국너구리</div>
+              <div>#스토리 #판타지</div>
+              <div>★ 9.82</div>
             </div>
           </div>
           <!-- 여주실격! -->
@@ -192,10 +219,10 @@
               alt="여주실격!"
             />
             <div class="webToonInfo">
-              <h1>여주실격!</h1>
-              <h2>기맹기</h2>
-              <h3>#스토리 #드라마</h3>
-              <h4>★ 9.98</h4>
+              <div>여주실격!</div>
+              <div>기맹기</div>
+              <div>#스토리 #드라마</div>
+              <div>★ 9.98</div>
             </div>
           </div>
           <!-- 세상은 돈과 권력 -->
@@ -206,10 +233,10 @@
               alt="세상은 돈과 권력"
             />
             <div class="webToonInfo">
-              <h1>세상은 돈과 권력</h1>
-              <h2>한동우 / 이도희</h2>
-              <h3>#에피소드 #드라마</h3>
-              <h4>★ 9.94</h4>
+              <div>세상은 돈과 권력</div>
+              <div>한동우 / 이도희</div>
+              <div>#에피소드 #드라마</div>
+              <div>★ 9.94</div>
             </div>
           </div>
           <!-- 나쁜사람 -->
@@ -220,10 +247,10 @@
               alt="나쁜사람"
             />
             <div class="webToonInfo">
-              <h1>나쁜사람</h1>
-              <h2>둠스</h2>
-              <h3>#에피소드 #개그</h3>
-              <h4>★9.78</h4>
+              <div>나쁜사람</div>
+              <div>둠스</div>
+              <div>#에피소드 #개그</div>
+              <div>★9.78</div>
             </div>
           </div>
           <!-- 빌드업 -->
@@ -234,10 +261,10 @@
               alt="빌드업"
             />
             <div class="webToonInfo">
-              <h1>빌드업</h1>
-              <h2>911</h2>
-              <h3>#스토리 #스포츠</h3>
-              <h4>★ 9.96</h4>
+              <div>빌드업</div>
+              <div>911</div>
+              <div>#스토리 #스포츠</div>
+              <div>★ 9.96</div>
             </div>
           </div>
           <!-- 미래의 골동품 가게 -->
@@ -248,10 +275,10 @@
               alt="미래의 골동품가게"
             />
             <div class="webToonInfo">
-              <h1>미래의 골동품 가게</h1>
-              <h2>구아진</h2>
-              <h3>#스토리, #스릴러</h3>
-              <h4>★ 9.83</h4>
+              <div>미래의 골동품 가게</div>
+              <div>구아진</div>
+              <div>#스토리, #스릴러</div>
+              <div>★ 9.83</div>
             </div>
           </div>
           <!-- 내 남편과 결혼해줘 -->
@@ -262,10 +289,10 @@
               alt="내 남편과 결혼해줘"
             />
             <div class="webToonInfo">
-              <h1>내 남편과 결혼해줘</h1>
-              <h2>성소작 / LICO</h2>
-              <h3>#스토리 #로맨스</h3>
-              <h4>★ 9.93</h4>
+              <div>내 남편과 결혼해줘</div>
+              <div>성소작 / LICO</div>
+              <div>#스토리 #로맨스</div>
+              <div>★ 9.93</div>
             </div>
           </div>
         </section>

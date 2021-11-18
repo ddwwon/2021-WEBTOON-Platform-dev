@@ -9,81 +9,209 @@
 
     <!-- Bootstrap -->
     <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
     <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <!-- bootstrap-icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css"
+    />
   </head>
   <body>
+    <!-- <topOfTop> = 상단바-->
+      <div class="topOfTop">
+        <div>
+            <section class="moreInfo-icon">
+                <label class="closeside">
+                <i class="bi bi-arrow-left fs-1"></i><input type="button" class="closesideBar"></i> 
+                </label>
+  
+                <div class="profile-image">
+                    <a onclick="location.href='../profile.html'"><img src="../../Background/window.jpeg" alt="window" /></a>
+                </div>
+                
+                <div class="userName" onclick="location.href='../../Components/rogin.html'"><u>웹프실습3팀</u></div>
+                <ul class="sideBar-lists">
+                    <li class="sideBarComponent" onclick="location.href='../search.html'"><a>검색</a></li>
+                    <li class="sideBarComponent" onclick="location.href='../notice.html'"><a>게시판</a></li>
+                    <li class="sideBarComponent" onclick="location.href='../SaveBox.html'"><a>보관함</a></li>
+                    <li class="sideBarComponent" onclick="location.href='../랜덤웹툰페이지/랜덤웹툰페이지.html'"><a>랜덤웹툰추천</a></li>
+                    <li class="sideBarComponent" onclick="location.href='../Setting.html'"><a>설정</a></li>
+                </ul>
+            </section>
+        </div>
+        <label class="moreInfo">
+            <i class="bi bi-list fs-1"></i><input type="button"class="sideBar"></i> 
+        </label>
+        
+        <h2 class ="name" onclick="setMainforweekDay();">개척웹툰</h2>
+        <div class = "collection">
+            <i class="bi bi-collection fs-2" onclick="location.href='../SaveBox.html'"></i>    
+        </div>
+        <div class ="search">
+            <i class="bi bi-search fs-2" onclick="location.href='../search.html'"></i>   
+        </div>
+  
+        <hr class = "line">
+      </topOfTop>
+    <!--상단바 끝-->
     <div class="layoutContainer">
       <aside></aside>
-      <section class="moreInfo-icon">
-        <div class="profile-image">
-          <img src="../../Background/window.jpeg" alt="window" />
-        </div>
-        <div class="userName" onclick="location.href='../rogin.html'"><u>웹프실습3팀</u></div>
-        <ul class="sideBar-lists">
-          <li class="sideBarComponent"><a href="../search.html" target="_self">검색</a></li>
-          <li class="sideBarComponent"><a href="../notice.html" target="_self">게시판</a></li>
-          <li class="sideBarComponent"><a href="../SaveBox.html" target="_self">보관함</a></li>
-          <li class="sideBarComponent"><a href="../랜덤웹툰페이지/랜덤웹툰페이지.html" target="_self">랜덤웹툰추천</a></li>
-          <li class="sideBarComponent"><a href="../Setting.html" target="_self">설정</a></li>
-        </ul>
-      </section>
       <div class="centerContainer">
+        
         <header>
-          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-            <label class="moreInfo">
-              <input type="button" value=">" class="sideBar"/>
-            </label>
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
             <!-- 슬라이드 하단 버튼 -->
             <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="3"
+                aria-label="Slide 4"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="4"
+                aria-label="Slide 5"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="5"
+                aria-label="Slide 6"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="6"
+                aria-label="Slide 7"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="7"
+                aria-label="Slide 8"
+              ></button>
             </div>
             <!-- 슬라이드 이미지 -->
             <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="../../CSS/webtoonAd/용사가돌아왔다.jpg" class="d-block w-100 height" alt="광고1">
-                </div>
-                <div class="carousel-item">
-                    <img src="../../CSS/webtoonAd/하루만네가되고싶어.jpg" class="d-block w-100 height" alt="광고2">
-                </div>
-                <div class="carousel-item">
-                    <img src="../../CSS/webtoonAd/한림체육관.jpg" class="d-block w-100 height" alt="광고3">
-                </div>
-                <div class="carousel-item">
-                  <img src="../../CSS/webtoonAd/1을줄게.jpg" class="d-block w-100 height" alt="광고3">
-                </div>
-                <div class="carousel-item">
-                  <img src="../../CSS/webtoonAd/2021최애캐 안녕, 잘 지내니.jpg" class="d-block w-100 height" alt="광고3">
-                </div>
-                <div class="carousel-item">
-                  <img src="../../CSS/webtoonAd/사신소년.jpg" class="d-block w-100 height" alt="광고3">
-                </div>
-                <div class="carousel-item">
-                  <img src="../../CSS/webtoonAd/여신강림.jpg" class="d-block w-100 height" alt="광고3">
-                </div>
-                <div class="carousel-item">
-                  <img src="../../CSS/webtoonAd/엽총소년.jpg" class="d-block w-100 height" alt="광고3">
-                </div>
+              <div class="carousel-item active">
+                <img
+                  src="../../CSS/webtoonAd/용사가돌아왔다.jpg"
+                  class="d-block w-100 height"
+                  alt="광고1"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../../CSS/webtoonAd/하루만네가되고싶어.jpg"
+                  class="d-block w-100 height"
+                  alt="광고2"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../../CSS/webtoonAd/한림체육관.jpg"
+                  class="d-block w-100 height"
+                  alt="광고3"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../../CSS/webtoonAd/1을줄게.jpg"
+                  class="d-block w-100 height"
+                  alt="광고3"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../../CSS/webtoonAd/2021최애캐 안녕, 잘 지내니.jpg"
+                  class="d-block w-100 height"
+                  alt="광고3"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../../CSS/webtoonAd/사신소년.jpg"
+                  class="d-block w-100 height"
+                  alt="광고3"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../../CSS/webtoonAd/여신강림.jpg"
+                  class="d-block w-100 height"
+                  alt="광고3"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../../CSS/webtoonAd/엽총소년.jpg"
+                  class="d-block w-100 height"
+                  alt="광고3"
+                />
+              </div>
             </div>
             <!-- 슬라이드 좌측 버튼-->
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
             </button>
             <!-- 슬라이드 우측 버튼 -->
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
             </button>
           </div>
         </header>
@@ -101,171 +229,207 @@
         </nav>
         <section class="webToonList-grid">
           <!-- 더 복서 -->
-          <div class="webToonList" onclick="location.href='../목요웹툰/더복서/더복서.html'">
+          <div
+            class="webToonList"
+            onclick="location.href='../목요웹툰/더복서/더복서.html'"
+          >
             <img
               class="thumbNail"
               src="../../CSS/목요웹툰/mainWebtoonImages/더복서.jfif"
               alt="더 복서"
             />
             <div class="webToonInfo">
-              <h1 class="webtoonInfoContent">더 복서</h1>
-              <h3 class="webtoonInfoContent">정지훈</h3>
-              <h3 class="webtoonInfoContent">#스토리 #액션</h3>
-              <h4 class="webtoonInfoContent">★ 9.88</h4>
+              <div>더 복서</div>
+              <div>정지훈</div>
+              <div>#스토리 #액션</div>
+              <div>★ 9.88</div>
             </div>
           </div>
           <!-- 나노마신 -->
-          <div class="webToonList" onclick="location.href='../목요웹툰/나노마신/나노마신.html'">
+          <div
+            class="webToonList"
+            onclick="location.href='../목요웹툰/나노마신/나노마신.html'"
+          >
             <img
               class="thumbNail"
               src="../../CSS/목요웹툰/mainWebtoonImages/나노마신.jfif"
               alt="나노마신"
             />
             <div class="webToonInfo">
-              <h1>나노마신</h1>
-              <h2>한중월야,현절무 / 금강불괴</h2>
-              <h3>#스토리 #판타지</h3>
-              <h4>★ 9.94</h4>
+              <div>나노마신</div>
+              <div>한중월야,현절무 / 금강불괴</div>
+              <div>#스토리 #판타지</div>
+              <div>★ 9.94</div>
             </div>
           </div>
           <!-- 이두나! -->
-          <div class="webToonList" onclick="location.href='../목요웹툰/이두나!/이두나!.html'">
+          <div
+            class="webToonList"
+            onclick="location.href='../목요웹툰/이두나!/이두나!.html'"
+          >
             <img
               class="thumbNail"
               src="../../CSS/목요웹툰/mainWebtoonImages/이두나!.jfif"
               alt="이두나!"
             />
             <div class="webToonInfo">
-              <h1>이두나!</h1>
-              <h2>민송아</h2>
-              <h3>#스토리 #로맨스</h3>
-              <h4>★ 9.85</h4>
+              <div>이두나!</div>
+              <div>민송아</div>
+              <div>#스토리 #로맨스</div>
+              <div>★ 9.85</div>
             </div>
           </div>
           <!-- 나 혼자 네크로멘서 -->
-          <div class="webToonList" onclick="location.href='../목요웹툰/나혼자네크로맨서/나혼자네크로맨서.html'">
+          <div
+            class="webToonList"
+            onclick="location.href='../목요웹툰/나혼자네크로맨서/나혼자네크로맨서.html'"
+          >
             <img
               class="thumbNail"
               src="../../CSS/목요웹툰/mainWebtoonImages/나혼자네크로맨서.jfif"
               alt="나 혼자 네크로맨서"
             />
             <div class="webToonInfo">
-              <h1>나 혼자 네크로멘서</h1>
-              <h2>지점장, 김경열 / 김동준</h2>
-              <h3>#스토리 #판타지</h3>
-              <h4>★ 9.92</h4>
+              <div>나 혼자 네크로멘서</div>
+              <div>지점장, 김경열 / 김동준</div>
+              <div>#스토리 #판타지</div>
+              <div>★ 9.92</div>
             </div>
           </div>
           <!-- 묵시의 인플루언서 -->
-          <div class="webToonList" onclick="location.href='../목요웹툰/묵시의인플루언서/묵시의인플루언서.html'">
+          <div
+            class="webToonList"
+            onclick="location.href='../목요웹툰/묵시의인플루언서/묵시의인플루언서.html'"
+          >
             <img
               class="thumbNail"
               src="../../CSS/목요웹툰/mainWebtoonImages/묵시의인플루언서.jfif"
               alt="묵시의 인플루언서"
             />
             <div class="webToonInfo">
-              <h1>묵시의 인플루언서</h1>
-              <h2>조석</h2>
-              <h3>#스토리 #스릴러</h3>
-              <h4>★ 9.87</h4>
+              <div>묵시의 인플루언서</div>
+              <div>조석</div>
+              <div>#스토리 #스릴러</div>
+              <div>★ 9.87</div>
             </div>
           </div>
           <!-- 정글쥬스 -->
-          <div class="webToonList" onclick="location.href='../목요웹툰/정글쥬스/정글쥬스.html'">
+          <div
+            class="webToonList"
+            onclick="location.href='../목요웹툰/정글쥬스/정글쥬스.html'"
+          >
             <img
               class="thumbNail"
               src="../../CSS/목요웹툰/mainWebtoonImages/정글쥬스.jfif"
               alt="정글쥬스"
             />
             <div class="webToonInfo">
-              <h1>정글쥬스</h1>
-              <h2>형은 / 쥬더</h2>
-              <h3>#스토리 #액션</h3>
-              <h4>★ 9.96</h4>
+              <div>정글쥬스</div>
+              <div>형은 / 쥬더</div>
+              <div>#스토리 #액션</div>
+              <div>★ 9.96</div>
             </div>
           </div>
           <!-- 노답소녀 -->
-          <div class="webToonList" onclick="location.href='../목요웹툰/노답소녀/노답소녀.html'">
+          <div
+            class="webToonList"
+            onclick="location.href='../목요웹툰/노답소녀/노답소녀.html'"
+          >
             <img
               class="thumbNail"
               src="../../CSS/목요웹툰/mainWebtoonImages/노답소녀.jfif"
               alt="노답소녀"
             />
             <div class="webToonInfo">
-              <h1>노답소녀</h1>
-              <h2>석우</h2>
-              <h3>#스토리 #로맨스</h3>
-              <h4>★ 9.89</h4>
+              <div>노답소녀</div>
+              <div>석우</div>
+              <div>#스토리 #로맨스</div>
+              <div>★ 9.89</div>
             </div>
           </div>
           <!-- 포식동물 -->
-          <div class="webToonList" onclick="location.href='../목요웹툰/포식동물/포식동물.html'">
+          <div
+            class="webToonList"
+            onclick="location.href='../목요웹툰/포식동물/포식동물.html'"
+          >
             <img
               class="thumbNail"
               src="../../CSS/목요웹툰/mainWebtoonImages/포식동물.jfif"
               alt="포식동물"
             />
             <div class="webToonInfo">
-              <h1>포식동물</h1>
-              <h2>신희빈 / 치훈</h2>
-              <h3>#스토리 #스릴러</h3>
-              <h4>★ 9.91</h4>
+              <div>포식동물</div>
+              <div>신희빈 / 치훈</div>
+              <div>#스토리 #스릴러</div>
+              <div>★ 9.91</div>
             </div>
           </div>
           <!-- 무사만리행 -->
-          <div class="webToonList" onclick="location.href='../목요웹툰/무사만리행/무사만리행.html'">
+          <div
+            class="webToonList"
+            onclick="location.href='../목요웹툰/무사만리행/무사만리행.html'"
+          >
             <img
               class="thumbNail"
               src="../../CSS/목요웹툰/mainWebtoonImages/무사만리행.jfif"
               alt="무사만리행"
             />
             <div class="webToonInfo">
-              <h1>무사만리행</h1>
-              <h2>운 / 배민기</h2>
-              <h3>#스토리 #액션</h3>
-              <h4>★9.96</h4>
+              <div>무사만리행</div>
+              <div>운 / 배민기</div>
+              <div>#스토리 #액션</div>
+              <div>★9.96</div>
             </div>
           </div>
           <!-- 오빠세끼 -->
-          <div class="webToonList" onclick="location.href='../목요웹툰/오빠세끼/오빠세끼.html'">
+          <div
+            class="webToonList"
+            onclick="location.href='../목요웹툰/오빠세끼/오빠세끼.html'"
+          >
             <img
               class="thumbNail"
               src="../../CSS/목요웹툰/mainWebtoonImages/오빠세끼.jfif"
               alt="오빠세끼"
             />
             <div class="webToonInfo">
-              <h1>오빠세끼</h1>
-              <h2>올리브유</h2>
-              <h3>#에피소드 #일상</h3>
-              <h4>★ 9.92</h4>
+              <div>오빠세끼</div>
+              <div>올리브유</div>
+              <div>#에피소드 #일상</div>
+              <div>★ 9.92</div>
             </div>
           </div>
           <!-- 던전 씹어먹는 아티팩트 -->
-          <div class="webToonList" onclick="location.href='../목요웹툰/던전씹어먹는아티팩트/던전씹어먹는아티팩트.html'">
+          <div
+            class="webToonList"
+            onclick="location.href='../목요웹툰/던전씹어먹는아티팩트/던전씹어먹는아티팩트.html'"
+          >
             <img
               class="thumbNail"
               src="../../CSS/목요웹툰/mainWebtoonImages/던전씹어먹는아티팩트.jfif"
               alt="던전 씹어먹는 아티팩트"
             />
             <div class="webToonInfo">
-              <h1>던전 씹어먹는 아티팩트</h1>
-              <h2>제로워터, 엄키 / 엄키</h2>
-              <h3>#스토리 #판타지</h3>
-              <h4>★ 9.95</h4>
+              <div>던전 씹어먹는 아티팩트</div>
+              <div>제로워터, 엄키 / 엄키</div>
+              <div>#스토리 #판타지</div>
+              <div>★ 9.95</div>
             </div>
           </div>
           <!-- 별을 삼킨 너에게 -->
-          <div class="webToonList" onclick="location.href='../목요웹툰/별을삼킨너에게/별을삼킨너에게.html'">
+          <div
+            class="webToonList"
+            onclick="location.href='../목요웹툰/별을삼킨너에게/별을삼킨너에게.html'"
+          >
             <img
               class="thumbNail"
               src="../../CSS/목요웹툰/mainWebtoonImages/별을삼킨너에게.jfif"
               alt="별을 삼킨 너에게"
             />
             <div class="webToonInfo">
-              <h1>별을 삼킨 너에게</h1>
-              <h2>ARI</h2>
-              <h3>#스토리 #로맨스</h3>
-              <h4>★ 9.96</h4>
+              <div>별을 삼킨 너에게</div>
+              <div>ARI</div>
+              <div>#스토리 #로맨스</div>
+              <div>★ 9.96</div>
             </div>
           </div>
         </section>

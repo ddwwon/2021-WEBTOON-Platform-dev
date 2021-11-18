@@ -37,7 +37,6 @@ function setMainforweekDay(){
     {location.href = "../Components/금요웹툰/friWebToonPage.html"}
     else if( getWeekDayToday() == 'Sat' )
     {location.href = "../Components/토요웹툰/saturWebToonPage.html"}
-
 }
   
 // 로그인
