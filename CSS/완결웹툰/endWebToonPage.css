@@ -18,9 +18,30 @@
   margin-bottom: 0.3rem;
 }
 
-/* 사이드바 */
-header {
+/* 상단바 시작*/
+.topOfTop{
   position: relative;
+  margin-top: 1%;
+  margin-left: 11%;
+  background-color: white;
+  color: var(--Blue);
+
+  padding: 0.1%;
+  min-width: 500px;
+  
+}
+/* 보관함 */
+.collection{
+  float: right;
+  margin-top: 1%;
+  cursor: pointer;
+}
+/* 검색 */
+.search{
+  float: right;
+  margin-right: 2%;
+  margin-top: 1%;
+  cursor: pointer;
 }
 
 /* 사이드바 클릭버튼을 꾸미는 스타일 지정  */
@@ -37,7 +58,17 @@ header {
   left: -1%;
   width: 6%;
 }
+.closeside input {
+  /* 포지션 절대적요소로 변경 */
+  position: absolute; 
+  /* 부모요소 배경색상을 물려받음 */
+  background-color: transparent;
+  /* 보더 삭제 */
+  border: none;
+  left: 10rem;
+}
 
+/* 전체적인 레이아웃을 그리드로 주고 최소 높이를 100vh, 최고 넓이를 100vw로 주고, 열기준 0.5:2:0.5 비율로 전체적인 틀을 완성 */
 /* 메뉴바의 가로폭을 vw로 변경, 패딩탑과 레프트 삭제 */
 .moreInfo-icon {
   /* z인덱스값을 주어 모든요소보다 먼저 보이도록 조정 */
@@ -50,7 +81,7 @@ header {
   position: fixed;
   background-color: #94b0da;
   color: #fff;
-  width: 20vw;
+  width: 25vw;
   height: 100%;
   top: 0;
   left: -50%;
@@ -58,7 +89,21 @@ header {
   transition: 1s ease;
 }
 
+/* 사이드 바 닫는 아이콘 */
+.closeside{
+  float: right;
+  cursor: pointer;
+}
 
+/* 사이드 바 여는 아이콘 */
+.moreInfo{
+  position: relative;
+  cursor: pointer;
+  top: 0.3rem;
+}
+
+
+/* 프로필 */
 .profile-image {
   /* 평소에는 이미지 모습을 숨김 */
   overflow: hidden;
@@ -68,22 +113,19 @@ header {
   align-items: center;
   /* 가로축 중간 */
   justify-content: center;
-  height: 0.01%;
+  height: 0.5%;
   border-radius: 50%;
-  padding: 30%;
+  padding: 25%;
   margin: 10% 20%;
   top: 0;
   left: 0;
-  /* 부모요소에 상대적인 포지션을 주기 */
-  position: relative;
-  /* border: 1px solid black; */
+  cursor: pointer;
+  filter: contrast(170%);;
+}
+.profile-image:hover{
+  filter: contrast(190%);;
 }
 
-/* 자식요소에 절대적인 포지션을 주고, height 100%지정시 꽉찬화면으로 보일수 있도록함 */
-.profile-image img {
-  height: 100%;
-  position: absolute;
-}
 
 /* 메뉴바 닉네임사이즈 vw로 변경, top left 요소 삭제 */
 .userName {
@@ -94,7 +136,12 @@ header {
   /* 부모요소크기만큼 가로값을 받고 그 중간에 닉네임지정 */
   width: 100%;
   text-align: center;
+  cursor: pointer;
 }
+.userName:hover{
+  color: var(--DarkBlue);
+}
+
 
 /* 사이드바의 리스트들 절대적요소 삭제, 패딩 왼쪽값 0으로 조정, 폰트사이즈 vw로 변경  */
 .sideBar-lists {
@@ -103,14 +150,10 @@ header {
   font-size: 2.5vh;
 } 
 
-/* 마진요소 10%로 변경 */
+/* 마진요소 5%로 변경 */
 .sideBarComponent {
   padding: 5% 0;
-}
-
-/* 사이드바 호버시 색상변경 */
-.sideBarComponent:hover {
-  background-color: #454ade;
+  cursor: pointer;
 }
 
 /* 사이드바요소의 첫번째 요소인 검색부분 마진탑을 20%로 변경 */
@@ -118,7 +161,11 @@ header {
   margin-top: 10%;
 }
 
-/* 사이드바의 요소들을 중앙정렬함 */
+/* 사이드바 호버시 색상변경 */
+.sideBarComponent:hover {
+  background-color: #454ade;
+}
+
 .sideBarComponent > a {
   color: #fff;
   /* 밑줄삭제 */
@@ -126,6 +173,26 @@ header {
   display: block;
   text-align: center;
 }
+/* 햄버거 아이콘 */
+
+.bi{
+  padding: 1rem;
+}
+
+/* 개척웹툰 */
+.name{
+  display: inline;
+  cursor: pointer;
+}
+
+/* 수평선 */
+hr.line{
+  width: 100%;
+  margin-left: 0%;
+  border-top: 1.4px solid #bbb;
+  border-bottom: 0px;
+}
+/* 상단바 끝*/
 
 /*웹툰 광고 부분*/
 /*슬라이드 이미지 비율 고정. 디스플레이 세로 크기의 25%, 가로 크기의 100%*/
@@ -133,11 +200,6 @@ header {
   object-fit: cover;
   height: 22vh;
   width: 100vh;
-}
-/*사이드바 버튼이 웹툰 광고 위에 겹치도록*/
-.moreInfo {
-  position: absolute;
-  z-index: 2;
 }
 
 /* 웹툰들의 썸네일 크기 조정 */
