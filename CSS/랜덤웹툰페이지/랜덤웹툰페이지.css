@@ -235,6 +235,7 @@ hr.line{
 .randomBoxInfo {
   text-align: center;
   font-size: 3vw;
+  color: black;
 }
 
 /* 웹툰의 간략정보를 표시하는  공간, 평소에는 안보이게 해두고, 웹툰이 표기될때 정보를 같이 표기 */
