@@ -39,152 +39,156 @@
     />
   </head>
   <body>
-    <div class="main-screen">
-      <!-- 뒤로가기, 관심설정, 공유 버튼 -->
-      <header>
-        <div class="webtoon-button">
-          <button type="button" class="pre-button" onclick="location.href='../wednsWebToonPage.html'">
-            <i class="bi bi-arrow-left"></i>
-          </button>
-          <button type="button" class="share-button" onclick="shareButton()">
-            <i class="bi bi-share-fill"></i>
-          </button>
-          <button type="button" class="like-button" onclick="likeButton()">
-            <i class="bi bi-heart"></i>
-          </button>
-        </div>
-      </header>
-      <!-- 웹툰 설명, 웹툰 보는 곳 -->
-      <main>
-        <div class="webtoon-start">
-          <div class="webtoon-mainImage">
-            <img
-              class="image-size"
-              src="../../../CSS/수요웹툰/mainWebtoonImages/여주실격!.jfif"
-            />
+    <div class="grid-set">
+      <div></div>
+      <div class="main-screen">
+        <!-- 뒤로가기, 관심설정, 공유 버튼 -->
+        <header>
+          <div class="webtoon-button">
+            <button type="button" class="pre-button" onclick="location.href='../wednsWebToonPage.html'">
+              <i class="bi bi-arrow-left"></i>
+            </button>
+            <button type="button" class="share-button" onclick="shareButton()">
+              <i class="bi bi-share-fill"></i>
+            </button>
+            <button type="button" class="like-button" onclick="likeButton()">
+              <i class="bi bi-heart"></i>
+            </button>
           </div>
-          <div class="right-contents">
-            <!-- 웹툰 설명 -->
-            <div class="webtoon-explain">
-              <div class="webtoon-title">여주실격!</div>
-              <div class="webtoon-writer">기맹기 | 수요웹툰</div>
-              <div class="webtoon-score">★ 9.98</div>
-              <div class="webtoonHashTag">#스토리 #드라마</div>
+        </header>
+        <!-- 웹툰 설명, 웹툰 보는 곳 -->
+        <main>
+          <div class="webtoon-start">
+            <div class="webtoon-mainImage">
+              <img
+                class="image-size"
+                src="../../../CSS/수요웹툰/mainWebtoonImages/여주실격!.jfif"
+              />
             </div>
-            <!-- 첫편부터 보기, 이어보기 버튼 -->
-            <div class="watch-button">
-              <button type="button" class="start-button" onclick="location.href='https://comic.naver.com/webtoon/detail?titleId=738143&no=1&weekday=wed'">첫편부터 보기</button>
-              <button type="button" class="continue-button" onclick="reloadButton()">이어보기</button>
-            </div>
-          </div>
-        </div>
-        <div class="line"></div>
-        <!-- 웹툰 설명과 웹툰 리스트 구분 선 -->
-        <!-- 웹툰 리스트(액자형) -->
-        <div class="watch-webtoon">
-          <div class="button-line">
-            <div class="webtoon-num">
-              <!-- 해당 웹툰 전체 회차 수-->
-              전체(8)
-            </div>
-            <div class="select-sequence">
-              <!-- 처음부터/최신편부터 보기 중 선택-->
-              <select name="sequence" class="sequence">
-                <option value="new">최신편부터</option>
-               
-              </select>
+            <div class="right-contents">
+              <!-- 웹툰 설명 -->
+              <div class="webtoon-explain">
+                <div class="webtoon-title">여주실격!</div>
+                <div class="webtoon-writer">기맹기 | 수요웹툰</div>
+                <div class="webtoon-score">★ 9.98</div>
+                <div class="webtoonHashTag">#스토리 #드라마</div>
+              </div>
+              <!-- 첫편부터 보기, 이어보기 버튼 -->
+              <div class="watch-button">
+                <button type="button" class="start-button" onclick="location.href='https://comic.naver.com/webtoon/detail?titleId=738143&no=1&weekday=wed'">첫편부터 보기</button>
+                <button type="button" class="continue-button" onclick="reloadButton()">이어보기</button>
+              </div>
             </div>
           </div>
           <div class="line"></div>
-          <!-- 선택 부분과 웹툰 리스트 구분선 -->
-          <div class="webtoon-view">
-            <!-- 웹툰 목록 -->
-            <!-- 웹툰 리스트 배열 유동적으로 변경 필요 -->
-            <ul class="wetoon-list">
-              <!-- 여주실격! 8화 -->
-             <li class="webtoon">
-                <a
-                  href="https://comic.naver.com/webtoon/detail?titleId=738143&no=8&weekday=wed"
-                >
-                  <div id="webtoonImage" class="webtoon-image-8">
-                    <p class="webtoon-info">8화 천사리사 은퇴의 전말 (8)</p>
-                  </div>
-                </a>
-              </li>
-              <!-- 여주실격! 7화 -->
-              <li class="webtoon">
-                <a
-                  href="https://comic.naver.com/webtoon/detail?titleId=738143&no=7&weekday=wed"
-                >
-                  <div id="webtoonImage" class="webtoon-image-7">
-                    <p class="webtoon-info">7화 천사리사 은퇴의 전말 (7)</p>
-                  </div>
-                </a>
-              </li>
-              <!-- 여주실격! 6화 -->
-              <li class="webtoon">
-                <a
-                  href="https://comic.naver.com/webtoon/detail?titleId=738143&no=6&weekday=wed"
-                >
-                  <div id="webtoonImage" class="webtoon-image-6">
-                    <p class="webtoon-info">6화 천사리사 은퇴의 전말 (6)</p>
-                  </div>
-                </a>
-              </li>
-              <!-- 여주실격! 5화 -->
-              <li class="webtoon">
-                <a
-                  href="https://comic.naver.com/webtoon/detail?titleId=738143&no=5&weekday=wed"
-                >
-                  <div id="webtoonImage" class="webtoon-image-5">
-                    <p class="webtoon-info">5화 천사리사 은퇴의 전말 (5)</p>
-                  </div>
-                </a>
-              </li>
-              <!-- 여주실격! 4화 -->
-              <li class="webtoon">
-                <a
-                  href="https://comic.naver.com/webtoon/detail?titleId=738143&no=4&weekday=wed"
-                >
-                  <div id="webtoonImage" class="webtoon-image-4">
-                    <p class="webtoon-info">4화 천사리사 은퇴의 전말 (4)</p>
-                  </div>
-                </a>
-              </li>
-              <!-- 여주실격! 3화 -->
-              <li class="webtoon">
-                <a
-                  href="https://comic.naver.com/webtoon/detail?titleId=738143&no=3&weekday=wed"
-                >
-                  <div id="webtoonImage" class="webtoon-image-3">
-                    <p class="webtoon-info">3화 천사리사 은퇴의 전말 (3)</p>
-                  </div>
-                </a>
-              </li>
-              <!-- 여주실격! 2화 -->
-              <li class="webtoon">
-                <a
-                  href="https://comic.naver.com/webtoon/detail?titleId=738143&no=2&weekday=wed"
-                >
-                  <div id="webtoonImage" class="webtoon-image-2">
-                    <p class="webtoon-info">2화 천사리사 은퇴의 전말 (2)</p>
-                  </div>
-                </a>
-              </li>
-              <!-- 여주실격! 1화 -->
-              <li class="webtoon">
-                <a
-                  href="https://comic.naver.com/webtoon/detail?titleId=738143&no=1&weekday=wed"
-                >
-                  <div id="webtoonImage" class="webtoon-image-1">
-                    <p class="webtoon-info">1화 천사리사 은퇴의 전말 (1)</p>
-                  </div>
-                </a>
-              </li>
-            </ul>
+          <!-- 웹툰 설명과 웹툰 리스트 구분 선 -->
+          <!-- 웹툰 리스트(액자형) -->
+          <div class="watch-webtoon">
+            <div class="button-line">
+              <div class="webtoon-num">
+                <!-- 해당 웹툰 전체 회차 수-->
+                전체(8)
+              </div>
+              <div class="select-sequence">
+                <!-- 처음부터/최신편부터 보기 중 선택-->
+                <select name="sequence" class="sequence">
+                  <option value="new">최신편부터</option>
+                 
+                </select>
+              </div>
+            </div>
+            <div class="line"></div>
+            <!-- 선택 부분과 웹툰 리스트 구분선 -->
+            <div class="webtoon-view">
+              <!-- 웹툰 목록 -->
+              <!-- 웹툰 리스트 배열 유동적으로 변경 필요 -->
+              <ul class="wetoon-list">
+                <!-- 여주실격! 8화 -->
+               <li class="webtoon">
+                  <a
+                    href="https://comic.naver.com/webtoon/detail?titleId=738143&no=8&weekday=wed"
+                  >
+                    <div id="webtoonImage" class="webtoon-image-8">
+                      <p class="webtoon-info">8화 천사리사 은퇴의 전말 (8)</p>
+                    </div>
+                  </a>
+                </li>
+                <!-- 여주실격! 7화 -->
+                <li class="webtoon">
+                  <a
+                    href="https://comic.naver.com/webtoon/detail?titleId=738143&no=7&weekday=wed"
+                  >
+                    <div id="webtoonImage" class="webtoon-image-7">
+                      <p class="webtoon-info">7화 천사리사 은퇴의 전말 (7)</p>
+                    </div>
+                  </a>
+                </li>
+                <!-- 여주실격! 6화 -->
+                <li class="webtoon">
+                  <a
+                    href="https://comic.naver.com/webtoon/detail?titleId=738143&no=6&weekday=wed"
+                  >
+                    <div id="webtoonImage" class="webtoon-image-6">
+                      <p class="webtoon-info">6화 천사리사 은퇴의 전말 (6)</p>
+                    </div>
+                  </a>
+                </li>
+                <!-- 여주실격! 5화 -->
+                <li class="webtoon">
+                  <a
+                    href="https://comic.naver.com/webtoon/detail?titleId=738143&no=5&weekday=wed"
+                  >
+                    <div id="webtoonImage" class="webtoon-image-5">
+                      <p class="webtoon-info">5화 천사리사 은퇴의 전말 (5)</p>
+                    </div>
+                  </a>
+                </li>
+                <!-- 여주실격! 4화 -->
+                <li class="webtoon">
+                  <a
+                    href="https://comic.naver.com/webtoon/detail?titleId=738143&no=4&weekday=wed"
+                  >
+                    <div id="webtoonImage" class="webtoon-image-4">
+                      <p class="webtoon-info">4화 천사리사 은퇴의 전말 (4)</p>
+                    </div>
+                  </a>
+                </li>
+                <!-- 여주실격! 3화 -->
+                <li class="webtoon">
+                  <a
+                    href="https://comic.naver.com/webtoon/detail?titleId=738143&no=3&weekday=wed"
+                  >
+                    <div id="webtoonImage" class="webtoon-image-3">
+                      <p class="webtoon-info">3화 천사리사 은퇴의 전말 (3)</p>
+                    </div>
+                  </a>
+                </li>
+                <!-- 여주실격! 2화 -->
+                <li class="webtoon">
+                  <a
+                    href="https://comic.naver.com/webtoon/detail?titleId=738143&no=2&weekday=wed"
+                  >
+                    <div id="webtoonImage" class="webtoon-image-2">
+                      <p class="webtoon-info">2화 천사리사 은퇴의 전말 (2)</p>
+                    </div>
+                  </a>
+                </li>
+                <!-- 여주실격! 1화 -->
+                <li class="webtoon">
+                  <a
+                    href="https://comic.naver.com/webtoon/detail?titleId=738143&no=1&weekday=wed"
+                  >
+                    <div id="webtoonImage" class="webtoon-image-1">
+                      <p class="webtoon-info">1화 천사리사 은퇴의 전말 (1)</p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-      </main>
+        </main>
+      </div>
+      <div></div>
     </div>
     <script src="../../../JS/수요웹툰/서브수요웹툰공통JS.js"></script>
   </body>

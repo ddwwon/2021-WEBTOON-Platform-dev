@@ -288,4 +288,5 @@ nav button:hover {
   display: none;
   font-size: 0.8vw;
   transform: translate(-50%, -50%);
+  color: black;
 }
