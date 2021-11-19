@@ -7,14 +7,12 @@
     
     <title>Webtoon Search</title>
 
-    <!--css-->
+    <!-- css -->
     <link rel="stylesheet" href="../CSS/searchPage.css" />
-
-    <!-- javaScript -->
-    <script src = "../JS/join.js"></script>
 
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+
 </head>
 <body>
     <!-- <header> = 상단바-->
@@ -23,7 +21,7 @@
             <section class="moreInfo-icon">
     
                 <label class="closeside">
-                <i class="bi bi-arrow-left fs-1"></i><input type="button" class="closesideBar"></i> 
+                <i class="bi bi-arrow-left fs-1"><input type="button" class="closesideBar"></i> 
                 </label>
     
                 <div class="profile-image">
@@ -41,10 +39,10 @@
             </section>
         </div>
         <label class="moreInfo">
-            <i class="bi bi-list fs-1"></i><input type="button"class="sideBar"></i> 
+            <i class="bi bi-list fs-1"><input type="button"class="sideBar"></i> 
         </label>
         
-        <h2 class ="name" onclick="setMainforweekDay();">개척웹툰</h2>
+        <div class ="name" onclick="setMainforweekDay();">개척웹툰</div>
         <div class = "collection">
             <i class="bi bi-collection fs-2" onclick="location.href='./SaveBox.html'"></i>    
         </div>
@@ -55,23 +53,20 @@
         <hr class = "line">
     </header>
     <!--상단바 끝-->
+    <hgroup> <!-- 검색창 -->
+        <div class="search-header">
+            <div class="search-input">
+                <form>
+                    <input type="text" class="input-text" placeholder="검색어를 입력하세요."> <!-- 검색 입력창 -->
+                    <button type="reset" class="input-reset"><i class="bi bi-x"></i></button> <!-- 검색어 입력 텍스트 지우는 버튼-->
+                    <button type="submit" class="input-submit"><i class="bi bi-search"></i></button> <!-- 검색어 전송 버튼 -->
+                </form>
+            </div>
+        </div>
+    </hgroup>
     <div class="grid-set">
         <div></div> <!-- 1:1:1 화면 비율을 위한 div -->
         <div class="search-screen">
-            <!--<header>
-                <div class="search-header">
-                    
-                    <a href="./main.html" class="back-button"><i class="bi bi-arrow-left"></i></a>
-                    
-                    <div class="search-input">
-                        <i class="bi bi-search"></i>
-                        <form>
-                            <input type="text" class="input-text">
-                            <button type="reset" class="input-reset"><i class="bi bi-x"></i></button>
-                        </form>
-                    </div>
-                </div>
-            </header>-->
             <main> <!-- 인기 검색어, 추천 작품, 추천 완결, 추천 신작 -->
                 <div class="popular-search"> <!-- 인기 검색어 -->
                     <div class="popular-title"><b>인기 검색어</b></div>
@@ -88,27 +83,37 @@
                     <div class="recommend-webtoon-list">
                         <ul class="recommend-list">
                             <li>
-                                <img class="webtoon-image" src="../WebtoonImages/RecommendWebtoon/소녀의세계.png">
+                                <img class="webtoon-image"
+                                    src="../WebtoonImages/RecommendWebtoon/소녀의세계.png"
+                                    onclick="location.href='../Components/월요웹툰/소녀의세계/소녀의세계.html'">
                                 <div class="webtoon-title">소녀의 세계</div>
                                 <div class="webtoon-info">모랑지(네이버)</div>
                             </li>
                             <li>
-                                <img class="webtoon-image" src="../WebtoonImages/RecommendWebtoon/걸어서30분.png">
+                                <img class="webtoon-image"
+                                    src="../WebtoonImages/RecommendWebtoon/걸어서30분.png"
+                                    onclick="location.href='../Components/금요웹툰/걸어서30분/걸어서30분.html'">
                                 <div class="webtoon-title">걸어서 30분</div>
                                 <div class="webtoon-info">이온도(네이버)</div>
                             </li>
                             <li>
-                                <img class="webtoon-image" src="../WebtoonImages/RecommendWebtoon/곱게키웠더니짐승.png">
+                                <img class="webtoon-image"
+                                    src="../WebtoonImages/RecommendWebtoon/곱게키웠더니짐승.png"
+                                    onclick="location.href='../Components/일요웹툰/곱게키웠더니,짐승/곱게키웠더니,짐승.html'">
                                 <div class="webtoon-title">곱게 키웠더니, 짐승</div>
                                 <div class="webtoon-info">이른꽃, 티바/여슬기(네이버)</div>
                             </li>
                             <li>
-                                <img class="webtoon-image" src="../WebtoonImages/RecommendWebtoon/여신강림.png">
+                                <img class="webtoon-image"
+                                    src="../WebtoonImages/RecommendWebtoon/여신강림.png"
+                                    onclick="location.href='../Components/화요웹툰/여신강림/여신강림.html'">
                                 <div class="webtoon-title">여신강림</div>
                                 <div class="webtoon-info">야옹이(네이버)</div>
                             </li>
                             <li>
-                                <img class="webtoon-image" src="../WebtoonImages/RecommendWebtoon/이번생도잘부탁해.png">
+                                <img class="webtoon-image"
+                                    src="../WebtoonImages/RecommendWebtoon/이번생도잘부탁해.png"
+                                    onclick="location.href='../Components/일요웹툰/이번생도잘부탁해/이번생도잘부탁해.html'">
                                 <div class="webtoon-title">이번 생도 잘 부탁해</div>
                                 <div class="webtoon-info">이혜(네이버)</div>
                             </li>
@@ -120,27 +125,37 @@
                     <div class="recommend-webtoon-list">
                         <ul class="recommend-list">
                             <li>
-                                <img class="webtoon-image" src="../WebtoonImages/RecommendEnd/AI가세상을지배한다면.png">
+                                <img class="webtoon-image"
+                                    src="../WebtoonImages/RecommendEnd/AI가세상을지배한다면.png"
+                                    onclick="location.href='../Components/완결웹툰/AI가세상을지배한다면/AI가세상을지배한다면.html'">
                                 <div class="webtoon-title">AI가 세상을 지배한다면</div>
                                 <div class="webtoon-info">POGO/HOOPA(네이버)</div>
                             </li>
                             <li>
-                                <img class="webtoon-image" src="../WebtoonImages/RecommendEnd/비밀상자.png">
+                                <img class="webtoon-image"
+                                    src="../WebtoonImages/RecommendEnd/비밀상자.png"
+                                    onclick="location.href='../Components/완결웹툰/비밀상자/비밀상자.html'">
                                 <div class="webtoon-title">비밀상자</div>
                                 <div class="webtoon-info">레이카(네이버)</div>
                             </li>
                             <li>
-                                <img class="webtoon-image" src="../WebtoonImages/RecommendEnd/수상한비밀상담부.png">
+                                <img class="webtoon-image"
+                                    src="../WebtoonImages/RecommendEnd/수상한비밀상담부.png"
+                                    onclick="location.href='../Components/완결웹툰/수상한비밀상담부/수상한비밀상담부.html'">
                                 <div class="webtoon-title">수상한 비밀 상담부</div>
                                 <div class="webtoon-info">149(네이버)</div>
                             </li>
                             <li>
-                                <img class="webtoon-image" src="../WebtoonImages/RecommendEnd/웰캄투실버라이프.png">
+                                <img class="webtoon-image"
+                                    src="../WebtoonImages/RecommendEnd/웰캄투실버라이프.png"
+                                    onclick="location.href='../Components/완결웹툰/웰캄투실버라이프/웰캄투실버라이프.html'">
                                 <div class="webtoon-title">웰캄투실버라이프</div>
                                 <div class="webtoon-info">솔녀(네이버)</div>
                             </li>
                             <li>
-                                <img class="webtoon-image" src="../WebtoonImages/RecommendEnd/인문학적감수성.png">
+                                <img class="webtoon-image"
+                                    src="../WebtoonImages/RecommendEnd/인문학적감수성.png"
+                                    onclick="location.href='../Components/완결웹툰/인문학적감수성/인문학적감수성.html'">
                                 <div class="webtoon-title">인문학적 감수성</div>
                                 <div class="webtoon-info">교날/번암(네이버)</div>
                             </li>
@@ -152,41 +167,47 @@
                     <div class="recommend-webtoon-list">
                         <ul class="recommend-list">
                             <li>
-                                <img class="webtoon-image" src="../WebtoonImages/RecommendNew/온에어.png">
+                                <img class="webtoon-image"
+                                    src="../WebtoonImages/RecommendNew/온에어.png"
+                                    onclick="location.href='../Components/신작웹툰/온에어/온에어.html'">
                                 <div class="webtoon-title">온에어</div>
                                 <div class="webtoon-info">심복일(네이버)</div>
                             </li>
                             <li>
-                                <img class="webtoon-image" src="../WebtoonImages/RecommendNew/재난소년.png">
+                                <img class="webtoon-image"
+                                    src="../WebtoonImages/RecommendNew/재난소년.png"
+                                    onclick="location.href='../Components/신작웹툰/재난소년/재난소년.html'">
                                 <div class="webtoon-title">재난소년</div>
                                 <div class="webtoon-info">코말랑(네이버)</div>
                             </li>
                             <li>
-                                <img class="webtoon-image" src="../WebtoonImages/RecommendNew/헤어지면죽음.png">
+                                <img class="webtoon-image"
+                                    src="../WebtoonImages/RecommendNew/헤어지면죽음.png"
+                                    onclick="location.href='../Components/신작웹툰/헤어지면죽음/헤어지면죽음.html'">
                                 <div class="webtoon-title">헤어지면 죽음</div>
                                 <div class="webtoon-info">봄소희/KYMA(네이버)</div>
                             </li>
                             <li>
-                                <img class="webtoon-image" src="../WebtoonImages/RecommendNew/후궁스캔들.png">
+                                <img class="webtoon-image"
+                                    src="../WebtoonImages/RecommendNew/후궁스캔들.png"
+                                    onclick="location.href='../Components/신작웹툰/후궁스캔들/후궁스캔들.html'">
                                 <div class="webtoon-title">후궁스캔들</div>
                                 <div class="webtoon-info">정현/기트로우(네이버)</div>
                             </li>
                             <li>
-                                <img class="webtoon-image" src="../WebtoonImages/RecommendNew/희란국연가.png">
+                                <img class="webtoon-image"
+                                    src="../WebtoonImages/RecommendNew/희란국연가.png"
+                                    onclick="location.href='../Components/신작웹툰/희란국연가/희란국연가.html'">
                                 <div class="webtoon-title">희란국연가</div>
-                                <div class="webtoon-info">김수지/MISNIGHT STUDIO(네이버)</div>
+                                <div class="webtoon-info">김수지(네이버)</div>
                             </li>
                         </ul>
                     </div>
                 </div>
             </main>
-            <div class="blank"></div> <!--footer에 가려지는 부분이 없도록 맨 아래에 여백-->
-            <footer> <!-- 웹툰 페이지명, 마이페이지(보관함) -->
-                <div class="footer-web-name">웹툰 페이지명</div>
-                <button type="button" class="archive-button" onclick="location.href=''"><i class="bi bi-archive"></i></button> <!-- 보관함 페이지로 경로 지정하기 -->
-            </footer>
         </div>
         <div></div> <!-- 1:1:1 화면 비율을 위한 div -->
     </div>
+    <script src = "../JS/join.js"></script>
 </body>
 </html>

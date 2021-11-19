@@ -16,14 +16,14 @@
 * {
     font-family: SCDream3;
 }
-header > * {
-    margin-bottom: 0.3rem;
-}
 
-/* -------------------------------- 상단바 시작 ----------------------------- */
+/* ---------------------------------------- 상단바 시작 ------------------------------------ */
+header > * {
+    margin-bottom: 0.6rem;
+}
 header{
     position: relative;
-    margin-top: 1%;
+    margin-top: 0;
     margin-left: 11%;
     background-color: white;
     color: var(--blue);
@@ -92,7 +92,7 @@ header{
 }
 
 /* 사이드 바 닫는 아이콘 */
-    .closeside{
+.closeside{
     float: right;
     cursor: pointer;
 }
@@ -176,23 +176,30 @@ header{
     text-align: center;
 }
 
-/* 햄버거 아이콘 */
+/* 헤더, 사이드바 아이콘 패딩, 크기 조절 */
+.bi-arrow-left,
 .bi-list,
 .bi-collection,
-.bi-search{
-    padding: 1rem;
+header .bi-search{
+    padding: 1vw;
+    font-size: 2.2vw;
+}
+.bi-list {
+    font-size: 2.5vw;;
 }
 
 /* 개척웹툰 */
 .name{
     display: inline;
     cursor: pointer;
+    font-size: 2vw;
 }
 
 /* 수평선 */
 hr.line{
     width: 86%;
     margin-left: 0%;
+    margin-top: 3vh;
     border-top: 1.4px solid #bbb;
     border-bottom: 0px;
 }
@@ -218,57 +225,50 @@ html, body {
     padding: 0;
 }
 
-/*헤더
-header {
-    height: 5.3vh;
-    background-color: var(--grey-blue);
-}
+/*검색창*/
 .search-header {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
-/*이전 화면 이동 버튼
-.bi-arrow-left {
-    font-size: 1.2vw;
-    color: white;
-    padding: 0.7vh;
-}
-/*상단 부분 가로 정렬(좌측 정렬)
-.back-button,
-.search-input {
-    float: left;
-}
-/*입력창 안에 돋보기 모양이랑 리셋버튼이 들어가있는 것처럼 보이게 해당 부분 전체 색깔을 white로 해줌
+/*입력창 안에 돋보기 모양이랑 리셋버튼이 들어가있는 것처럼 보이게 해당 부분 전체 색깔을 grey-blue로 해줌*/
 .search-input {
     display: flex;
     align-items: center;
-    background-color: white;
-    border-radius: 0.8vw;
-    padding: 0.2vh 0.3vw 0.2vh 0.3vw;
-    margin: 0.3vw 0 0.3vw 0;
+    background-color: var(--grey-blue);
+    border-radius: 1vw;
+    margin: 0.5vh 0 0.5vh 0;
+    padding: 0.4vh 0.8vw 0.4vh 0.8vw;
 }
-/*돋보기 모양 아이콘 스타일
-.bi-search {
-    color: var(--grey-blue);
-    font-size: 1.1vw;
-    margin: 0 0 0.2vh 0.3vw;
-}
-/*검색 입력창 크기 조절
+/*검색 입력창 크기 조절*/
 .input-text {
-    width: 24vw;
-    height: 2.5vh;
-    font-size: 1.1vw;
+    width: 35vw;
+    height: 3.6vh;
+    font-size: 1.5vh;
     border: 0;
-    margin: 0.2vh 1vw 0.2vh 1vw;
+    border-radius: 0.8vw;
+    margin-bottom: 0.3vh
 }
-/*검색 입력창 리셋 버튼 디자인
+/*검색 입력창 리셋 버튼 디자인*/
 .input-reset {
     border: 0;
     background-color: transparent;
-    color: var(--grey-blue);
-    font-size: 1.1vw;
+    color: white;
+    font-size: 1.2vw;
 }
-*/
+/*검색 입력창 전송(제출) 버튼 디자인*/
+.input-submit {
+    border: 0;
+    background-color: transparent;
+    color: white;
+    font-size: 1.2vw;
+    margin-right: 0.2vw
+}
+
+/*맨 아래에 여백 살짝*/
+main {
+    margin-bottom: 2vh;
+}
 
 /*인기 검색어 부분*/
 .popular-search {
@@ -308,7 +308,7 @@ header {
 /*웹툰 이미지*/
 .webtoon-image {
     object-fit: cover;
-    width: 7vw;
+    width: 7.5vw;
     height: 12vh;
 }
 /*웹툰 이미지 정렬 (가로로 스크롤 되면서 볼 수 있음)*/
@@ -341,8 +341,8 @@ header {
 /*웹툰 이미지 가로로 정렬*/
 .recommend-list > li {
     float: left;
-    padding-left: 0.5vw;
-    padding-right: 0.5vw;
+    padding-left: 0.6vw;
+    padding-right: 0.6vw;
 }
 /*웹툰 제목*/
 .webtoon-title {
@@ -353,38 +353,4 @@ header {
 .webtoon-info {
     font-size: 0.5vw;
     color: var(--light-grey);
-}
-
-/*footer 가려짐 방지 여백*/
-.blank {
-    height: 6vh;
-}
-
-/*footer 부분*/
-footer {
-    display: flex;
-    position: fixed;
-    bottom: 0;
-    height: 5vh;
-    width: 33%;
-    background-color: var(--grey-blue);
-}
-/*웹페이지 이름 부분*/
-.footer-web-name {
-    font-size: 1vw;
-    color: white;
-    padding: 1vh 0 1vh 1vw;
-}
-/*footer 보관함 아이콘*/
-.bi-archive {
-    color: white;
-    font-size: 1.3vw;
-    padding: 1vw;
-}
-/*보관함 버튼 우측 정렬 및 버튼 배경색, 테두리 제거*/
-.archive-button {
-    float: right;
-    margin-left: auto;
-    border: 0;
-    background-color: transparent;
 }
