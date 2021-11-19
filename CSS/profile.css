@@ -116,6 +116,7 @@ header{
     /* 가로축 중간 */
     justify-content: center;
     height: 0.5%;
+    width: 0.5%;
     border-radius: 50%;
     padding: 25%;
     margin: 10% 20%;
@@ -123,8 +124,8 @@ header{
     left: 0;
     cursor: pointer;
     filter: contrast(170%);;
-    }
-    .profile-image:hover{
+}
+.profile-image:hover{
     filter: contrast(190%);;
 }
 
@@ -217,4 +218,24 @@ hr.line{
 .profile-title {
     font-size: 1.5vw;
     margin: 1vh;
+}
+/*제목 아래 선*/
+.line2{
+    margin-left: 0%;
+    margin-top: 2vh;
+    border-top: 1.4px solid #bbb;
+    border-bottom: 0px;
+}
+
+/*프로필 원래 이미지*/
+.original-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.5vh;
+}
+.original-image > img {
+    height: 23vh;
+    width: 23vh;
+    border-radius: 50%;
 }

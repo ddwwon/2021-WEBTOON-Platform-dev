@@ -123,8 +123,8 @@ header{
     left: 0;
     cursor: pointer;
     filter: contrast(170%);;
-    }
-    .profile-image:hover{
+}
+.profile-image:hover{
     filter: contrast(190%);;
 }
 
