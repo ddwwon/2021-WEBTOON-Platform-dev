@@ -56,104 +56,100 @@
             <hr class = "line">
           </header>
         <!--상단바 끝-->
-    <div class = "Setting_container">
-        <div></div>
-        <div class = "center_container">
-            <header class = "Setting_title">설정</header>
-            <main>
-                
-                 <div>
-                    <h2 class="accordion-header" id="flush-headingOne">
-                        <div id = "name" class = "component">도원</div>
-                    </h2>
-                </div>
-                <div class="accordion accordion-flush" id="accordionFlushExample">
+
+        <div class = "Setting_container">
+            <div></div>
+            <div class = "center_container">
+                <header class = "Setting_title">설정</header>
+                <main>
+                    
                     <div>
-                        <h2 class="accordion-header" id="flush-headingTwo">
-                            <button  class="collapsed component"  type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                닉네임 변경
-                            </button>
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <div id = "name" class = "component">도원</div>
                         </h2>
-                        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">
-                                <div class="input-group mb-3">
-                                    <input id = "changingName" type="text" class="form-control" placeholder="변경할 닉네임을 입력해주세요" aria-label="Recipient's username" aria-describedby="button-addon2">
-                                    <button class="btn" type="button" id="button-addon2" onclick = "getName()">확인</button>
+                    </div>
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div>
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                                <button  class="collapsed component change_name_btn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                    닉네임 변경
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <div class="input-group mb-3">
+                                        <input id = "changingName" type="text" class="form-control" placeholder="변경할 닉네임을 입력해주세요" aria-label="Recipient's username" aria-describedby="button-addon2">
+                                        <button class="btn" type="button" id="button-addon2" onclick = "getName()">확인</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="collapsed component change_pw_btn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                    비밀번호 변경
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <div class="input-group mb-3">
+                                        <input id = "change_pw1" type="text" class="form-control" placeholder="변경할 비밀번호를 입력해주세요" aria-label="Recipient's username" aria-describedby="button-addon2">
+                                        <!-- <button class="btn btn-outline-secondary" type="button" id="button-addon2"></button> -->
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <input id = "change_pw2" type="text" class="form-control" placeholder="변경 비밀번호 확인" aria-label="Recipient's username" aria-describedby="button-addon2">
+                                        <button onclick = "change_password()"class="btn" type="button" id="button-addon2">확인</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div> 
+                            <h2 class="accordion-header" id="flush-headingFour">
+                                <button class="collapsed component secession_btn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                    탈퇴
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <div class= "text">
+                                        진짜로 탈퇴하시겠습니까?<br>
+                                        한번 탈퇴하시면 기존 데이터는 복구될 수 없습니다. <br>
+                                        탈퇴하실 거라면 밑에 버튼을 눌러주세요. <br><br>
+                                    </div>                                
+                                    <button onclick = "secession()" class="btn out_btn" type="button" id="button-addon2">탈퇴</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div> 
+                            <h2 class="accordion-header" id="flush-headingFive">
+                                <button class="collapsed component send_form_btn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                                    의견 보내기
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <!-- 의견보내기 부트 스트랩 -->
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlInput1" class="form-label">이메일주소</label>
+                                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlTextarea1" class="form-label">의견</label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                        <button onclick = "send_comments()" class="btn send_btn" type="button" id="button-addon2">보내기</button>
+                                    </div>
+                                    <!--  -->
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    <div>
-                        <h2 class="accordion-header" id="flush-headingThree">
-                            <button class="collapsed component" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                                비밀번호 변경
-                            </button>
-                        </h2>
-                        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">
-                                <div class="input-group mb-3">
-                                    <input id = "change_pw1" type="text" class="form-control" placeholder="변경할 비밀번호를 입력해주세요" aria-label="Recipient's username" aria-describedby="button-addon2">
-                                    <!-- <button class="btn btn-outline-secondary" type="button" id="button-addon2"></button> -->
-                                </div>
-                                <div class="input-group mb-3">
-                                    <input id = "change_pw2" type="text" class="form-control" placeholder="변경 비밀번호 확인" aria-label="Recipient's username" aria-describedby="button-addon2">
-                                    <button onclick = "change_password()"class="btn" type="button" id="button-addon2">확인</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div> 
-                        <h2 class="accordion-header" id="flush-headingFour">
-                            <button class="collapsed component" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                                탈퇴
-                            </button>
-                        </h2>
-                        <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">
-                                <div class= "text">
-                                    진짜로 탈퇴하시겠습니까?<br>
-                                    한번 탈퇴하시면 기존 데이터는 복구될 수 없습니다. <br>
-                                    탈퇴하실 거라면 밑에 버튼을 눌러주세요. <br><br>
-                                </div>                                
-                                <button onclick = "secession()" class="btn out_btn" type="button" id="button-addon2">탈퇴</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div> 
-                        <h2 class="accordion-header" id="flush-headingFive">
-                            <button class="collapsed component" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-                                의견 보내기
-                            </button>
-                        </h2>
-                        <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">
-                                <!-- 의견보내기 부트 스트랩 -->
-                                <div class="mb-3">
-                                    <label for="exampleFormControlInput1" class="form-label">이메일주소</label>
-                                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="exampleFormControlTextarea1" class="form-label">의견</label>
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                                    <button onclick = "send_comments()" class="btn send_btn" type="button" id="button-addon2">보내기</button>
-                                </div>
-                                <!--  -->
-                            </div>
-                        </div>
-                    </div>
-
-                </div>             
-
-               
-
-                
-            </main>
-           
-        <div></div>
-    </div>    
-    <script src="../JS/Setting.js"></script>
+                </main>
+            
+            <div></div>
+        </div>   
+        <script src="../JS/Setting.js" async></script> 
 </body>
 </html>

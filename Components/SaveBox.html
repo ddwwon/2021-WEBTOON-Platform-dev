@@ -49,7 +49,7 @@
             <i class="bi bi-list fs-1"></i><input type="button"class="sideBar"></i> 
         </label>
         
-        <h2 class ="name" onclick="setMainforweekDay();">개척웹툰</h2>
+        <h2 class ="name" onclick="setMainforweekDay()">개척웹툰</h2>
         <div class = "collection">
             <i class="bi bi-collection fs-2" onclick="location.href='./SaveBox.html'"></i>    
         </div>
@@ -65,92 +65,90 @@
         <div></div>
         <div class = "SaveBox_Layout">
             <nav class>
-                <button class = "Continue_webtoon">이어보기</button>
+                <button class = "Continue_webtoon" onclick="location.href='https://comic.naver.com/webtoon/detail?titleId=761722&no=8&weekday=fri'">이어보기</button>
                 <button class = "Like_webtoon">❤</button>
             </nav>
                 <main class = "SaveBox_Webtoon_list">
                     <div class = "Webtoon_list">
-                      <img class = "thumbNail" src="../웹툰대표이미지들/금요웹툰/세기말풋사과보습학원.jfif" alt="세기말풋사과보습학원"/>
+                      <img class = "thumbNail" src="../웹툰대표이미지들/금요웹툰/세기말풋사과보습학원.jfif" alt="세기말풋사과보습학원" onclick="location.href='../Components/금요웹툰/세기말풋사과보습학원/세기말풋사과보습학원.html'"/>
                       <div class = "webToonInfo">
-                        <div>세기말 풋사과 보습학원</div>
-                        <div>Author</div>
-                        <div>Content</div>
-                        <div>Rate</div>
-                        <input type = "checkbox" onclick="btn_click()" name = "alarm" class="btn" id = "12">
-                        <label for="12">알림 설정</label>
+                        <div class = "webToon_title">세기말 풋사과 보습학원</div>
+                        <div class = "webToon_author">순끼</div>
+                        <div class = "webToon_genre">#스토리 #로맨스</div>
+                        <div class = "webToon_grade">★ 9.78</div>
+                        <button class="btn btn1">알림 설정</button>
                         </input>
                       </div>                      
                     </div>  
 
                     <div class = "Webtoon_list">
-                      <img class = "thumbNail" src="../웹툰대표이미지들/목요웹툰/오빠세끼.jfif" alt="오빠세끼"/>
+                      <img class = "thumbNail" src="../웹툰대표이미지들/목요웹툰/오빠세끼.jfif" alt="오빠세끼" onclick="location.href='../Components/목요웹툰/오빠세끼/오빠세끼.html'"/>
                       <div class = "webToonInfo">
-                        <div>오빠세끼</div>
-                        <div>Author</div>
-                        <div>Content</div>
-                        <div>Rate</div>
-                        <input id = "34" type = "checkbox" onclick="btn_click()" name = "alarm" class="btn">
-                        <label for="34">알림 설정</label></input>
+                        <div class = "webToon_title">오빠세끼</div>
+                        <div class = "webToon_author">올리브유</div>
+                        <div class = "webToon_genre">#에피소드 #일상</div>
+                        <div class = "webToon_grade">★ 9.92</div>
+                        <button  class="btn btn2">알림 설정</button>
                       </div> 
                     </div>
                     <div class = "Webtoon_list">
-                      <img class = "thumbNail" src="../웹툰대표이미지들/수요웹툰/세상은돈과권력.jfif" alt ="세상은돈과권력"/>
+                      <img class = "thumbNail" src="../웹툰대표이미지들/수요웹툰/세상은돈과권력.jfif" alt ="세상은돈과권력" onclick="location.href='../Components/수요웹툰/세상은돈과권력/세상은돈과권력.html'"/>
                       <div class = "webToonInfo">
-                        <div>세상은 돈과 권력</div>
-                        <div>Author</div>
-                        <div>Content</div>
-                        <div>Rate</div>
-                        <button onclick="btn_click()" class="btn">알림 설정</button>
+                        <div class = "webToon_title">세상은 돈과 권력</div>
+                        <div class = "webToon_author">한동우 / 이도희</div>
+                        <div class = "webToon_genre">#에피소드 #드라마</div>
+                        <div class = "webToon_grade">★ 9.94</div>
+                        <button class="btn btn3">알림 설정</button>
                       </div> 
                     </div>
                     <div class = "Webtoon_list">
-                      <img class = "thumbNail" src="../웹툰대표이미지들/신작웹툰/신군.jpg" alt="신군"/>
+                      <img class = "thumbNail" src="../웹툰대표이미지들/신작웹툰/신군.jpg" alt="신군" onclick="location.href='../Components/신작웹툰/신군/신군.html'"/>
                       <div class = "webToonInfo">
-                        <div>신군</div>
-                        <div>Author</div>
-                        <div>Content</div>
-                        <div>Rate</div>
-                        <button onclick="btn_click()" class="btn">알림 설정</button>
+                        <div class = "webToon_title">신군</div>
+                        <div class = "webToon_author">규남</div>
+                        <div class = "webToon_genre">#스토리 #액션</div>
+                        <div class = "webToon_grade">★ 9.88</div>
+                        <button class="btn btn4">알림 설정</button>
                       </div> 
                     </div>
                     <div class = "Webtoon_list">
-                      <img class = "thumbNail" src="../웹툰대표이미지들/월요웹툰/소녀의세계.jpg" alt="소녀의세계"/>
+                      <img class = "thumbNail" src="../웹툰대표이미지들/월요웹툰/소녀의세계.jpg" alt="소녀의세계" onclick="location.href='../Components/월요웹툰/소녀의세계/소녀의세계.html'"/>
                       <div class = "webToonInfo">
-                        <div>소녀의 세계</div>
-                        <div>Author</div>
-                        <div>Content</div>
-                        <div>Rate</div>
-                        <button onclick="btn_click()" class="btn">알림 설정</button>
+                        <div class = "webToon_title">소녀의 세계</div>
+                        <div class = "webToon_author">모랑지</div>
+                        <div class = "webToon_genre">#스토리 #드라마</div>
+                        <div class = "webToon_grade">★ 9.58</div>
+                        <button class="btn btn5">알림 설정</button>
                       </div> 
                     </div>
                     <div class = "Webtoon_list">
-                      <img class = "thumbNail" src="../웹툰대표이미지들/일요웹툰/살아남은로맨스.jfif" alt="살아남은로맨스"/>
+                      <img class = "thumbNail" src="../웹툰대표이미지들/일요웹툰/살아남은로맨스.jfif" alt="살아남은로맨스" onclick="location.href='../Components/일요웹툰/살아남은로맨스/살아남은로맨스.html'"/>
                       <div class = "webToonInfo">
-                        <div>살아남은 로맨스</div>
-                        <div>Author</div>
-                        <div>Content</div>
-                        <div>Rate</div>
-                        <button onclick="btn_click()" class="btn">알림 설정</button>
+                        <div class = "webToon_title">살아남은 로맨스</div>
+                        <div class = "webToon_author">이연</div>
+                        <div class = "webToon_genre">#스토리 #판타지</div>
+                        <div class = "webToon_grade">★ 9.96</div>
+                        <button class="btn btn6">알림 설정</button>
                       </div> 
                     </div>
                     <div class = "Webtoon_list">
-                      <img class = "thumbNail" src="../웹툰대표이미지들/토요웹툰/반드시해피엔딩.jfif" alt="반드시해피엔딩"/>
+                      <img class = "thumbNail" src="../웹툰대표이미지들/토요웹툰/반드시해피엔딩.jfif" alt="반드시해피엔딩" onclick="location.href='../Components/토요웹툰/반드시해피엔딩/반드시해피엔딩.html'"/>
                       <div class = "webToonInfo">
-                        <div>반드시 해피엔딩</div>
-                        <div>Author</div>
-                        <div>Content</div>
-                        <div>Rate</div>
-                        <button onclick="btn_click()" class="btn">알림 설정</button>
+                        <div class = "webToon_title">반드시 해피엔딩</div>
+                        <div class = "webToon_author">플아다, 불사 / 재림</div>
+                        <div class = "webToon_genre">#스토리 #로맨스</div>
+                        <div class = "webToon_grade">★ 9.96</div>
+                        <button class="btn btn7">알림 설정</button>
                       </div> 
                     </div>
                     <div class = "Webtoon_list">
-                      <img class = "thumbNail" src="../웹툰대표이미지들/화요웹툰/하루만네가되고싶어.jfif" alt="하루만네가되고싶어"/>
+                      <img class = "thumbNail" src="../웹툰대표이미지들/화요웹툰/하루만네가되고싶어.jfif" alt="하루만네가되고싶어 onclick="location.href='../Components/화요웹툰/하루만네가되고싶어/하루만네가되고싶어.html'""/>
                       <div class = "webToonInfo">
-                        <div>하루만 네가 되고싶어</div>
-                        <div>Author</div>
-                        <div>Content</div>
-                        <div>Rate</div>
-                        <button onclick="btn_click()" class="btn">알림 설정</button>
+                        <div class = "webToon_title">하루만 네가 되고 싶어</div>
+                        <div class = "webToon_author">삼</div>
+                        <div class = "webToon_genre">#스토리 #로맨스</div>
+                        <div class = "webToon_grade">★ 9.98</div>
+                        <button class="btn btn8">알림 설정</button>
                       </div>  
                     </div>               
                 </main>

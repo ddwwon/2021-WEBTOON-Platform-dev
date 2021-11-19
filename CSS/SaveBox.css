@@ -243,18 +243,6 @@ nav > button:hover {
   display: inline;
 }
 
-/* .webToonInfo:hover {
-  opacity: 0.3;
-}
-
-.webToonInfo:hover {
-  display: inline;
-} */
-
-/* .webToonInfo:hover {
-  display: inline;
-} */
-
 /* 웹툰에 호버시 나오는 작품 정보 */
 .webToonInfo {
   position: absolute;
@@ -272,10 +260,18 @@ nav > button:hover {
   margin-top: 10%;
   font-size: 1.5vh;
   padding: 5%;
-  display: none;
+  /* display: none; */
 }
-/* 
-.btn:hover {
-  background-color: var(--Blue);
-  color: var(--White);
-} */
+
+.webToon_title {
+  font-size: 2vh;
+}
+
+.webToon_author {
+  font-size: 1.5vh;
+}
+
+.webToon_genre,
+.webToon_grade {
+  font-size: 1.3vh;
+}
