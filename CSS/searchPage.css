@@ -236,17 +236,17 @@ html, body {
     display: flex;
     align-items: center;
     background-color: var(--grey-blue);
-    border-radius: 1vw;
+    border-radius: 0.9vw;
     margin: 0.5vh 0 0.5vh 0;
     padding: 0.4vh 0.8vw 0.4vh 0.8vw;
 }
 /*검색 입력창 크기 조절*/
 .input-text {
-    width: 35vw;
+    width: 24vw;
     height: 3.6vh;
     font-size: 1.5vh;
     border: 0;
-    border-radius: 0.8vw;
+    border-radius: 0.6vw;
     margin-bottom: 0.3vh
 }
 /*검색 입력창 리셋 버튼 디자인*/
