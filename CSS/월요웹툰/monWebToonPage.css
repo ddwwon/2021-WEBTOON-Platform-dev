@@ -277,7 +277,7 @@ nav button:hover {
 /* 메인웹툰이미지에 마우스오버시 색상, 그리고 투명도 변경 */
 .webToonList img:hover {
   color: #454ade;
-  opacity: 0.5;
+  opacity: 0.2;
 }
 
 .webToonList img:hover ~ .webToonInfo {
