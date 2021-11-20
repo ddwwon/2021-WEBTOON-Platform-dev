@@ -129,9 +129,13 @@
   left: 0;
   cursor: pointer;
   filter: contrast(170%);;
+  position: relative;
 }
 .profile-image:hover{
   filter: contrast(190%);;
+}
+.profile-image img {
+  position: absolute;
 }
 
 
@@ -148,6 +152,10 @@
 }
 .userName:hover{
   color: var(--DarkBlue);
+}
+/* 닉네임 밑줄 삭제 */
+.userName > u {
+  text-decoration: none;
 }
 
 

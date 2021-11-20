@@ -150,6 +150,10 @@
 .userName:hover{
   color: var(--DarkBlue);
 }
+/* 닉네임 밑줄 삭제 */
+.userName > u {
+  text-decoration: none;
+}
 
 
 /* 사이드바의 리스트들 절대적요소 삭제, 패딩 왼쪽값 0으로 조정, 폰트사이즈 vw로 변경  */
