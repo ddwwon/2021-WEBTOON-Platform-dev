@@ -39,23 +39,21 @@ function setMainforweekDay(){
     {location.href = "../Components/토요웹툰/saturWebToonPage.html"}
 
 }
-function getClickedPageid(){
 
-    $('.number').click(function(){
-        const id_check = $(this).attr("id");
-    });
+$('.page-link').click(function(){
+    const id_check = $(this).attr("id");
+    console.log(id_check);
+    Paging(280,Number(id_check));
+});
 
-}
 
 //paging 구현을 못함
-function Paging(totalContentsSize){
-    const selectpage = Number($("#page4").text());
+function Paging(totalContentsSize, selectpage){
     const ShowLinksOnPage = 5;
     const ShowContentsOnPage = 7;
     const totalPageSize = Math.ceil(totalContentsSize/ShowContentsOnPage);  // 총 페이지 수
-    const currentPage = selectpage;
-    const startPageNum = currentPage -  Math.round(ShowLinksOnPage / 2) +1;// pagination이 보여주고 있는 첫 페이지
-    const endPageNum = currentPage +  Math.round(ShowLinksOnPage / 2) -1;   // pagination이 보여주고 있는 마지막 페이지
+    const startPageNum = selectpage -  Math.round(ShowLinksOnPage / 2) +1;// pagination이 보여주고 있는 첫 페이지
+    const endPageNum = selectpage +  Math.round(ShowLinksOnPage / 2) -1;   // pagination이 보여주고 있는 마지막 페이지
 
     if(endPageNum > totalPageSize) {
         endPageNum = totalPageSize
@@ -63,11 +61,10 @@ function Paging(totalContentsSize){
 
     
     $("div.page").remove();
-    $("#pages").on("click", function() {
-            for(let i = startPageNum ; i <= endPageNum; i++){
-                $("#next").before('<li class="page-item"><a class="page-link" href="#">'+ i + '</a></li>');
-             }
-    });
+    for(let i = startPageNum ; i <= endPageNum; i++){
+        $("#"+i).html('<li class="page-item"><a class="page-link" href="#" id = "'+ i + '">'+ i + '</a></li>');
+    }
+ 
     
     
     return {
@@ -77,7 +74,7 @@ function Paging(totalContentsSize){
         totalContentsSize,
         ShowLinksOnPage,
         ShowContentsOnPage,
-        currentPage
+        selectpage
     }
 }
 
