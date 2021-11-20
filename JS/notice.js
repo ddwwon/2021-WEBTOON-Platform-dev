@@ -40,42 +40,74 @@ function setMainforweekDay(){
 
 }
 
-$('.page-link').click(function(){
-    const id_check = $(this).attr("id");
-    console.log(id_check);
-    Paging(280,Number(id_check));
+
+
+
+
+//pagination 사용
+let preNum;
+$('.page-item').click(function(){
+
+const num = this.innerText; //.page-item의 내용
+
+if(num === "다음" && preNum ==undefined){           //처음 "다음" 키 누를 때
+    preNum = Paging(280);
+}
+else if(num === "이전" && preNum ==undefined){      //처음 "이전" 키 누를 때 (바로 "다음" 키를 누를 수 있게 하기 위해)
+    preNum = Paging(280,1);
+}
+else if(num === "다음" && preNum !== undefined){    //이후 "다음" 키 누를 때
+    preNum = Paging(280, preNum[1]);
+}
+else if(num ==="이전"  && preNum !== undefined){    //이후 "이전" 키 누를 때
+    preNum = Paging(280, preNum[0]);
+}
+else {                                              // 숫자 누를 때
+    preNum = Paging(280,Number(num));               
+}
+    
 });
 
 
-//paging 구현을 못함
+//pagination
 function Paging(totalContentsSize, selectpage){
     const ShowLinksOnPage = 5;
     const ShowContentsOnPage = 7;
     const totalPageSize = Math.ceil(totalContentsSize/ShowContentsOnPage);  // 총 페이지 수
-    const startPageNum = selectpage -  Math.round(ShowLinksOnPage / 2) +1;// pagination이 보여주고 있는 첫 페이지
-    const endPageNum = selectpage +  Math.round(ShowLinksOnPage / 2) -1;   // pagination이 보여주고 있는 마지막 페이지
-
-    if(endPageNum > totalPageSize) {
-        endPageNum = totalPageSize
-    }
-
+    const startPageNum = selectpage -  Math.round(ShowLinksOnPage / 2) + 1;// pagination이 보여주고 있는 첫 페이지
+    const endPageNum = selectpage +  Math.floor(ShowLinksOnPage / 2);   // pagination이 보여주고 있는 마지막 페이지
     
-    $("div.page").remove();
-    for(let i = startPageNum ; i <= endPageNum; i++){
-        $("#"+i).html('<li class="page-item"><a class="page-link" href="#" id = "'+ i + '">'+ i + '</a></li>');
+   if (selectpage == undefined){        //처음 "다음" 키 누를 때
+        Paging(280,ShowLinksOnPage);
+        return[ShowLinksOnPage -  Math.round(ShowLinksOnPage / 2) +1, ShowLinksOnPage + Math.round(ShowLinksOnPage / 2) -1];
     }
- 
-    
-    
-    return {
-        startPageNum,
-        endPageNum,
-        totalPageSize,
-        totalContentsSize,
-        ShowLinksOnPage,
-        ShowContentsOnPage,
-        selectpage
+    else if (selectpage < Math.round(ShowLinksOnPage /2) ){     //1보다 작은 수가 나올 수 없도록
+        Paging(280, Math.round(ShowLinksOnPage / 2));
+        return [1, ShowLinksOnPage];
     }
+    else if (selectpage > totalPageSize - Math.floor(ShowLinksOnPage / 2)){  //전체 페이지 수를 넘기지 않도록
+        Paging(280,totalPageSize - Math.floor(ShowLinksOnPage / 2));
+        return [totalPageSize - ShowLinksOnPage + 1 , totalPageSize];
+    }
+    else{       //그 외
+        if(endPageNum > totalPageSize) {
+            console.log(totalPageSize);
+            endPageNum = totalPageSize
+        }
+        
+        //출력
+        let id =1;
+        console.log("마지막 페이지 수"+endPageNum);
+        while(id <= ShowLinksOnPage){
+            for(let j = startPageNum ; j <= endPageNum; j++){
+                $("#"+id).html('<li class="page-item id = "'+ id + '"><a class="page-link" href="#" >'+ j + '</a></li>');
+                console.log("마지막 페이지 수"+j);
+                id++;
+            } 
+            break;
+        }
+        return [startPageNum, endPageNum];
+    }
+    
 }
-
 
