@@ -225,10 +225,16 @@ h2 {
 
 /* 닉네임, 닉네임 변경, 비밀번호 변경, 탈퇴 크기 조절  */
 .component {
+  border-radius: 2vh;
   border: none;
   font-size: 2vh;
   padding: 1vh;
   background-color: transparent;
+}
+
+.collapsed:hover {
+  background-color: var(--SkyBlue2);
+  color: var(--White);
 }
 
 .component:focus {
