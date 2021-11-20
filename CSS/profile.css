@@ -116,6 +116,7 @@ header{
     /* 가로축 중간 */
     justify-content: center;
     height: 0.5%;
+    width: 0.5%;
     border-radius: 50%;
     padding: 25%;
     margin: 10% 20%;
@@ -213,144 +214,70 @@ hr.line{
     grid-template-columns: 1fr 1fr 1fr !important;
 }
 
-/*검색화면 전체 페이지*/
-.search-screen {
-    display: grid;
+/*'프로필 변경'이라고 적힌 제목*/
+.profile-title {
+    font-size: 1.5vw;
+    margin: 1vh;
 }
-/*body에 margin 잡히는 거 방지*/
-html, body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
+/*제목 아래 선*/
+.line2{
+    margin-left: 0%;
+    margin-top: 2vh;
+    border-top: 1.4px solid #bbb;
+    border-bottom: 0px;
 }
 
-/*검색창*/
-.search-header {
+/*프로필 변경 부분*/
+.profile-change {
     display: flex;
+    flex-direction: column; /*요소들이 수직으로 정렬됨*/
     align-items: center;
     justify-content: center;
 }
-/*입력창 안에 돋보기 모양이랑 리셋버튼이 들어가있는 것처럼 보이게 해당 부분 전체 색깔을 grey-blue로 해줌*/
-.search-input {
-    display: flex;
+/*프로필 원래 이미지*/
+.profile-change > img {
+    height: 23vh;
+    width: 23vh;
+    border-radius: 50%;
+    margin-top: 1.5vh;
+}
+/*프로필 변경 버튼, 취소 버튼*/
+.profile-change-button,
+.profile-cancle-button {
+    margin: 1vh;
+    padding: 1vh;
+    border: 0px;
+    border-radius: 1vh;
+    background-color: var(--blue);
+    color: white;
+}
+.profile-cancle-button {
+    width: 3vw;
+}
+/*이미지 선택을 위한 부분*/
+.image-select {
+    display: none;
+    flex-direction: column; /*요소들이 수직으로 정렬됨*/
     align-items: center;
-    background-color: var(--grey-blue);
-    border-radius: 0.9vw;
-    margin: 0.5vh 0 0.5vh 0;
-    padding: 0.4vh 0.8vw 0.4vh 0.8vw;
+    justify-content: center;
 }
-/*검색 입력창 크기 조절*/
-.input-text {
-    width: 24vw;
-    height: 3.6vh;
-    font-size: 1.5vh;
-    border: 0;
-    border-radius: 0.6vw;
-    margin-bottom: 0.3vh
+/*이미지 선택 안내 문구*/
+.notice-text {
+    font-size: 1vw;
 }
-/*검색 입력창 리셋 버튼 디자인*/
-.input-reset {
-    border: 0;
-    background-color: transparent;
-    color: white;
-    font-size: 1.2vw;
-}
-/*검색 입력창 전송(제출) 버튼 디자인*/
-.input-submit {
-    border: 0;
-    background-color: transparent;
-    color: white;
-    font-size: 1.2vw;
-    margin-right: 0.2vw
-}
-
-/*맨 아래에 여백 살짝*/
-main {
-    margin-bottom: 2vh;
-}
-
-/*인기 검색어 부분*/
-.popular-search {
-    margin-bottom: 2vh;
-}
-/*'인기 검색어'라고 적힌 제목 부분*/
-.popular-title {
-    color: var(--dark-grey);
-    font-size: 1.2vw;
-    margin: 1.5vh 1.5vw 1vh 1.5vw;
-}
-/*인기 검색어 배경 박스*/
-.search-list {
-    background-color: var(--light-blue);
-    border-radius: 1vw;
-    padding: 1vh 0 1vh 0;
-    margin: 0 1.5vw 0 1.5vw;
-}
-/*인기 검색어 순위 글자*/
-.search-words {
-    padding: 0.5vh 0 0.5vh 0;
-    margin: 0 1vw 0 1vw;
-    color: var(--dark-grey);
-    font-size: 0.9vw;
-}
-
-/*추천 작품, 추천 완결, 추천 신작 제목 부분*/
-.recommend-webtoon-title,
-.recommend-end-title,
-.recommend-new-title {
-    color: var(--light-grey);
-    font-size: 1.2vw;
-    margin: 2vh 1.5vw 1vh 1.5vw;
-    text-decoration: underline; /*밑줄*/
-    text-underline-position: under; /*글자와 밑줄 간격 조금 띄우기*/
-}
-/*웹툰 이미지*/
-.webtoon-image {
+/*이미지*/
+.change-image > img {
     object-fit: cover;
-    width: 7.5vw;
-    height: 12vh;
+    height: 18vh;
+    width: 18vh;
 }
-/*웹툰 이미지 정렬 (가로로 스크롤 되면서 볼 수 있음)*/
-.recommend-webtoon-list {
-    width: 30vw;
-    height: 22vh;
-    overflow-x: scroll !important; /*범위 벗어나면 가로 스크롤*/
-    margin-left: 1vw;
-    background-color: var(--light-blue);
-    border-radius: 1vw;
+.change-image {
+    list-style: none; /*리스트 점 없애기*/
+    padding-left: 0.5vh;
+    padding-right: 0.5vh;
 }
-/*웹툰 가로 스크롤 스타일*/
-.recommend-webtoon-list::-webkit-scrollbar { /*스크롤바*/
-    height: 0.35vh
-}
-.recommend-webtoon-list::-webkit-scrollbar-thumb { /*스크롤바 막대*/
-    background-color: var(--grey-blue);
-    border-radius: 0.2vw;
-}
-.recommend-webtoon-list::-webkit-scrollbar-track { /*스크롤바 뒷배경*/
-    background-attachment: rgba(0, 0, 0, 0);
-}
-.recommend-list {
-    list-style: none;
-    white-space: nowrap;
-    -webkit-padding-start: 0px; /*왼쪽 공백 없애기*/
-    margin-left: 0.5vw;
-    display: flex;
-}
-/*웹툰 이미지 가로로 정렬*/
-.recommend-list > li {
-    float: left;
-    padding-left: 0.6vw;
-    padding-right: 0.6vw;
-}
-/*웹툰 제목*/
-.webtoon-title {
-    font-size: 0.8vw;
-    color: var(--dark-grey);
-}
-/*웹툰 작가, 플랫폼*/
-.webtoon-info {
-    font-size: 0.5vw;
-    color: var(--light-grey);
+.image-list {
+    -webkit-padding-start: 0px; /*ul 태그 시작점을 0px로 해서 왼쪽 공백 없애기*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }

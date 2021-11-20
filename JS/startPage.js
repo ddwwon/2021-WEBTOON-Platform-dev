@@ -6,7 +6,7 @@ window.onload = function() {
 
 const slideShow = () => {
     let i;
-    let image = document.getElementsByClassName("icon-image"); //class명이 icon-image인 dom 참조
+    const image = document.getElementsByClassName("icon-image"); //class명이 icon-image인 dom 참조
     for(i = 0; i < image.length; i++){
         image[i].style.display = "none"; //처음에는 display를 none으로
     }

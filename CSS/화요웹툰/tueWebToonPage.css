@@ -122,17 +122,24 @@
   align-items: center;
   /* 가로축 중간 */
   justify-content: center;
-  height: 0.5%;
+  height: 0.01%;
   border-radius: 50%;
-  padding: 25%;
+  padding: 30%;
   margin: 10% 20%;
   top: 0;
   left: 0;
   cursor: pointer;
   filter: contrast(170%);;
+  position: relative;
 }
 .profile-image:hover{
   filter: contrast(190%);;
+}
+/* 프로필 사진의 높이를 부모요소의 크기의 100%만큼 적용, 트랜스폼 스타일을 이용하여 정중앙에 위치하도록 설정 */
+.profile-image img {
+  height: 100%;
+  position: absolute;
+  transform: translate(-50%,-50%);
 }
 
 
@@ -149,6 +156,10 @@
 }
 .userName:hover{
   color: var(--DarkBlue);
+}
+/* 닉네임 밑줄 삭제 */
+.userName > u {
+  text-decoration: none;
 }
 
 

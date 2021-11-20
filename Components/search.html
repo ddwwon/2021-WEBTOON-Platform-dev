@@ -53,20 +53,20 @@
         <hr class = "line">
     </header>
     <!--상단바 끝-->
-    <hgroup> <!-- 검색창 -->
-        <div class="search-header">
-            <div class="search-input">
-                <form>
-                    <input type="text" class="input-text" placeholder="검색어를 입력하세요."> <!-- 검색 입력창 -->
-                    <button type="reset" class="input-reset"><i class="bi bi-x"></i></button> <!-- 검색어 입력 텍스트 지우는 버튼-->
-                    <button type="submit" class="input-submit"><i class="bi bi-search"></i></button> <!-- 검색어 전송 버튼 -->
-                </form>
-            </div>
-        </div>
-    </hgroup>
     <div class="grid-set">
         <div></div> <!-- 1:1:1 화면 비율을 위한 div -->
         <div class="search-screen">
+            <hgroup> <!-- 검색창 -->
+                <div class="search-header">
+                    <div class="search-input">
+                        <form>
+                            <input type="text" class="input-text" placeholder="검색어를 입력하세요."> <!-- 검색 입력창 -->
+                            <button type="reset" class="input-reset"><i class="bi bi-x"></i></button> <!-- 검색어 입력 텍스트 지우는 버튼-->
+                            <button type="submit" class="input-submit" onclick="alert('검색어가 입력되었습니다');"><i class="bi bi-search"></i></button> <!-- 검색어 전송 버튼 -->
+                        </form>
+                    </div>
+                </div>
+            </hgroup>
             <main> <!-- 인기 검색어, 추천 작품, 추천 완결, 추천 신작 -->
                 <div class="popular-search"> <!-- 인기 검색어 -->
                     <div class="popular-title"><b>인기 검색어</b></div>
@@ -208,6 +208,6 @@
         </div>
         <div></div> <!-- 1:1:1 화면 비율을 위한 div -->
     </div>
-    <script src = "../JS/join.js"></script>
+    <script src = "../JS/search.js"></script>
 </body>
 </html>
