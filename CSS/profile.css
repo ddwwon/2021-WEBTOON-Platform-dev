@@ -227,15 +227,57 @@ hr.line{
     border-bottom: 0px;
 }
 
-/*프로필 원래 이미지*/
-.original-image {
+/*프로필 변경 부분*/
+.profile-change {
     display: flex;
+    flex-direction: column; /*요소들이 수직으로 정렬됨*/
     align-items: center;
     justify-content: center;
-    margin-top: 1.5vh;
 }
-.original-image > img {
+/*프로필 원래 이미지*/
+.profile-change > img {
     height: 23vh;
     width: 23vh;
     border-radius: 50%;
+    margin-top: 1.5vh;
+}
+/*프로필 변경 버튼, 취소 버튼*/
+.profile-change-button,
+.profile-cancle-button {
+    margin: 1vh;
+    padding: 1vh;
+    border: 0px;
+    border-radius: 1vh;
+    background-color: var(--blue);
+    color: white;
+}
+.profile-cancle-button {
+    width: 3vw;
+}
+/*이미지 선택을 위한 부분*/
+.image-select {
+    display: none;
+    flex-direction: column; /*요소들이 수직으로 정렬됨*/
+    align-items: center;
+    justify-content: center;
+}
+/*이미지 선택 안내 문구*/
+.notice-text {
+    font-size: 1vw;
+}
+/*이미지*/
+.change-image > img {
+    object-fit: cover;
+    height: 18vh;
+    width: 18vh;
+}
+.change-image {
+    list-style: none; /*리스트 점 없애기*/
+    padding-left: 0.5vh;
+    padding-right: 0.5vh;
+}
+.image-list {
+    -webkit-padding-start: 0px; /*ul 태그 시작점을 0px로 해서 왼쪽 공백 없애기*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }

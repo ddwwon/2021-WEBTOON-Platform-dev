@@ -12,6 +12,7 @@
 
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+
 </head>
 <body>
     <!-- <header> = 상단바-->
@@ -24,7 +25,9 @@
                 </label>
     
                 <div class="profile-image">
-                    <a onclick="location.href='../Components/profile.html'"><img src="../Background/window.jpeg" alt="window" /></a>
+                    <a onclick="location.href='../Components/profile.html'">
+                        <img class="sidebar-profile" src="../Background/window.jpeg" alt="window">
+                    </a>
                 </div>
                     
                 <div class="userName" onclick="location.href='../Components/rogin.html'"><u>웹프실습3팀</u></div>
@@ -54,13 +57,51 @@
     <!--상단바 끝-->
     <div class="grid-set">
         <div></div> <!-- 1:1:1 화면 비율을 위한 div -->
-        <main> <!--프로필 변경하는 화면-->
-            <div class="profile-title">프로필 변경</div>
-            <hr class="line2">
-            <div class="original-image"><img src="../Background/window.jpeg" alt="window" /></div>
-        </main>
+        <div class="profile-main-screen">
+            <hgroup>
+                <div class="profile-title">프로필 변경</div>
+                <hr class="line2">
+            </hgroup>
+            <main> <!--프로필 변경하는 화면-->
+                <div class="profile-change">
+                    <img class="profile-image-original" src="../Background/window.jpeg" alt="window" />
+                    <button class="profile-change-button" onclick="Show()">이미지 선택</button>
+                </div>
+                <hr class="line2">
+                <div class="image-select"> <!--이미지 선택-->
+                    <button class="profile-cancle-button" onclick="Hidden()">취소</button>
+                    <div class="notice-text">아래 이미지 중 프로필로 설정하고 싶은 이미지를 선택하세요.</div>
+                    <ul class="image-list"> <!-- 프로필 이미지 목록 -->
+                        <li class="change-image">
+                            <img src="../Background/sky.jpg" onclick="ChangeProfile('../Background/sky.jpg')">
+                        </li>
+                        <li class="change-image">
+                            <img src="../Background/물결.jpeg" onclick="ChangeProfile('../Background/물결.jpeg')">
+                        </li>
+                        <li class="change-image">
+                            <img src="../Background/홀로그램.jpg" onclick="ChangeProfile('../Background/홀로그램.jpg')">
+                        </li>
+                        <li class="change-image">
+                            <img src="../Background/sea.jpg" onclick="ChangeProfile('../Background/sea.jpg')">
+                        </li>
+                        <li class="change-image">
+                            <img src="../Background/window.jpeg" onclick="ChangeProfile('../Background/window.jpeg')">
+                        </li>
+                        <li class="change-image">
+                            <img src="../Background/puppy_hat.png" onclick="ChangeProfile('../Background/puppy_hat.png')">
+                        </li>
+                        <li class="change-image">
+                            <img src="../Background/rabbit.png" onclick="ChangeProfile('../Background/rabbit.png')">
+                        </li>
+                        <li class="change-image">
+                            <img src="../Background/puppy_notebook.png" onclick="ChangeProfile('../Background/puppy_notebook.png')">
+                        </li>
+                    </ul>
+                </div>
+            </main>
+        </div>
         <div></div> <!-- 1:1:1 화면 비율을 위한 div -->
     </div>
-    <script src = "../JS/join.js"></script>
+    <script src="../JS/profile.js"></script>
 </body>
 </html>
