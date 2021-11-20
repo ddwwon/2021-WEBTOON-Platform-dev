@@ -128,6 +128,9 @@
     position: absolute;
     transform: translate(-50%, -50%);
   }
+  .userName > u {
+    text-decoration: none;
+  }
   
   
   /* 메뉴바 닉네임사이즈 vw로 변경, top left 요소 삭제 */
