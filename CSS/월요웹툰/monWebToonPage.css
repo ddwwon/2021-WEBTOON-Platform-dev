@@ -5,10 +5,10 @@
 }
 /* 색상 */
 :root {
-  --SkyBlue1: #dcedff;
+  --SkyBlue1: #DCEDFF;
   --SkyBlue2: #94b0da;
   --Blue: #454ade;
-  --DarkBlue: #1b1f3b;
+  --DarkBlue: #1B1F3B;
 }
 
 /* 전체적인 레이아웃을 그리드로 주고 최소 높이를 100vh, 최고 넓이를 100vw로 주고, 열기준 0.5:2:0.5 비율로 전체적인 틀을 완성 */
@@ -277,7 +277,7 @@ nav button:hover {
 /* 메인웹툰이미지에 마우스오버시 색상, 그리고 투명도 변경 */
 .webToonList img:hover {
   color: #454ade;
-  opacity: 0.5;
+  opacity: 0.2;
 }
 
 .webToonList img:hover ~ .webToonInfo {
@@ -293,4 +293,5 @@ nav button:hover {
   display: none;
   font-size: 0.8vw;
   transform: translate(-50%, -50%);
+  color: black;
 }
