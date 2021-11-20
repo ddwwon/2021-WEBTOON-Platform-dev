@@ -27,19 +27,19 @@ const getWeekDayToday = () => {
 //접속 요일에 따른 메인 화면 세팅
 const setMainforweekDay = () => {
   if (getWeekDayToday() == "Sun") {
-    location.href = "../../Components/일요웹툰/sunWebToonPage.html";
+    location.href = "../Components/일요웹툰/sunWebToonPage.html";
   } else if (getWeekDayToday() == "Mon") {
-    location.href = "../../Components/월요웹툰/monWebToonPage.html";
+    location.href = "../Components/월요웹툰/monWebToonPage.html";
   } else if (getWeekDayToday() == "Tue") {
-    location.href = "../../Components/화요웹툰/tueWebToonPage.html";
+    location.href = "../Components/화요웹툰/tueWebToonPage.html";
   } else if (getWeekDayToday() == "Wed") {
-    location.href = "../../Components/수요웹툰/wednsWebToonPage.html";
+    location.href = "../Components/수요웹툰/wednsWebToonPage.html";
   } else if (getWeekDayToday() == "Thu") {
-    location.href = "../../Components/목요웹툰/thursWebToonPage.html";
+    location.href = "../Components/목요웹툰/thursWebToonPage.html";
   } else if (getWeekDayToday() == "Fri") {
-    location.href = "../../Components/금요웹툰/friWebToonPage.html";
+    location.href = "../Components/금요웹툰/friWebToonPage.html";
   } else if (getWeekDayToday() == "Sat") {
-    location.href = "../../Components/토요웹툰/saturWebToonPage.html";
+    location.href = "../Components/토요웹툰/saturWebToonPage.html";
   }
 };
 
