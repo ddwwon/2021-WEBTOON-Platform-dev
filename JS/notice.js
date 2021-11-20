@@ -44,36 +44,11 @@ function setMainforweekDay(){
 
 
 
-//pagination 사용
-let preNum;
-$('.page-item').click(function(){
-
-const num = this.innerText; //.page-item의 내용
-
-if(num === "다음" && preNum ==undefined){           //처음 "다음" 키 누를 때
-    preNum = Paging(280);
-}
-else if(num === "이전" && preNum ==undefined){      //처음 "이전" 키 누를 때 (바로 "다음" 키를 누를 수 있게 하기 위해)
-    preNum = Paging(280,1);
-}
-else if(num === "다음" && preNum !== undefined){    //이후 "다음" 키 누를 때
-    preNum = Paging(280, preNum[1]);
-}
-else if(num ==="이전"  && preNum !== undefined){    //이후 "이전" 키 누를 때
-    preNum = Paging(280, preNum[0]);
-}
-else {                                              // 숫자 누를 때
-    preNum = Paging(280,Number(num));               
-}
-    
-});
-
-
 //pagination
-function Paging(totalContentsSize, selectpage){
+function Paging(totalpostsSize, selectpage){
     const ShowLinksOnPage = 5;
-    const ShowContentsOnPage = 7;
-    const totalPageSize = Math.ceil(totalContentsSize/ShowContentsOnPage);  // 총 페이지 수
+    const ShowContentsOnPage = 5;
+    const totalPageSize = Math.ceil(totalpostsSize/ShowContentsOnPage);  // 총 페이지 수
     const startPageNum = selectpage -  Math.round(ShowLinksOnPage / 2) + 1;// pagination이 보여주고 있는 첫 페이지
     const endPageNum = selectpage +  Math.floor(ShowLinksOnPage / 2);   // pagination이 보여주고 있는 마지막 페이지
     
@@ -97,11 +72,9 @@ function Paging(totalContentsSize, selectpage){
         
         //출력
         let id =1;
-        console.log("마지막 페이지 수"+endPageNum);
         while(id <= ShowLinksOnPage){
             for(let j = startPageNum ; j <= endPageNum; j++){
                 $("#"+id).html('<li class="page-item id = "'+ id + '"><a class="page-link" href="#" >'+ j + '</a></li>');
-                console.log("마지막 페이지 수"+j);
                 id++;
             } 
             break;
@@ -110,4 +83,32 @@ function Paging(totalContentsSize, selectpage){
     }
     
 }
+
+
+
+//전체 게시물 수
+const totalpostsSize = 50;
+//pagination 사용
+let preNum;
+$('.page-item').click(function(){
+
+const num = this.innerText; //.page-item의 내용
+
+if(num === "다음" && preNum ==undefined){           //처음 "다음" 키 누를 때
+    preNum = Paging(totalpostsSize);
+}
+else if(num === "이전" && preNum ==undefined){      //처음 "이전" 키 누를 때 (바로 "다음" 키를 누를 수 있게 하기 위해)
+    preNum = Paging(totalpostsSize,1);
+}
+else if(num === "다음" && preNum !== undefined){    //이후 "다음" 키 누를 때
+    preNum = Paging(totalpostsSize, preNum[1]);
+}
+else if(num ==="이전"  && preNum !== undefined){    //이후 "이전" 키 누를 때
+    preNum = Paging(totalpostsSize, preNum[0]);
+}
+else {                                              // 숫자 누를 때
+    preNum = Paging(totalpostsSize,Number(num));               
+}
+    
+});
 
