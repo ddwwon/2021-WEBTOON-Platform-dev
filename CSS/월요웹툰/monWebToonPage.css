@@ -4,11 +4,11 @@
   src: url("../Fonts/S-Core_Dream_OTF/SCDream3.otf");
 }
 /* 색상 */
-:root{
-  --SkyBlue1: #DCEDFF ;
-  --SkyBlue2 :#94b0da ;
+:root {
+  --SkyBlue1: #dcedff;
+  --SkyBlue2: #94b0da;
   --Blue: #454ade;
-  --DarkBlue: #1B1F3B;
+  --DarkBlue: #1b1f3b;
 }
 
 /* 전체적인 레이아웃을 그리드로 주고 최소 높이를 100vh, 최고 넓이를 100vw로 주고, 열기준 0.5:2:0.5 비율로 전체적인 틀을 완성 */
@@ -26,7 +26,7 @@
 }
 
 /* 상단바 시작*/
-.topOfTop{
+.topOfTop {
   position: relative;
   margin-top: 1%;
   margin-left: 11%;
@@ -36,16 +36,15 @@
 
   padding: 0.1%;
   min-width: 500px;
-  
 }
 /* 보관함 */
-.collection{
+.collection {
   float: right;
   margin-top: 1%;
   cursor: pointer;
 }
 /* 검색 */
-.search{
+.search {
   float: right;
   margin-right: 2%;
   margin-top: 1%;
@@ -55,7 +54,7 @@
 /* 사이드바 클릭버튼을 꾸미는 스타일 지정  */
 .moreInfo input {
   /* 포지션 절대적요소로 변경 */
-  position: absolute; 
+  position: absolute;
   /* 부모요소 배경색상을 물려받음 */
   background-color: transparent;
   /* 보더 삭제 */
@@ -68,7 +67,7 @@
 }
 .closeside input {
   /* 포지션 절대적요소로 변경 */
-  position: absolute; 
+  position: absolute;
   /* 부모요소 배경색상을 물려받음 */
   background-color: transparent;
   /* 보더 삭제 */
@@ -98,18 +97,17 @@
 }
 
 /* 사이드 바 닫는 아이콘 */
-.closeside{
+.closeside {
   float: right;
   cursor: pointer;
 }
 
 /* 사이드 바 여는 아이콘 */
-.moreInfo{
+.moreInfo {
   position: relative;
   cursor: pointer;
   top: 0.3rem;
 }
-
 
 /* 프로필 */
 .profile-image {
@@ -121,23 +119,25 @@
   align-items: center;
   /* 가로축 중간 */
   justify-content: center;
-  height: 0.5%;
+  height: 0.01%;
   border-radius: 50%;
-  padding: 25%;
+  padding: 30%;
   margin: 10% 20%;
   top: 0;
   left: 0;
   cursor: pointer;
-  filter: contrast(170%);;
+  filter: contrast(170%);
   position: relative;
 }
-.profile-image:hover{
-  filter: contrast(190%);;
+.profile-image:hover {
+  filter: contrast(190%);
 }
+/* 프로필 사진의 높이를 부모요소의 크기의 100%만큼 적용, 트랜스폼 스타일을 이용하여 정중앙에 위치하도록 설정 */
 .profile-image img {
+  height: 100%;
   position: absolute;
+  transform: translate(-50%,-50%);
 }
-
 
 /* 메뉴바 닉네임사이즈 vw로 변경, top left 요소 삭제 */
 .userName {
@@ -150,7 +150,7 @@
   text-align: center;
   cursor: pointer;
 }
-.userName:hover{
+.userName:hover {
   color: var(--DarkBlue);
 }
 /* 닉네임 밑줄 삭제 */
@@ -158,13 +158,12 @@
   text-decoration: none;
 }
 
-
 /* 사이드바의 리스트들 절대적요소 삭제, 패딩 왼쪽값 0으로 조정, 폰트사이즈 vw로 변경  */
 .sideBar-lists {
   list-style: none;
   padding-left: 0;
   font-size: 2.5vh;
-} 
+}
 
 /* 마진요소 5%로 변경 */
 .sideBarComponent {
@@ -198,13 +197,13 @@
 }
 
 /* 개척웹툰 */
-.name{
+.name {
   display: inline;
   cursor: pointer;
 }
 
 /* 수평선 */
-hr.line{
+hr.line {
   width: 100%;
   margin-left: 0%;
   border-top: 1.4px solid #bbb;
@@ -222,7 +221,7 @@ hr.line{
 
 /* 웹툰들의 썸네일 크기 조정 */
 .thumbNail {
-  width: 100%
+  width: 100%;
 }
 
 /* 요일,신작,완결별웹툰 버튼 그리드로 표현 */
@@ -295,4 +294,3 @@ nav button:hover {
   font-size: 0.8vw;
   transform: translate(-50%, -50%);
 }
-
