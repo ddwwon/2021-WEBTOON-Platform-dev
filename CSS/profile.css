@@ -123,12 +123,18 @@ header{
     top: 0;
     left: 0;
     cursor: pointer;
-    filter: contrast(170%);;
+    filter: none;
+    position: relative;
 }
 .profile-image:hover{
-    filter: contrast(190%);;
+    filter: contrast(190%);
 }
-
+/* 프로필 사진의 높이를 부모요소의 크기의 100%만큼 적용, 트랜스폼 스타일을 이용하여 정중앙에 위치하도록 설정 */
+.profile-image img {
+    height: 100%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
 
 /* 메뉴바 닉네임사이즈 vw로 변경, top left 요소 삭제 */
 .userName {
@@ -240,8 +246,9 @@ hr.line{
     width: 23vh;
     border-radius: 50%;
     margin-top: 1.5vh;
+    object-fit: cover;
 }
-/*프로필 변경 버튼, 취소 버튼*/
+/*프로필 변경 버튼, 닫기 버튼*/
 .profile-change-button,
 .profile-cancle-button {
     margin: 1vh;
