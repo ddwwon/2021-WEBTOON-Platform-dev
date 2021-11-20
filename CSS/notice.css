@@ -5,6 +5,7 @@
     --Blue: #454ade;
     --DarkBlue: #1B1F3B;
   }
+  
 /* 상단바 시작*/
 header{
   position: relative;
@@ -101,17 +102,23 @@ header{
   align-items: center;
   /* 가로축 중간 */
   justify-content: center;
-  height: 0.5%;
+  height: 0.01%;
   border-radius: 50%;
-  padding: 25%;
+  padding: 30%;
   margin: 10% 20%;
   top: 0;
   left: 0;
+  position: relative;
   cursor: pointer;
   filter: contrast(170%);;
 }
 .profile-image:hover{
   filter: contrast(190%);;
+}
+.profile-image img {
+  height: 100%;
+  position: absolute;
+  transform: translate(-50%, -50%);
 }
 
 
@@ -191,6 +198,11 @@ hr.line{
   
   .notice{
     padding-bottom: 3%;
+  }
+  .pagination{
+    margin: auto;
+    width: 17.8rem;
+    margin-top:  7.5%;
   }
   .write{
     position: static;
