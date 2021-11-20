@@ -124,11 +124,17 @@ header{
     left: 0;
     cursor: pointer;
     filter: contrast(170%);;
+    position: relative;
 }
 .profile-image:hover{
     filter: contrast(190%);;
 }
-
+/* 프로필 사진의 높이를 부모요소의 크기의 100%만큼 적용, 트랜스폼 스타일을 이용하여 정중앙에 위치하도록 설정 */
+.profile-image img {
+    height: 100%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
 
 /* 메뉴바 닉네임사이즈 vw로 변경, top left 요소 삭제 */
 .userName {
