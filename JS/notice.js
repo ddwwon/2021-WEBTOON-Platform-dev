@@ -84,7 +84,8 @@ function Paging(totalpostsSize, selectpage){
         let id =1;
         while(id <= ShowLinksOnPage){
             for(let j = startPageNum ; j <= endPageNum; j++){
-                $("#"+id).html('<li class="page-item id = "'+ id + '"><a class="page-link" href="#" >'+ j + '</a></li>');
+                const num = document.getElementById(id);
+                num.innerText = j;
                 id++;
             } 
             break;
