@@ -42,6 +42,16 @@ function setMainforweekDay(){
 
 
 
+//게시물을 누르면
+$('.post').click(function(){
+    location.href ='../Components/terms_of_service.html'
+});
+
+//글쓰기 버튼을 누르면
+$('.write').click(function(){
+    location.href ='../Components/writenotice.html'
+});
+
 
 
 //pagination

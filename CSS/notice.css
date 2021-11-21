@@ -203,6 +203,10 @@ hr.line{
     padding-bottom: 3%;
   }
 
+  .post{
+    cursor:pointer;
+  }
+
   .pagination{
     margin: auto;
     width: 27.6rem;
