@@ -1,3 +1,4 @@
+/* 하도원 */
 /* 폰트 지정 */
 @font-face {
   font-family: SCDream3;
@@ -231,18 +232,19 @@ h2 {
   padding: 1vh;
   background-color: transparent;
 }
-
+/* 해당 메뉴 기능에 마우스 호버시 버튼 색 변경 */
 .collapsed:hover {
   background-color: var(--SkyBlue2);
   color: var(--White);
 }
 
+/* 해당 메뉴 기능에 마우스 클릭시 버튼 색 변경 */
 .component:focus {
   background-color: var(--Blue);
   color: var(--White);
 }
 
-/* 확인 버튼 조절 */
+/* 확인(닉네임변경, 비밀번호 변경) 버튼 조절 */
 .btn {
   border: 0.1vh solid var(--Gray);
   border-radius: 10%;

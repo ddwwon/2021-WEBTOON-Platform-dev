@@ -1,3 +1,4 @@
+// 하도원
 const sideBarbtn = document.querySelector(".sideBar");
 const section = document.querySelector(".moreInfo-icon");
 const label = document.querySelector(".moreInfo");

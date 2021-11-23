@@ -1,3 +1,4 @@
+/* 하도원 */
 /* 폰트 지정 */
 @font-face {
   font-family: SCDream3;
@@ -18,11 +19,13 @@
   margin-bottom: 0.3rem;
 }
 
+/* nav와 웹툰 리스트들의 공긴 저잘 */
 .SaveBox_Layout {
   display: grid;
   grid-template-rows: 0.5fr 5.5fr;
 }
 
+/* 양쪽 여백 생성 */
 .Side_margin {
   min-height: 100vh;
   max-width: 100vw;
@@ -30,6 +33,7 @@
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+/* 상단바 부분  */
 header {
   position: relative;
   left: 7%;
@@ -70,6 +74,7 @@ header {
   width: 6%;
 }
 
+/* 사이드바 닫는 버튼 */
 .closeside input {
   /* 포지션 절대적요소로 변경 */
   position: absolute;
@@ -209,12 +214,13 @@ hr.line {
   border-top: 1.4px solid #bbb;
   border-bottom: 0px;
 }
-
+/* 이어보기, ❤를 그리드로 공간분할 */
 nav {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
+/* 이어보기, ❤의 버튼의 모양 지정 */
 nav > button {
   border: 1px solid #fff;
   background-color: (--SkyBlue1);
@@ -222,23 +228,27 @@ nav > button {
   border-radius: 3%;
 }
 
+/* 이어보기, ❤ 버튼에 마우스오버시 버튼, 폰트 컬러 변경 */
 nav > button:hover {
   background-color: var(--Blue);
   color: var(--White);
 }
 
+/* 보관함에 담아둔 웹툰 리스트 공간 분할 */
 .SaveBox_Webtoon_list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   position: relative;
 }
 
+/* 웹툰 리스트의 틀 지정 */
 .Webtoon_list {
   background-color: var(--White);
   padding: 0.2rem;
   position: relative;
 }
 
+/* 웹툰 리스트에 해당 웹툰 이미지 지정 */
 .thumbNail {
   object-fit: cover;
   width: 100%;
@@ -246,15 +256,15 @@ nav > button:hover {
   border-radius: 10px;
 }
 
+/* 웹툰의 썸네일에 마우스 호버시 투명도 증가 및 웹툰 정보 표시 */
 .thumbNail:hover {
   opacity: 0.3;
 }
-
 .thumbNail:hover ~ .webToonInfo {
   display: inline;
 }
 
-/* 웹툰에 호버시 나오는 작품 정보 */
+/* 웹툰에 호버시 나오는 작품 정보 css 지정*/
 .webToonInfo {
   position: absolute;
   text-align: center;
@@ -266,14 +276,7 @@ nav > button:hover {
   font-weight: bold;
   color: var(--DarkBlue);
 }
-
-.btn {
-  margin-top: 10%;
-  font-size: 1.5vh;
-  padding: 5%;
-  /* display: none; */
-}
-
+/* 웹툰 정보의 글씨 크기 지정 */
 .webToon_title {
   font-size: 2vh;
 }
@@ -285,4 +288,11 @@ nav > button:hover {
 .webToon_genre,
 .webToon_grade {
   font-size: 1.3vh;
+}
+
+/* 알림설정 버튼 크기 지정 */
+.btn {
+  margin-top: 10%;
+  font-size: 1.5vh;
+  padding: 5%;
 }
