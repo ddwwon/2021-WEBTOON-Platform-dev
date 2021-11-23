@@ -202,10 +202,19 @@ hr.line{
   .notice{
     padding-bottom: 3%;
   }
+
+  .post{
+    cursor:pointer;
+  }
+
   .pagination{
     margin: auto;
-    width: 17.8rem;
-    margin-top:  7.5%;
+    width: 27.6rem;
+    margin-top:  8.5%;
+  }
+  .page-link{
+    width: 4rem;
+    height: 2.5rem;
   }
   .write{
     position: static;
