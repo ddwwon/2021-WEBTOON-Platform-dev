@@ -13,11 +13,11 @@ const slideShow = () => {
     image[index].style.display = "block"; //해당 인덱스의 display는 block으로
 
     index++;
-    if(index >  image.length) {
+    if(index >=  image.length) {
         index = 0; //인덱스가 초과되면(아이콘이 한 바퀴 돌면) 0으로 다시 초기화
     }
     
-    setTimeout(slideShow, 400); //함수를 0.4초마다 호출
+    setTimeout(slideShow, 300); //함수를 0.3초마다 호출
 }
 
 //시작 화면에서 2초 후 메인화면으로 이동
