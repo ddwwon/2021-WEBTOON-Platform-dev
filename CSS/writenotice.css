@@ -14,7 +14,7 @@
     --Blue: #454ade;
     --DarkBlue: #1B1F3B;
   }
- /* 상단바 시작*/
+ /* 상단바, 사이드바 시작*/
 header{
   position: relative;
   margin-top: 1%;
@@ -198,7 +198,13 @@ hr.line{
   border-top: 1.4px solid #bbb;
   border-bottom: 0px;
 }
-/* 상단바 끝*/
+/* 상단바, 사이드바 끝*/
+
+
+
+
+
+/* writenotice 시작 */
   main{
     position: static;
     text-align: center;

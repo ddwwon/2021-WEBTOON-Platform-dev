@@ -205,7 +205,9 @@ hr.line{
 
 
 
+
   
+  /* join 시작 */
   main{
     position: static;
     text-align: center;
@@ -245,6 +247,7 @@ hr.line{
     margin-left: 15px;
   }
  
+  /* 가입하기 버튼 */
   .joinButton{
     position: static;
     margin: 1rem;
@@ -263,6 +266,7 @@ hr.line{
     color: white;
   }
   
+  /*다른 아이디로 로그인*/
   .AnotherLogIn{
     position: static;
     margin: 1rem;
