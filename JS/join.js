@@ -70,8 +70,14 @@ function Join(){
         }
     }
 }
+const termOfService = document.querySelector(".termsOfService");
+termOfService.addEventListener("click", function () {
+    caution = false;
+});
 
 //경고창 띄우기
 window.onbeforeunload = function () {
 	if(caution)return '변경사항이 저장되지 않을 수 있습니다.';
 };
+
+
