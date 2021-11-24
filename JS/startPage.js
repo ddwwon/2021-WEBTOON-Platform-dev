@@ -1,3 +1,4 @@
+//조정미
 //시작 화면에서 0.4초마다 아이콘 변경
 window.onload = function() {
     slideShow();
