@@ -16,9 +16,9 @@ closesideBarBtn.addEventListener("click", function () {
 
 //접속 요일을 얻는 함수
 function getWeekDayToday(){
-    let now = new Date();
+    const now = new Date();
     const weekDay = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri','Sat'];
-    let week = weekDay[now.getDay()];
+    const week = weekDay[now.getDay()];
     return week;
 }
 
@@ -65,23 +65,19 @@ function Paging(totalpostsSize, selectpage){
     
    if (selectpage == undefined){        //처음 "다음" 키 누를 때
         Paging(280,ShowLinksOnPage);
-        return[ShowLinksOnPage -  Math.round(ShowLinksOnPage / 2) +1, ShowLinksOnPage + Math.round(ShowLinksOnPage / 2) -1];
+        return[ShowLinksOnPage -  Math.round(ShowLinksOnPage / 2) +1, ShowLinksOnPage + Math.round(ShowLinksOnPage / 2) -1, ShowContentsOnPage, ShowLinksOnPage];
     }
     else if (selectpage < Math.round(ShowLinksOnPage /2) ){     //1보다 작은 수가 나올 수 없도록
         Paging(280, Math.round(ShowLinksOnPage / 2));
-        return [1, ShowLinksOnPage];
+        return [1, ShowLinksOnPage, ShowContentsOnPage];
     }
     else if (selectpage > totalPageSize - Math.floor(ShowLinksOnPage / 2)){  //전체 페이지 수를 넘기지 않도록
         Paging(280,totalPageSize - Math.floor(ShowLinksOnPage / 2));
-        return [totalPageSize - ShowLinksOnPage + 1 , totalPageSize];
+        return [totalPageSize - ShowLinksOnPage + 1 , totalPageSize, ShowContentsOnPage];
     }
     else{       //그 외
-        if(endPageNum > totalPageSize) {
-            console.log(totalPageSize);
-            endPageNum = totalPageSize
-        }
         
-        //출력
+        //페이지네이션 변경
         let id =1;
         while(id <= ShowLinksOnPage){
             for(let j = startPageNum ; j <= endPageNum; j++){
@@ -91,11 +87,25 @@ function Paging(totalpostsSize, selectpage){
             } 
             break;
         }
-        return [startPageNum, endPageNum];
+        return [startPageNum, endPageNum, ShowContentsOnPage];
     }
     
 }
 
+function post(selectpage, totalpostsSize,ShowContentsOnPage){
+    //게시물 변경
+     let postNumId = ShowContentsOnPage;
+     const startpostNum = totalpostsSize - ShowContentsOnPage*(selectpage-1);
+     const EndpostNum = startpostNum-ShowContentsOnPage + 1;
+    while( postNumId >= 1){
+        for (let j = EndpostNum; j <= startpostNum;j++){
+            const postNum = document.getElementById("postNum"+ postNumId);
+            postNum.innerText = j;
+            postNumId--;
+        }
+        break;
+    }
+}
 
 
 //전체 게시물 수
@@ -108,19 +118,23 @@ const num = this.innerText; //.page-item의 내용
 
 if(num === "다음" && preNum ==undefined){           //처음 "다음" 키 누를 때
     preNum = Paging(totalpostsSize);
+    post(preNum[3],totalpostsSize, preNum[2]);
 }
 else if(num === "이전" && preNum ==undefined){      //처음 "이전" 키 누를 때 (바로 "다음" 키를 누를 수 있게 하기 위해)
     preNum = Paging(totalpostsSize,1);
+    post(1,totalpostsSize, preNum[2]);
 }
 else if(num === "다음" && preNum !== undefined){    //이후 "다음" 키 누를 때
     preNum = Paging(totalpostsSize, preNum[1]);
+    post(preNum[1],totalpostsSize, preNum[2]);
 }
 else if(num ==="이전"  && preNum !== undefined){    //이후 "이전" 키 누를 때
     preNum = Paging(totalpostsSize, preNum[0]);
+    post(preNum[0],totalpostsSize, preNum[2]);
 }
 else {                                              // 숫자 누를 때
     preNum = Paging(totalpostsSize,Number(num)); 
+    post(Number(num),totalpostsSize, preNum[2]);
 }
-    
 });
 

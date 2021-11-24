@@ -41,7 +41,8 @@ function setMainforweekDay(){
 
 }
 
-
+//경고창 띄울지 여부
+let caution = true;
 
 // 회원가입
 function Join(){
@@ -64,7 +65,13 @@ function Join(){
             alert("이용약관에 동의해주세요.")
         }
         else{
+            caution = false; //경고창 예외
             location.href = 'succeedJoin.html'
         }
     }
 }
+
+//경고창 띄우기
+window.onbeforeunload = function () {
+	if(caution)return '변경사항이 저장되지 않을 수 있습니다.';
+};

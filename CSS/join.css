@@ -227,44 +227,22 @@ hr.line{
     margin: 0.5rem;
     margin-top: 2rem;
   }
-  #passwordInput{
-    width: 20rem;
-    height: 2rem;
-    margin: 0.5rem;
-  }
 
-  #re-passwordInput{
-    width: 20rem;
-    height: 2rem;
-    margin: 0.5rem;
-  }
-
-  #NickNameInput{
-    width: 20rem;
-    height: 2rem;
-    margin: 0.5rem;
-  }
-  #NameInput{
-    width: 20rem;
-    height: 2rem;
-    margin: 0.5rem;
-  }
-  #e-mailInput{
-    width: 20rem;
-    height: 2rem;
-    margin: 0.5rem;
-  }
- 
-  .Optionalinfo{
-    position: static;
-    margin-bottom: 3rem;
-    margin-left: 15px;
-  }
-
+  #passwordInput,
+  #re-passwordInput,
+  #NickNameInput,
+  #NameInput,
+  #e-mailInput,
   #PhoneNumInput{
     width: 20rem;
     height: 2rem;
     margin: 0.5rem;
+  }
+
+  .Optionalinfo{
+    position: static;
+    margin-bottom: 3rem;
+    margin-left: 15px;
   }
  
   .joinButton{
