@@ -1,3 +1,4 @@
+//이현주
 const sideBarbtn = document.querySelector(".sideBar");
 const closesideBarBtn = document.querySelector(".closesideBar");
 const section = document.querySelector(".moreInfo-icon");
@@ -40,7 +41,10 @@ function setMainforweekDay(){
 
 }
 
+//경고창 띄울지 여부
+let caution = true;
 
+//글쓰기
 function Write(){
     const title =document.querySelector('.form-control');
     const content =document.querySelector('#contentInput');
@@ -52,6 +56,12 @@ function Write(){
         alert("내용을 작성해주세요.")
     }
     else{
+        caution = false; //경고창 예외
         location.href ='../Components/notice.html'
     }
 }
+
+//경고창 띄우기
+window.onbeforeunload = function () {
+	if(caution)return '변경사항이 저장되지 않을 수 있습니다.';
+};

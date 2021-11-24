@@ -1,3 +1,4 @@
+//이현주
 const sideBarbtn = document.querySelector(".sideBar");
 const closesideBarBtn = document.querySelector(".closesideBar");
 const section = document.querySelector(".moreInfo-icon");
@@ -118,7 +119,7 @@ else if(num ==="이전"  && preNum !== undefined){    //이후 "이전" 키 누�
     preNum = Paging(totalpostsSize, preNum[0]);
 }
 else {                                              // 숫자 누를 때
-    preNum = Paging(totalpostsSize,Number(num));               
+    preNum = Paging(totalpostsSize,Number(num)); 
 }
     
 });

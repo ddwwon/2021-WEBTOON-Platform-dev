@@ -1,3 +1,4 @@
+//이현주
 const sideBarbtn = document.querySelector(".sideBar");
 const closesideBarBtn = document.querySelector(".closesideBar");
 const section = document.querySelector(".moreInfo-icon");

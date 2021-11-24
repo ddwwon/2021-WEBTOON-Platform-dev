@@ -1,3 +1,4 @@
+//이현주
 const sideBarbtn = document.querySelector(".sideBar");
 const closesideBarBtn = document.querySelector(".closesideBar");
 const section = document.querySelector(".moreInfo-icon");
@@ -15,9 +16,9 @@ closesideBarBtn.addEventListener("click", function () {
 
 //접속 요일을 얻는 함수
 function getWeekDayToday(){
-    let now = new Date();
+    const now = new Date();
     const weekDay = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri','Sat'];
-    let week = weekDay[now.getDay()];
+    const week = weekDay[now.getDay()];
     return week;
 }
 
@@ -38,19 +39,22 @@ function setMainforweekDay(){
     else if( getWeekDayToday() == 'Sat' )
     {location.href = "../Components/토요웹툰/saturWebToonPage.html"}
 }
-  
+
 // 로그인
 function Rogin(){
-    const id =document.querySelector('#roginIdInput');
-    const pw =document.querySelector('#roginPasswordInput');
-
-    if(id.value == "manager" ||pw.value == "123456"){
+    const inputId =document.querySelector('#roginIdInput');
+    const inputPw =document.querySelector('#roginPasswordInput');
+    const person = {
+        id: 'manager',
+        pw: 123456
+      };  
+    if(inputId.value == person.id ||inputPw == person.pw){
         setMainforweekDay();
     }
-    else if(id.value == ""){
+    else if(inputId.value == ""){
         alert("아이디를 입력해 주세요.")
     }
-    else if(pw.value == ""){
+    else if(inputPw.value == ""){
         alert("비밀번호를 입력해 주세요.")
     }
     else
