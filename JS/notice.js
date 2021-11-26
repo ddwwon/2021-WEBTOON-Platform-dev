@@ -92,7 +92,7 @@ function Paging(totalpostsSize, selectpage){
     
 }
 
-function post(selectpage, totalpostsSize,ShowContentsOnPage){
+function post(selectpage, totalpostsSize, ShowContentsOnPage){
     //게시물 변경
      let postNumId = ShowContentsOnPage;
      const startpostNum = totalpostsSize - ShowContentsOnPage*(selectpage-1);
